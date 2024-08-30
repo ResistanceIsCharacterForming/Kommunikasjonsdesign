@@ -6,24 +6,23 @@
 
 body {
     font-size: calc(0.8em + 0.8vw);
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header-area" "main-area" "footer-area";
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "main-area" "footer-area";
+    width: 100%;
 }
 
-header {
-    grid-area: header-area;
-}
-main {
-    grid-area: main-area;
-
-}
 footer {
     grid-area: footer-area;
+    justify-items: center;
+    text-align: center;
+    width: 100vw;
 }
 
 #content {
     display: flex;
+    grid-area: main-area;
 }
 
 #content header {
@@ -34,4 +33,20 @@ footer {
 #content main {
     flex-basis: 70%;
     margin: auto;
+}
+
+#articleSelection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offsetLeft {
+    flex-basis: 100%;
+    margin: auto;
+    align-items: left;
+}
+
+.offsetRight {
+    flex-basis: 100%;
 }
