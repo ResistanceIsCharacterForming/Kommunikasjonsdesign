@@ -11,6 +11,8 @@ body {
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "main-area" "footer-area";
     width: 100%;
+    background-color: black;
+    color: white;
 }
 
 footer {
@@ -38,8 +40,6 @@ nav {
     margin: auto;
     background-color: lightgrey;
     height: 100%;
-    margin-right: 1rem;
-    padding: 1rem;
     color: white;
 }
 
@@ -47,7 +47,6 @@ nav {
     flex-basis: 70%;
     margin: auto;
     height: 100%;
-    margin-left: 1rem;
 }
 
 #articleSelection {
@@ -81,8 +80,8 @@ nav {
 }
 
 .hero {
-    margin: 1rem 0;
     padding: 0.5rem;
+    margin: 1rem 0;
     background-color: lightgrey;
     color: black;
     width: 100%;
@@ -90,11 +89,10 @@ nav {
     /* https://www.pexels.com/photo/assorted-color-laser-lights-417458/ */
     background-image: linear-gradient(rgba(50, 50, 50, 0.847), rgba(50, 50, 50, 0.847)), url("../assets/img/pexels-pixabay-417458.jpg");
     background-size: cover;
-
 }
 
+
 article {
-    background-color: lightgray;
     margin: 1rem;
     padding: 0.5rem;
 }
