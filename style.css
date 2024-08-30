@@ -113,3 +113,7 @@ article {
     font-weight: 700;
     font-style: normal;
 }
+
+.ffConsolas {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
