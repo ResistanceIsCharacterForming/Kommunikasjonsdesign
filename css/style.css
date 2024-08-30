@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "main-area" "footer-area";
+    grid-template-areas: "main-area" "aside-area" "footer-area";
     width: 100%;
     background-color: black;
     color: white;
@@ -21,6 +21,10 @@ footer {
     text-align: center;
     background-color: lightgrey;
     color: black;
+}
+
+aside {
+    grid-area: aside-area;
 }
 
 nav {
