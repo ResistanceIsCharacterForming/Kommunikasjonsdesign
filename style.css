@@ -59,6 +59,14 @@ nav {
     justify-content: space-between;
 }
 
+.gradientL {
+    background-image: linear-gradient(to left, #966FD6 20%, rgba(0,0,0,0) 60%); 
+}
+
+.gradientR {
+    background-image: linear-gradient(to right, #966FD6 20%, rgba(0,0,0,0) 60%); 
+}
+
 .offset > span {
     margin: auto;
 }
@@ -116,4 +124,8 @@ article {
 
 .ffConsolas {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+.articleR {
+    background-color:#FF0000;
 }
