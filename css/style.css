@@ -88,7 +88,7 @@ nav {
     width: 100%;
     color: white;
     /* https://www.pexels.com/photo/assorted-color-laser-lights-417458/ */
-    background-image: linear-gradient(rgba(50, 50, 50, 0.847), rgba(50, 50, 50, 0.847)), url("../img/pexels-pixabay-417458.jpg");
+    background-image: linear-gradient(rgba(50, 50, 50, 0.847), rgba(50, 50, 50, 0.847)), url("../assets/img/pexels-pixabay-417458.jpg");
     background-size: cover;
 
 }
