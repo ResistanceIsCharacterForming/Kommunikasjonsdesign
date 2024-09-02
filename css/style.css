@@ -1,163 +1,226 @@
+/* || Global selector */
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+/* || Scrolling */
+body {
+    scroll-behavior: smooth;
+}
+
+/* || Global font */
 body {
     font-size: calc(0.8em + 0.8vw);
+}
+h2 {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+p, a {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* || Font settings */
+.spotlight > p, .spotlight > a {
+    font-weight: bold;
+}
+.spotlight > h2 {
+    font-size: 3rem;
+}
+
+/* || Grid */
+#grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "main-area" "aside-area" "footer-area";
+    grid-template-areas: "main-area" "footer-area";
     width: 100%;
-    background-color: black;
-    color: white;
 }
-
-footer {
+#content {
+    grid-area: main-area;
+}
+#meta {
     grid-area: footer-area;
-    justify-items: center;
-    text-align: center;
-    background-color: lightgrey;
-    color: black;
 }
 
-aside {
-    grid-area: aside-area;
-}
-
-nav {
+/* || Navigation Bar */
+#content nav {
     position: sticky;
     top: 50%;
     transform: translate(0, -50%);
     padding: 1rem;
 }
-
-nav ul {
+#content nav ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     padding: 0;
 }
 
+/* || header && main */
 #content {
     display: flex;
-    grid-area: main-area;
 }
-
 #content header {
     flex-basis: 30%;
     margin: auto;
-    background-color: lightgrey;
     height: 100%;
+}
+
+/* || footer & aside */
+#meta footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* || Blocks */
+/* Code from https://codepen.io/nxworld/pen/aOdERG */
+.hero {
+    height: 70vh;
+	background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)), url(https://picsum.photos/g/2000/1200?image=443) center center / cover no-repeat;
+    display: inline-block;
+}
+.hero > h2, .hero > p {
+    position: relative;
+	top: 15%;
+	left: 15%;
+	-webkit-transform: translate(-15%, -15%);
+	transform: translate(-15%, -15%);
+	color: #fff;
+    text-align: center;
+}
+.hero > h2 {
+	font : normal 600 72px/1 'League Gothic', sans-serif;
+	white-space: nowrap;
+}
+.hero > p {
+    padding: 1.5rem;
+}
+/* Code from https://codepen.io/suvodip-mondal/embed/NewWQb?default-tab=result&theme-id=dark&zoom=1#result-box */
+.top {
+    position:fixed;
+    top:80%;
+    left:80%;
+    border-radius : 3em;
+    padding:1.2em 1em;
+    transform: translate(65%, 45%);
+    background-image: linear-gradient(90deg,#3e56a7,#04acff,#eaaaaa,#e11adc,#a0a00f,#3e56a7,#14accc);
+    background-size:400%;
+}
+.top > a {
+    font-weight:600;
+    font-size: 1em;
+    padding:.6em 1.6em;
+    background-color:black;
+    font-family: 'Raleway', sans-serif;
+    text-transform: Uppercase;
+    color:white;
+    border-radius : 1.5em;
+    text-align:center;
+    text-decoration:none;
+}
+.top:hover{
+    animation: animateBtn 3s ease-out infinite;
+}
+.top > a:hover{
+    text-shadow:0 0 .5em rgba(255,255,255,0.8);
+}
+.top > i {
+    display: inline-block;
+    margin: 0;
+}
+@keyframes animateBtn{
+    0%{
+        background-position : 0%;
+        box-shadow: 0 0 .8em #04acff;
+    }
+    50%{
+        background-position: 60%;
+        box-shadow: 0 0 .8em #e11adc;
+    }
+    100%{
+        background-position: 100%;
+        box-shadow: 0 0 .8em #3e56a7;
+    }
+}
+/* Code from https://unused-css.com/blog/animated-down-arrow/ */
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 70px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+}
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+@keyframes jumpInfinite {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* || Color */
+#grid {
+    background-color: black;
+    color: white;
+}
+#content header {
+    color: white;
+    background-color: lightgrey;
+}
+a {
+    color: white;
+}
+footer {
+    background-color: lightgrey;
+    color: black;
+}
+.spotlight > h2, .spotlight > p {
     color: white;
 }
 
-#content main {
-    /*
-    flex-basis: 70%;
-    margin: auto;
-    height: 100%;
-    */
+/* || Backgrounds */
+.spotlight > p {
+    padding: 1rem;
 }
 
-#articleSelection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.offset {
-    display: flex;
-    justify-content: space-between;
-}
-
-.gradientL {
-    background-image: linear-gradient(to left, #966FD6 20%, rgba(0,0,0,0) 60%); 
-}
-
-.gradientR {
-    background-image: linear-gradient(to right, #966FD6 20%, rgba(0,0,0,0) 60%); 
-}
-
-.offset > span {
-    margin: auto;
-}
-
-.offset > img {
-    display: block;
-    margin: auto;
-    text-align: right;
-    margin: 0.5rem;
-}
-
-.hero {
-    padding: 0.5rem;
-    margin: 1rem 0;
-    background-color: lightgrey;
-    color: black;
-    width: 100%;
-    /* https://pixabay.com/illustrations/banner-technology-business-header-5185316/ */
-    /*background-image: linear-gradient(rgba(145, 14, 14, 0.349), rgba(145, 14, 14, 0.349)), url("../assets/img/banner-5185316_1920.jpg");
-    background-size: cover;  */  
-}
-
-article {
-    margin: 1rem;
-    padding: 0.5rem;
-}
-
-.ffMatemasie {
-    font-family: "Matemasie", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.fflobster {
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.ffTitilliumLight {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-.ffTitilliumRegular {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.ffTitilliumBold {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.ffConsolas {
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-}
-
-.articleR {
-    background-color:#FF0000;
-}
-
-
-
+/* || Effects */
 /* This code is from: https://codepen.io/baarbaracrr/pen/KKovmGb */
-
-header {
+#content header {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgb(23, 146, 138) 68%, rgb(171, 29, 29) 98%);
     animation: gradient 60s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
 }
-
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
@@ -169,81 +232,75 @@ header {
         background-position: 0% 0%;
     }
 }
-
-/* --- */
-
 /* Code from https://codepen.io/HenryZarza/pen/VwYagOO */
-
-.section {
-    align-items: center;
-    background: url('../assets/img/banner-5185316_1920.jpg') no-repeat center / cover;
+.spotlight {
+    background-image: url('./../assets/img/1.png');
+    background-size: cover;
     bottom: 0;
-    display: flex;
-    justify-content: center;
+    display : flex;
+    align-items : center;
     flex-direction: column;
     height: 110vh;
     padding: 1rem;
     position: sticky;
     width: 100%;
     z-index: -1;
-  }
-
-  .section > h2 {
+}
+.spotlight > h2 {
     padding-top: 10rem;
     margin: auto;
     flex-basis: 100%;
-  }
-
-  .section > p {
+}
+.spotlight > p {
     text-align: left;
-    display: block;
+    /*display: block;*/
     margin: auto;
     flex-basis: 100%;
-    color: black;
-  }
-
-  .section > a {
-    display: block;
+}
+.spotlight > a {
+    /*display: block;*/
     margin: auto;
     flex-basis: 100%;
-  }
-  
-  .section:nth-child(2) {
-    background-image: url('https://images.unsplash.com/photo-1571413666114-1e5d1f2bad15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80');
-      z-index: -2;
-  }
-
-  .section:nth-child(3) {
-    background-image: url('https://images.unsplash.com/photo-1571413666114-1e5d1f2bad15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80');
-      z-index: -3;
-  }
-  
-  .section:nth-child(4) {
-    background-image: url('https://images.unsplash.com/photo-1552224647-b3a8f931b3b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
-      z-index: -4;
-  }
-  
-  .section:last-child {
-    background-image: url('https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+}
+.spotlight:nth-child(2) {
+    /* https://unsplash.com/photos/a-sign-in-the-middle-of-a-dirt-road-rNb2RaRQXyg */
+    background-image: url('./../assets/img/2.png');
+    z-index: -2;
+}
+.spotlight:nth-child(3) {
+    /* https://unsplash.com/photos/a-small-black-house-with-a-lot-of-windows-6LSKem6Fkt4 */
+    background-image: url('./../assets/img/3.png');
+    z-index: -3;
+}
+.spotlight:nth-child(4) {
+    /* https://images.unsplash.com/photo-1552224647-b3a8f931b3b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 */
+    background-image: url('./../assets/img/4.png');
+    z-index: -4;
+}
+.spotlight:last-child {
+    /* https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 */
+    background-image: url('./../assets/img/5.png');
     z-index: -5;
-  }
-  
-  .title {
-    color: #FFF;
-    font-size: 3rem;
-    text-stroke: 0.1px #000;
-    -webkit-text-stroke: 1px #000;
-  }
-  
-  @supports not (-webkit-text-stroke: 1px #000) {
-    .title {
-      text-shadow:
-         3px  3px 0 #000,
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
+}
+/* Code from https://css-tricks.com/books/greatest-css-tricks/scroll-animation/ */
+.progress {
+    height: 0.3rem;
+    width: 0%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: progress 1s linear;
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes progress {
+    to {
+    background-color: rgb(128, 0, 128);
+    width: 100%;
     }
-  }
-
-/* --- */
+}
