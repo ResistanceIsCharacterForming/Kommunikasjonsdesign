@@ -86,16 +86,17 @@ p, a {
 /* Might not be used but nice hero so leaving the code here. */
 /* Code from https://codepen.io/nxworld/pen/aOdERG */
 .hero {
-    height: 70vh;
+    min-height: 70vh;
 	background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)), url(https://picsum.photos/g/2000/1200?image=443) center center / cover no-repeat;
     display: inline-block;
+    width: 100%;
 }
 .hero > h2, .hero > p {
     position: relative;
 	top: 15%;
 	left: 15%;
-	-webkit-transform: translate(-15%, -15%);
-	transform: translate(-15%, -15%);
+	-webkit-transform: translate(-15%, 80%);
+	transform: translate(-15%, 80%);
 	color: #fff;
     text-align: center;
 }
@@ -398,4 +399,28 @@ footer {
         font-size: 24px;
         min-width: 196px;
     }
+}
+
+
+/* Temp section */
+
+.offset {
+    display: flex;
+    justify-content: space-between;
+}
+.offset > span {
+    margin: auto;
+}
+.offset > img {
+    display: block;
+    margin: auto;
+    text-align: right;
+    margin: 0.5rem;
+}
+
+#content main {
+    background-image: url("https://picsum.photos/1920/1080/?blur");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vw;
 }
