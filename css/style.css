@@ -86,7 +86,7 @@ p, a {
 /* Might not be used but nice hero so leaving the code here. */
 /* Code from https://codepen.io/nxworld/pen/aOdERG */
 .hero {
-    min-height: 70vh;
+    min-height: 80vh;
 	background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)), url(https://picsum.photos/g/2000/1200?image=443) center center / cover no-repeat;
     display: inline-block;
     width: 100%;
