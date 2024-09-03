@@ -422,5 +422,7 @@ footer {
     background-image: url("https://picsum.photos/1920/1080/?blur");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     min-height: 100vw;
 }
