@@ -83,6 +83,7 @@ p, a {
 }
 
 /* || Blocks */
+/* Might not be used but nice hero so leaving the code here. */
 /* Code from https://codepen.io/nxworld/pen/aOdERG */
 .hero {
     height: 70vh;
@@ -156,7 +157,7 @@ p, a {
 .down-arrow {
     position: absolute;
     top: calc(100vh - 70px);
-    left: calc(50% - 14px);
+    left: calc(50%);
     width: 0;
     height: 30px;
     border: 2px solid;
@@ -186,6 +187,34 @@ p, a {
         margin-top: 0;
     }
 }
+/* Code from https://getcssscan.com/css-buttons-examples */
+.navButton {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .navButton:active,
+  .navButton:hover {
+    outline: 0;
+  }
 
 /* || Color */
 #grid {
@@ -234,8 +263,10 @@ footer {
 }
 /* Code from https://codepen.io/HenryZarza/pen/VwYagOO */
 .spotlight {
-    background-image: url('./../assets/img/1.png');
+    /*background-image: url('./../assets/img/1.png');*/
+	background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)), url(https://picsum.photos/g/2000/1200?image=443) center center / cover no-repeat;
     background-size: cover;
+    background-color: #fff;
     bottom: 0;
     display : flex;
     align-items : center;
@@ -262,25 +293,33 @@ footer {
     margin: auto;
     flex-basis: 100%;
 }
+.spotlight:first-child h2 {
+	font : normal 600 72px/1 'League Gothic', sans-serif;
+}
 .spotlight:nth-child(2) {
     /* https://unsplash.com/photos/a-sign-in-the-middle-of-a-dirt-road-rNb2RaRQXyg */
-    background-image: url('./../assets/img/2.png');
+    background-image: url('./../assets/img/1.png');
     z-index: -2;
 }
 .spotlight:nth-child(3) {
-    /* https://unsplash.com/photos/a-small-black-house-with-a-lot-of-windows-6LSKem6Fkt4 */
-    background-image: url('./../assets/img/3.png');
+    /* https://unsplash.com/photos/a-sign-in-the-middle-of-a-dirt-road-rNb2RaRQXyg */
+    background-image: url('./../assets/img/2.png');
     z-index: -3;
 }
 .spotlight:nth-child(4) {
+    /* https://unsplash.com/photos/a-small-black-house-with-a-lot-of-windows-6LSKem6Fkt4 */
+    background-image: url('./../assets/img/3.png');
+    z-index: -4;
+}
+.spotlight:nth-child(5) {
     /* https://images.unsplash.com/photo-1552224647-b3a8f931b3b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 */
     background-image: url('./../assets/img/4.png');
-    z-index: -4;
+    z-index: -5;
 }
 .spotlight:last-child {
     /* https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 */
     background-image: url('./../assets/img/5.png');
-    z-index: -5;
+    z-index: -6;
 }
 /* Code from https://css-tricks.com/books/greatest-css-tricks/scroll-animation/ */
 .progress {
@@ -297,10 +336,66 @@ footer {
     /* These last 2 properites clean up overshoot weirdness */
     animation-iteration-count: 1;
     animation-fill-mode: both;
+    z-index: 999;
 }
 @keyframes progress {
     to {
     background-color: rgb(128, 0, 128);
     width: 100%;
+    }
+}
+
+/* || Toggles */
+#content header .navSection:nth-child(2) {
+    display: none;
+}
+
+/* || Media Queries */
+@media only screen and (max-width: 500px) {
+    #content {
+        display: initial;
+    }
+    #content header {
+        height: 8.5vh;
+        position: fixed;
+        width: 100%;
+    }
+    #content header .navSection:first-child {
+        display: none;
+    }
+    #content header .navSection:nth-child(2) {
+        display: initial;
+        margin: 1rem;
+    }
+    #content header .navSection:nth-child(2) h2, #content header .navSection:nth-child(2) i {
+        display: inline;
+    }
+    #content nav {
+        height: auto;
+        transform: none;
+        top: 0;
+        padding: 0;
+        padding-top: 1.7rem;
+    }
+    #content nav ul {
+        display: inline-block;
+    }
+    .spotlight {
+        height: 65vh;
+    }
+    .down-arrow {
+        top: calc(60vh - 60px);
+        left: calc(50%);
+    }
+    .top {
+        top:89.5%;
+        left:64.5%;
+        transform: translate(65%, 45%);
+    }
+}
+@media (min-width: 768px) {
+    .navButton {
+        font-size: 24px;
+        min-width: 196px;
     }
 }
