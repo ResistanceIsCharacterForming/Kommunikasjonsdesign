@@ -79,6 +79,10 @@ h1 {
     font-size: 18px;
 }
 
+.featured-work a {
+    color: white;
+}
+
 .publication-date {
     font-size: 14px;
     color: #888;
