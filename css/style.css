@@ -8,11 +8,14 @@
 /* || Scrolling */
 body {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 /* || Global font */
 body {
     font-size: calc(0.8em + 0.8vw);
+    line-height: 1.5;
 }
 h2 {
     font-family: "League Gothic", sans-serif;
@@ -20,6 +23,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    font-size: calc(1.5rem + 1vw);
 }
 p, a {
     font-family: "Open Sans", sans-serif;
@@ -27,6 +31,7 @@ p, a {
     font-weight: 300;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    font-size: 1rem;
 }
 
 /* || Font settings */
@@ -44,7 +49,12 @@ p, a {
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "main-area" "footer-area";
     width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
 }
+
 #content {
     grid-area: main-area;
 }
@@ -69,17 +79,21 @@ p, a {
 /* || header && main */
 #content {
     display: flex;
+
 }
+
 #content header {
     flex-basis: 30%;
     margin: auto;
     height: 100%;
+
 }
 
 /* || footer & aside */
 #meta footer {
     text-align: center;
     padding: 1rem;
+
 }
 
 /* || Blocks */
@@ -100,9 +114,11 @@ p, a {
 	color: #fff;
     text-align: center;
 }
+
 .hero > h2 {
 	font : normal 600 72px/1 'League Gothic', sans-serif;
 	white-space: nowrap;
+
 }
 .hero > p {
     padding: 1.5rem;
@@ -382,6 +398,7 @@ footer {
         display: inline-block;
     }
     .spotlight {
+        display: block;
         height: 65vh;
     }
     .down-arrow {
@@ -393,7 +410,9 @@ footer {
         left:64.5%;
         transform: translate(65%, 45%);
     }
+  
 }
+
 @media (min-width: 768px) {
     .navButton {
         font-size: 24px;
