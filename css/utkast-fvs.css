@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     font-family: sans-serif, Arial;
     height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll for all devices */
 }
 
 .container {
@@ -18,33 +19,148 @@ body, html {
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease; 
-    position: relative; 
-    z-index: 1000; 
+    position: fixed; /* Ensure sidebar is fixed on the left */
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000;
 }
 
 .sidebar.active {
-    transform: translateX(0); 
+    transform: translateX(0); /* Show sidebar when active */
 }
 
 .main-content {
-    flex-grow: 1; 
+    flex-grow: 1;
     background-color: rgb(27, 34, 65);
     color: white;
     padding: 40px;
+    overflow-x: hidden; /* Hide horizontal scrollbar for all devices */
     overflow-y: auto;
-    transition: margin-left 0.3s ease;
-}
-
-.social-icons {
     display: flex;
-    justify-content: flex-start;
-    gap: 40px; 
-    margin-top: 30px;
+    flex-direction: column;
+    margin-left: 290px; /* Ensure content starts after the sidebar on desktop */
 }
 
-.social-icons a {
-    color: black;
-    text-decoration: none;
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+/* Desktop specific styles */
+@media only screen and (min-width: 801px) {
+    .featured-work {
+        width: 100%; /* Full viewport width */
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in width */
+        margin-bottom: 40px; /* Margin for spacing between sections */
+        background-color: rgb(34, 45, 78); /* Background color for better visibility */
+        position: relative; /* For better alignment */
+    }
+
+    .featured-work:nth-child(odd) {
+        align-self: flex-start; /* Left aligned */
+        margin-left: auto; /* Ensure proper alignment */
+        margin-right: auto; /* Align to the left side */
+    }
+
+    .featured-work:nth-child(even) {
+        align-self: flex-end; /* Right aligned */
+        margin-left: auto; /* Align to the right side */
+        margin-right: 0; /* Ensure proper alignment */
+        text-align: right;
+    }
+
+    .featured-work img {
+        width: 100%; /* Ensure images are responsive */
+        max-width: 400px; /* Limit image width */
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .featured-work h2 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .featured-work p {
+        font-size: 18px;
+    }
+
+    .featured-work a {
+        color: white;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .publication-date {
+        font-size: 14px;
+        color: #888;
+    }
+
+    /* Hide menu toggle button on larger screens */
+    .menu-toggle {
+        display: none; /* Hide the button on desktop */
+    }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 800px) {
+    .sidebar {
+        position: fixed; /* Fix sidebar for mobile */
+        transform: translateX(-100%); /* Hide sidebar initially */
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1000; /* Ensure sidebar is above other content */
+    }
+
+    .sidebar.active {
+        transform: translateX(0); /* Show sidebar when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the button on mobile */
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px; 
+        left: 20px; 
+        z-index: 1100; /* Ensure menu toggle is above other content */
+        padding: 10px; 
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove margin when sidebar is hidden */
+    }
+    
+    .featured-work {
+        width: 100%; /* Full viewport width */
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in width */
+        margin-bottom: 40px; /* Margin for spacing between sections */
+        background-color: rgb(34, 45, 78); /* Background color for better visibility */
+        position: relative; /* For better alignment */
+    }
+
+    .featured-work img {
+        width: 100%; /* Ensure images are responsive */
+        max-width: 400px; /* Limit image width */
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    margin: 3rem;
 }
 
 .name {
@@ -65,51 +181,16 @@ body, html {
     margin-bottom: 10px;
 }
 
-.menu-toggle {
-    display: none; 
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px; 
-    left: 20px; 
-    z-index: 1100; 
-    padding: 10px; 
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px; 
+    margin-top: 30px;
 }
 
-h1 {
-    font-size: 48px;
-    margin-bottom: 40px;
-}
-
-.featured-work {
-    margin-bottom: 40px;
-}
-
-.featured-work img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.featured-work h2 {
-    font-size: 30px;
-    margin: 10px 0;
-}
-
-.featured-work p {
-    font-size: 18px;
-}
-
-.featured-work a {
-    color: white;
-}
-
-.publication-date {
-    font-size: 14px;
-    color: #888;
+.social-icons a {
+    color: black;
+    text-decoration: none;
 }
 
 footer {
@@ -119,27 +200,4 @@ footer {
     color: white;
     padding: 20px;
     gap: 10px;
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    .sidebar {
-        position: fixed; /* Fix sidebar for mobile */
-        transform: translateX(-100%); /* Hide sidebar initially */
-        height: 100%;
-        left: 0;
-        top: 0;
-    }
-
-    .sidebar.active {
-        transform: translateX(0); /* Show sidebar when active */
-    }
-
-    .menu-toggle {
-        display: block; /* Show the button on mobile */
-    }
-
-    .main-content {
-        margin-left: 0; /* Remove margin when sidebar is hidden */
-    }
 }
