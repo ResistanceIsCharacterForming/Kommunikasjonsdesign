@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/utkast-fvs.css">
+    <script src="https://kit.fontawesome.com/6e7e32dccf.js" crossorigin="anonymous"></script>
     <title>Alt om Alt</title>
 </head>
     <body>
         <div class="container">
+            <button class="menu-toggle" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <header class="sidebar">
-                <div class="social-icons">
-                    <a href="#" title="Instagram">ig</a>
-                    <a href="#" title="Facebook">fb</a>
-                    <a href="#" title="Snapchat">sc</a>
-                    <a href="#" title="X">x</a>
-                </div>
                 <div class="name">FNTT</div>
                 <nav class="nav-menu">
                     <a href="#">Kategorier</a>
@@ -23,6 +21,20 @@
                     <a href="#">Om oss</a>
                     <a href="#">Kontakt oss</a>
                 </nav>
+                <div class="social-icons">
+                    <a href="#" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" title="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" title="Snapchat">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                </div>
             </header>
             <main class="main-content">
                 <h1>Alt om Alt</h1>
@@ -63,5 +75,10 @@
             <p>Fitore (P)</p>
             <p>Nikolai (J)</p>
         </footer>
+        <script>
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.sidebar').classList.toggle('active');
+            });
+        </script>
     </body>
     </html>
