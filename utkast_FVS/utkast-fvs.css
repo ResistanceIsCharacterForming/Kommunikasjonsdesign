@@ -67,6 +67,10 @@ nav {
     text-decoration: none;
 }
 
+.fa-solid {
+    color: rgb(71, 124, 215);
+}
+
 .main-content {
     flex-grow: 1;
     background-color: rgb(9, 15, 45);
