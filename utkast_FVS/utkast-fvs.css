@@ -102,21 +102,21 @@ nav {
     margin: 10px 0;
 }
 
-.featured-work p {
+.body-text {
     font-size: 18px;
     gap: 10px;
-    color: rgb(209, 208, 208);
+    color: smoke;
 }
 
 .featured-work a {
-    color: white;
+    color: rgb(131, 134, 203);
     display: inline-block;
     margin-top: 10px;
 }
 
 .publication-date {
-    font-size: 14px;
-    color: #6e1c1c;
+    font-size: 16px;
+    color: #5f5f5f;
 }
 
 footer {
