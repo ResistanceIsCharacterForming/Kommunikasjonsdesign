@@ -107,9 +107,9 @@ h1 {
     color: white;
 }
 
-.publication-date {
+p.publication-date {
     font-size: 14px;
-    color: #888;
+    color: rgb(123, 123, 123);
 }
 
 footer {

@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: sans-serif, Arial;
+    font-family: sans-serif;
     height: 100%;
     overflow-x: hidden;
 }
@@ -35,6 +35,7 @@ body, html {
     font-weight: bold;
     margin-bottom: 40px;
     margin-top: 70px;
+    color: rgb(26, 26, 150)
 }
 
 nav {
@@ -68,8 +69,8 @@ nav {
 
 .main-content {
     flex-grow: 1;
-    background-color: rgb(27, 34, 65);
-    color: white;
+    background-color: rgb(9, 15, 45);
+    color: rgb(255, 255, 255);
     padding: 40px;
     overflow-x: hidden; 
     overflow-y: auto;
@@ -104,6 +105,7 @@ nav {
 .featured-work p {
     font-size: 18px;
     gap: 10px;
+    color: rgb(209, 208, 208);
 }
 
 .featured-work a {
@@ -114,7 +116,7 @@ nav {
 
 .publication-date {
     font-size: 14px;
-    color: #888;
+    color: #6e1c1c;
 }
 
 footer {
@@ -163,21 +165,6 @@ footer {
     .featured-work h2 {
         font-size: 30px;
         margin: 10px 0;
-    }
-
-    .featured-work p {
-        font-size: 18px;
-    }
-
-    .featured-work a {
-        color: white;
-        display: inline-block;
-        margin-top: 10px;
-    }
-
-    .publication-date {
-        font-size: 14px;
-        color: #888;
     }
 
     .menu-toggle {
