@@ -202,6 +202,11 @@ footer {
         padding: 10px; 
     }
 
+    .banner {
+        min-height: 200px;
+        background-size: cover;
+    }
+
     .main-content {
         margin-left: 0; 
     }
