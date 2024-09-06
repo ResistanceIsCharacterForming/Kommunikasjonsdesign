@@ -87,6 +87,8 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 300px; 
+    width: 100%;
 }
 
 .banner h1 {
