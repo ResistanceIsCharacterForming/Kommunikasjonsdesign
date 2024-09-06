@@ -30,6 +30,42 @@ body, html {
     transform: translateX(0); 
 }
 
+.name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px; 
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: black;
+    text-decoration: none;
+}
+
 .main-content {
     flex-grow: 1;
     background-color: rgb(27, 34, 65);
@@ -42,15 +78,58 @@ body, html {
     margin-left: 290px; 
 }
 
-nav {
+.banner {
+    position: relative;
+    background: url('banner-1158378_1280.png');
+    background-size: cover;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.banner h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin: 0;
+    padding: 20px;
+    opacity: 75%;
+}
+
+.featured-work h2 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.featured-work p {
+    font-size: 18px;
+    gap: 10px;
+}
+
+.featured-work a {
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.publication-date {
+    font-size: 14px;
+    color: #888;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(191, 194, 210);
+    color: white;
+    padding: 20px;
+    gap: 10px;
+}
+
 
 /* Desktop styles */
 @media only screen and (min-width: 801px) {
+    
     .featured-work {
         width: 100%; 
         padding: 20px;
@@ -154,49 +233,5 @@ nav {
         border-radius: 8px;
         margin-bottom: 20px;
     }
-}
-
-h1 {
-    font-size: 48px;
-    margin-bottom: 40px;
-    margin: 3rem;
-}
-
-.name {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    margin-top: 70px;
-}
-
-.nav-menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-menu a {
-    color: black;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: flex-start;
-    gap: 40px; 
-    margin-top: 30px;
-}
-
-.social-icons a {
-    color: black;
-    text-decoration: none;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(191, 194, 210);
-    color: white;
-    padding: 20px;
-    gap: 10px;
+  
 }
