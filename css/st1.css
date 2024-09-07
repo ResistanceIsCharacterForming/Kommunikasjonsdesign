@@ -1,0 +1,68 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.person {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person img {
+    position: absolute;
+}
+
+.person img:nth-child(2) {
+    animation: idleFace;
+    animation: idleFace 3s infinite;
+}
+
+.person img:nth-child(3) {
+    left: 2rem;
+    animation: idleHands 3s infinite;
+}
+
+.person img:nth-child(4) {
+    right: 2rem;
+    animation: idleHands 3s infinite;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+}
+
+@keyframes idleHands {
+    0% {
+        -webkit-transform:translateY(0)
+    }
+
+    50% {
+        -webkit-transform: translateY(-10%);
+        transform:translateY(-10%)
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform:translateY(0)
+    }
+}
+
+@keyframes idleFace {
+    0% {
+        content: url("../assets/figures/face_f.png")
+    }
+    100% {
+        content: url("../assets/figures/face_e.png")
+    }
+}
