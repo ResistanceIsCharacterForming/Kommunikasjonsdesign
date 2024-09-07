@@ -6,12 +6,6 @@ body, html {
     overflow-x: hidden;
 }
 
-.container {
-    display: flex; 
-    height: 100%;
-    width: 100%;
-}
-
 .sidebar {
     width: 250px;
     background-color: snow;
@@ -35,7 +29,7 @@ body, html {
     font-weight: bold;
     margin-bottom: 40px;
     margin-top: 70px;
-    color: rgb(26, 26, 150)
+    color: rgb(26, 26, 150);
 }
 
 nav {
@@ -93,6 +87,7 @@ nav {
     text-align: center;
     min-height: 300px; 
     width: 100%;
+    margin: 0;
 }
 
 .banner h1 {
@@ -103,6 +98,15 @@ nav {
     opacity: 75%;
 }
 
+.featured-work {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    background-color: rgb(34, 45, 78);
+    position: relative;
+}
+
 .featured-work h2 {
     font-size: 25px;
     margin: 10px 0;
@@ -111,7 +115,7 @@ nav {
 .body-text {
     font-size: 18px;
     gap: 10px;
-    color: smoke;
+    color: rgb(255, 255, 255);
 }
 
 .featured-work a {
@@ -134,30 +138,14 @@ footer {
     gap: 10px;
 }
 
-
 /* Desktop styles */
 @media only screen and (min-width: 801px) {
-    
     .featured-work {
-        width: 100%; 
-        padding: 20px;
+        width: 100%;
         box-sizing: border-box; 
         margin-bottom: 40px; 
         background-color: rgb(34, 45, 78); 
         position: relative; 
-    }
-
-    .featured-work:nth-child(odd) {
-        align-self: flex-start; 
-        margin-left: auto; 
-        margin-right: auto; 
-    }
-
-    .featured-work:nth-child(even) {
-        align-self: flex-end; 
-        margin-left: auto;
-        margin-right: 0; 
-        text-align: right;
     }
 
     .featured-work img {
@@ -217,9 +205,7 @@ footer {
     
     .featured-work {
         width: 100%;
-        padding: 20px;
         box-sizing: border-box; 
-        margin-bottom: 40px;
         background-color: rgb(34, 45, 78); 
         position: relative; 
     }
@@ -231,5 +217,4 @@ footer {
         border-radius: 8px;
         margin-bottom: 20px;
     }
-  
 }
