@@ -79,7 +79,7 @@ nav {
 
 .banner {
     position: relative;
-    background: url('banner-1158378_1280.png');
+    background: url('/assets/img/banner-1158378_1280.png');
     background-size: cover;
     display: flex;
     align-items: center;
