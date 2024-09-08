@@ -38,12 +38,12 @@ nav {
     gap: 20px;
 }
 
-.nav-menu {
+#nav-menu {
     display: flex;
     flex-direction: column;
 }
 
-.nav-menu a {
+#nav-menu a {
     color: black;
     text-decoration: none;
     margin-bottom: 10px;
