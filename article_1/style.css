@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    position: relative; 
+}
+
+.content {
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.bg1 {
+    background-image: url('../assets/img/graduation-6840941_1280.png');
+}
+
+.bg2 {
+    background-image: url('../assets/img/woman-8286277_1280.jpg');
+    min-height: 400px;
+}
+
+.bg3 {
+    background-image: url('../assets/img/failure-6115826_1280.jpg');
+    min-height: 400px;
+}
+
+.bg4 {
+    background-image: url('../assets/img/balloon-4401242_1280.png');
+    min-height: 400px;
+}
+
+.bg5 {
+    background-image: url('../assets/img/stone-2127669_1280.png');
+    min-height: 400px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #c11c1c;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    text-align: center;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+header, footer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: #f4f4f4;
+}
