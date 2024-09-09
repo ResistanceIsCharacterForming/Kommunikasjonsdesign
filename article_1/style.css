@@ -50,7 +50,7 @@ h1, h2 {
     color: #c11c1c;
     padding: 18px;
     font-size: 25px;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
@@ -71,12 +71,6 @@ h1, h2 {
     letter-spacing: 10px;
 }
 
-header, footer {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 main {
     background-color: #f4f4f4;
