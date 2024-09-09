@@ -90,6 +90,21 @@ nav ul li a:hover {
     color: rgb(126, 126, 126);
 }
 
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 35px; 
+}
+
+.social-icons a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
 /* Main */
 main {
     display: flex;
