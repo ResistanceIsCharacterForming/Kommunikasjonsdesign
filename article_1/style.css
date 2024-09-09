@@ -22,6 +22,7 @@ body, html {
 
 .bg1 {
     background-image: url('../assets/img/graduation-6840941_1280.png');
+    min-height: 400px;
 }
 
 .bg2 {
