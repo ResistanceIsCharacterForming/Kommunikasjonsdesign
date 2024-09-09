@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/6e7e32dccf.js" crossorigin="anonymous"></script>
+
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- League Gothic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Story 1</title>
+</head>
+<body>
+
+    <section class="parallax">
+        <article class="content">
+            <h2>Lorem + ipsum = ...?</h2>
+            <p>... dolor sit amet, consectetur adipiscing elit. Proin commodo rhoncus mollis.</p>
+            <p>Donec at ante eu augue ultrices gravida. Donec quis blandit magna, id sagittis erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <span class="bufferLarge"></span>
+            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam nec ipsum rutrum, tristique mauris ac, iaculis quam.</p>
+            <span class="bufferSmall"></span>
+        </article>
+    </section>
+
+    <span class="bufferMedium"></span>
+
+    <section>
+        <article class="content contentB">
+            <p>Duis et rhoncus lectus, a lobortis odio. Nunc quis scelerisque quam. Aenean ac nulla ex. Sed sit amet est lacinia, molestie nunc sit amet, lacinia enim. Sed placerat mi mauris.</p>
+            <span class="bufferSmall"></span>
+            <div>
+                <canvas id="chart1"></canvas>
+            </div>  
+            <span class="bufferSmall"></span>
+            <p>Nam at efficitur orci, sed varius massa. Phasellus volutpat interdum finibus. Vivamus at iaculis ligula. Etiam accumsan magna quis lacus ornare, a bibendum nibh iaculis. Curabitur in lacinia arcu, non laoreet ante.</p>
+    </section>
+
+    <span class="bufferMedium"></span>
+
+    <section>
+        <div id="imageContainer">
+            <img src="./assets/img/2.jpg">
+        </div>
+        <article class="content">
+            <p>Proin nec purus lacus. Phasellus vitae cursus mauris, non imperdiet purus. Nunc dapibus lorem a quam venenatis, et consequat lectus vulputate. Maecenas tincidunt eu enim id posuere. Aliquam rhoncus magna at egestas accumsan. Quisque ut augue ac eros efficitur tempor.</p>
+        </article>
+    </section>
+
+    <span class="bufferMedium"></span>
+
+    <section class="parallax parallax2">
+        <span class="bufferMedium"></span>
+        <article class="content">
+            <p>Morbi tristique sem gravida sagittis accumsan. Aenean in purus nec nunc dictum maximus ac in nisl. Pellentesque a risus in urna bibendum consectetur. Phasellus suscipit consectetur mauris. Donec sed quam eu enim sagittis auctor a sed urna. Nulla sapien neque, congue ultricies ex et, auctor vestibulum nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            <span class="bufferMedium"></span>
+            <p>In hac habitasse platea dictumst. Ut ac dolor vitae mi vestibulum volutpat. Donec facilisis vel est et dignissim. Aenean vulputate metus ac vestibulum volutpat.</p>
+            <span class="bufferLarge"></span>
+            <p>... suspendisse volutpat malesuada lacus</p>
+            <span class="bufferSmall"></span>
+        </article>
+    </section>
+
+    <span class="bufferMedium"></span>
+
+    <section>
+        <article class="content3">
+            <video autoplay muted loop id="myVideo">
+                <source src="./assets/vid/1.mp4" type="video/mp4">
+            </video>
+            <span>
+                <p>At euismod ligula varius nec. Integer scelerisque eleifend blandit. Maecenas luctus eget justo quis dapibus. Aenean nunc lacus, scelerisque quis odio in, rutrum posuere turpis.</p>
+            </span>
+        </article>
+    </section>
+
+    <span class="bufferMedium"></span>
+    
+    <section>
+        <article class="content contentB">
+            <p>Vestibulum tempor, felis id tincidunt tincidunt, velit ligula hendrerit ante, in convallis tellus ligula ut metus. Ut lectus sapien, aliquam quis vulputate tempus, accumsan ac augue.</p>          
+            <p>Pellentesque diam ligula, bibendum vel semper ut, facilisis quis ante. Curabitur sit amet ultrices metus. Sed consequat semper. </p>
+        </article>
+    </section>
+
+    <span class="bufferMedium"></span>
+
+    <script>
+        const ctx = document.getElementById('chart1');
+      
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+</body>
+</html>
