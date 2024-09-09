@@ -1,0 +1,142 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 960px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+/* || Global font */
+body {
+    font-size: calc(0.8em + 0.8vw);
+}
+h2 {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: calc(5rem + 1vw);
+}
+p, a {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.parallax {
+    background-size: cover;
+    min-height: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax:first-child {
+    background-image: url("./../assets/img/1.jpg");
+}
+
+.parallax:first-child h2 {
+    margin-top: 0;
+    padding: 15vh;
+    text-align: center;
+}
+
+.parallax2 {
+    background-image: url("./../assets/img/3.jpg");
+}
+
+.content {
+    margin: 0 2rem;
+    color: white;
+}
+
+.contentB {
+    color: black;
+}
+
+.buffer50 {
+    height: 50vh;
+    width: 100%;
+    display: inline-block;
+}
+
+.buffer30 {
+    height: 30vh;
+    width: 100%;
+    display: inline-block;
+}
+
+.buffer10 {
+    height: 10vh;
+    width: 100%;
+    display: inline-block;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+#imageContainer {
+    overflow: hidden;
+}
+
+#imageContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: kenburns 20s infinite;
+}
+
+@keyframes kenburns {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, 120px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    
+    100% {
+        transform: scale3d(2, 2, 2) translate3d(-170px, 100px, 0px);
+        opacity: 0;
+    }
+}
+
+video {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    -o-filter: blur(1.5px);
+    filter: blur(1.5px);
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.content3 {
+    position: relative;
+}
+
+.content3 span {
+    margin: 0 2rem;
+    position: absolute;
+    position:absolute;
+    top:30vh;
+    left:0;
+    z-index:1;
+    color: white;
+}
