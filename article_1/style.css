@@ -4,7 +4,93 @@ body, html {
     font-family: Arial, sans-serif;
     line-height: 1.8;
     color: #333;
+    overflow-x: hidden;
 }
+
+/* Navigasjon */
+#sticky-menu {
+    position: fixed;
+    height: 60px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1001;
+}
+
+#menu-toggle {
+    background-color: beige;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    max-width: 35px;
+    margin: 1rem 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 0rem 2rem;
+    width: 250px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+#main-menu.active {
+    transform: translateX(0);
+}
+
+nav h2 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding-bottom: 1.5rem;
+    font-size: medium;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(126, 126, 126);
+}
+
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 35px; 
+}
+
+.social-icons a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
 
 .parallax {
     background-attachment: fixed;
@@ -75,3 +161,34 @@ h1, h2 {
 main {
     background-color: #f4f4f4;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5ba0d94e;
+    color: white;
+}
+
+/* Media query for større skjermer */
+@media only screen and (min-width: 760px) {
+
+    /* Navigasjon */
+    #sticky-menu {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #main-menu {
+        transform: translateX(0);
+    }
+
+    /* Footer */
+    footer {
+        margin-left: 250px;
+    }
+}
+
