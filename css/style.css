@@ -9,7 +9,7 @@ body {
     font-family: sans-serif, Arial;
     display: flex;
     flex-direction: column;
-    background-color: #01021e;
+    background-color: #060c16;
     color: white;
     margin: 0;
 }
@@ -22,8 +22,10 @@ header {
     max-width: 100%;
 }
 #head {
-    background-image: url("../assets/img/world-140304_1280.jpg");
-    color: white;
+    background-image: url("../assets/img/banner-1557881_1280.jpg");
+    background-size: cover;
+    background-color: aliceblue;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 60px 0 0 0;
     padding: 40px;
@@ -119,7 +121,7 @@ article {
     flex-direction: column;
     max-width: 600px;
     padding: 2rem;
-    background-color: #0f1f52;
+    background-color: #1b4164;
     margin-bottom: 20px;
 }
 
@@ -146,7 +148,7 @@ article a {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #0f1f52;
+    background-color: #5ba1d9;
     color: white;
 }
 
