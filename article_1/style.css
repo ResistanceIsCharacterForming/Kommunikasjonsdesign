@@ -53,7 +53,6 @@ nav h2 {
     font-size: 2rem;
     color: rgb(0, 0, 0);
     padding-top: 4rem;
-    padding-bottom: 1rem;
 }
 
 nav ul {
@@ -108,7 +107,8 @@ nav ul li a:hover {
 
 .bg1 {
     background-image: url('../assets/img/graduation-6840941_1280.png');
-    min-height: 400px;
+    min-height: 500px;
+
 }
 
 .bg2 {
@@ -131,7 +131,7 @@ nav ul li a:hover {
     min-height: 400px;
 }
 
-h1, h2 {
+caption h1, h2 {
     text-align: center;
     color: #c11c1c;
     padding: 18px;
