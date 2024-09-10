@@ -13,7 +13,7 @@ body {
 
 /* || Global font */
 body {
-  font-size: min(20px, calc(0.8em + 0.8vw));
+  font-size: min(20px, calc(0.8em + 0.8dvw));
 }
 h2 {
   font-family: "League Gothic", sans-serif;
@@ -21,7 +21,7 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  font-size: calc(5rem + 1vw);
+  font-size: calc(5rem + 1dvw);
 }
 p,
 a {
@@ -34,7 +34,7 @@ a {
 
 .parallax {
   background-size: cover;
-  min-height: 100vw;
+  min-height: 100dvw;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -47,7 +47,7 @@ a {
 
 .parallax:first-child h2 {
   margin-top: 0;
-  padding: 15vh;
+  padding: 15dvh;
   text-align: center;
 }
 
@@ -120,8 +120,8 @@ canvas {
 
 video {
   width: 100%;
-  min-height: 100vh;
-  object-fit: fill;
+  min-height: 100dvh;
+
   -o-filter: blur(1.5px);
   filter: blur(1.5px);
   z-index: 0;
@@ -136,7 +136,7 @@ video {
   margin: 0 2rem;
   position: absolute;
   position: absolute;
-  top: 30vh;
+  top: 30dvh;
   left: 0;
   z-index: 1;
   color: white;
@@ -146,18 +146,21 @@ video {
   body {
     width: 480px;
     max-width: 100%;
-    font-size: min(16px, calc(0.8em + 0.8vw));
+    font-size: min(16px, calc(0.8em + 0.8dvw));
   }
 
   h2 {
-    font-size: calc(3.5rem + 1vw);
+    font-size: calc(3.5rem + 1dvw);
   }
 
   video {
     width: 100%;
-    min-height: 50vh;
+    min-height: 80dvh;
+    height: auto;
+    /*object-fit: cover;*/
   }
 
+  /*
   .content3 span {
     top: 10dvh;
   }
@@ -172,7 +175,7 @@ video {
 
   .bufferSmall {
     height: 5dvh;
-  }
+  }*/
 }
 
 @media only screen and (max-width: 400px) {
