@@ -41,15 +41,16 @@
         <article class="content contentB">
             <p>Duis et rhoncus lectus, a lobortis odio. Nunc quis scelerisque quam. Aenean ac nulla ex. Sed sit amet est lacinia, molestie nunc sit amet, lacinia enim. Sed placerat mi mauris.</p>
             <span class="bufferSmall"></span>
-            <div>
+            
+            <section class="canvasContainer">
                 <canvas id="chart1"></canvas>
                 <p>Fagbrev sysselsetting, fra 2018+2019 til 2022+2023</p>
-            </div>
+            </section>
 
-            <div>
+            <section class="canvasContainer">
                 <canvas id="chart2"></canvas>
                 <p>Livskvalitet i Norge 2020: Tilfredshet med psykisk helse. Prosent og gjennomsnitt</p>
-            </div>
+            </section>
 
             <span class="bufferSmall"></span>
             <p>Nam at efficitur orci, sed varius massa. Phasellus volutpat interdum finibus. Vivamus at iaculis ligula. Etiam accumsan magna quis lacus ornare, a bibendum nibh iaculis. Curabitur in lacinia arcu, non laoreet ante.</p>
@@ -158,15 +159,13 @@
             }]
             },
             options: {
-            scales: {
-                y: {
-                beginAtZero: true
+                scales: {
+                    y: {
+                    beginAtZero: true
+                    }
                 }
             }
-            }
         })
-
-
       </script>
 </body>
 </html>

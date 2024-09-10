@@ -173,3 +173,9 @@ video {
         height: 5dvh;
     }
   }
+
+@media only screen and (max-width: 500px) {
+    .canvasContainer {
+        scale: 0.7;
+    }
+}
