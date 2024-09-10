@@ -1,0 +1,179 @@
+/* Generelt */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-size: calc(0.6em + 0.6vw);
+    font-family: sans-serif, Arial;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfbdc1;
+    color: white;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+}
+#head {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Navigasjon */
+#menu-toggle {
+    font-size: 1.5rem;
+    color: black;
+    max-width: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0rem 2rem;
+    padding-top: 5.5rem;
+    width: 250px;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+#main-menu.active {
+    transform: translateX(0);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    background-color: white;
+}
+nav h2 {
+    font-size: 1.8rem;
+    color: black;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+    padding-bottom: 1.5rem;
+    font-size: medium;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: rgb(126, 126, 126);
+}
+#home {
+    font-weight: bold;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 1.5rem;
+    background-color: black;
+    margin-bottom: 20px;
+}
+article img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+}
+article time {
+    font-size: smaller;
+    color: lightgrey;
+}
+article h3 {
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* Media query for større skjermer */
+@media only screen and (min-width: 760px) {
+
+    /* Header */
+    #head {
+        padding: 5em;
+    }
+    
+    /* Navigasjon */
+    #menu-toggle {
+        display: none;
+    }
+    #main-menu {
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        padding: 0;
+        gap: 1.5rem;
+        width: auto;
+        transform: translateX(0);
+    }
+    #main-menu.active {
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        padding: 0;
+        gap: 1.5rem;
+        width: auto;
+    }
+    nav {
+        justify-content: center;
+        align-items: baseline;
+    }
+    nav h2 {
+        padding-right: 4rem;
+    }
+
+
+    /* Main */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    article {
+        max-width: 700px;
+    }
+
+}
