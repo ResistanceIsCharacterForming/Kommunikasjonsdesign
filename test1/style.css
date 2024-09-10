@@ -1,0 +1,142 @@
+:root {
+    --main-font: "Inter", sans-serif;
+    --primary-color: #333;
+    --secondary-color: #f1f1f1;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      filter: saturate(0) brightness(50%);
+    }
+    to {
+      filter: saturate(1) brightness(100%);
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  body {
+    height: 200vh;
+    margin: 0;
+    background-color: #f1f1f1;
+  }
+  
+  header {
+    display: flex;
+    position: sticky;
+    height: 7dvh;
+    padding: 0 2rem;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.5rem;
+    font-family: Inter, sans-serif;
+    z-index: 9999;
+    span {
+      font-weight: 900;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 0 1rem;
+      }
+    }
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    h1 {
+      position: absolute;
+      font-family: Helvetica, sans-serif;
+      font-size: 5rem;
+      height: fit-content;
+      color: white;
+      padding: 2rem;
+      background-color: #01010169;
+    }
+  }
+  
+  .parallaxcontainer {
+    position: relative;
+    .parallax {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://cdn.pixabay.com/photo/2015/09/13/03/41/man-937665_1280.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: calc(100dvh - 7vh);
+      animation: fadeIn 100ms ease;
+    }
+    .header {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Helvetica, sans-serif;
+      font-size: 5rem;
+      height: fit-content;
+      color: white;
+      padding: 2rem;
+      background-color: #01010169;
+    }
+  }
+  
+  .article-section {
+    display: flex;
+    font-family: Inter, sans-serif;
+    justify-content: center;
+  
+    article {
+      max-width: 65%;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      p {
+        justify-self: center;
+        padding: 0 1rem;
+      }
+      a {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+      .gap {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  
+  figure {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 0;
+  
+    .artimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    h2 {
+      width: 100%;
+      color: #f1f1f1;
+      font-size: 5rem;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+  
