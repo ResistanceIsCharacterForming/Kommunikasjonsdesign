@@ -35,10 +35,12 @@ a {
 
 .parallax {
     height: 100vh;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-perspective: 1px;
     perspective: 1px;
+    padding: 0;
 }
 
 .parallax__layer {
@@ -68,9 +70,10 @@ a {
     object-fit: cover;
 }
 
+/*
 .parallax__layer {
-    height: 100vh 0;
-  }
+    padding: 100vh 0;
+  }*/
 
   .content2
     {
