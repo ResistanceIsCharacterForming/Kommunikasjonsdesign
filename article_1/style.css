@@ -94,10 +94,6 @@ nav ul li a:hover {
 
 /* Main */
 
-main {
-    background-color: #f4f4f4;
-}
-
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -184,6 +180,12 @@ footer {
 /* Media query for større skjermer */
 @media only screen and (min-width: 760px) {
 
+    main {
+        background-color: #f4f4f4;
+        padding-left: 300px;
+        margin: 0;
+    }
+
     /* Navigasjon */
     #sticky-menu {
         display: none;
@@ -199,7 +201,9 @@ footer {
 
     /* Footer */
     footer {
-        margin-left: 250px;
+        margin-left: 300px;
     }
+
+
 }
 
