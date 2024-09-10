@@ -3,21 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <span>LOGO</span>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="artikkel.html">Artikkel</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="parallax">
       <h1 class="header">Fagbrev – en blindvei for unge i arbeidslivet?</h1>
     </div>
     <section class="article-section">
       <article>
         <p>
-          Er du ung, har ambisjoner, jobbet hardt – men opplever at ting likevel
-          ikke går som planlagt? Dette er realiteten for mange som tar fagbrev i
-          Norge. Etter to år på videregående og to år som lærling, skulle veien
-          videre være klar: en trygg og fast jobb. Men for mange viser denne
-          veien seg å være alt annet enn sikker.
+          <strong>
+            Er du ung, har ambisjoner, jobbet hardt – men opplever at ting
+            likevel ikke går som planlagt? Dette er realiteten for mange som tar
+            fagbrev i Norge. Etter to år på videregående og to år som lærling,
+            skulle veien videre være klar: en trygg og fast jobb. Men for mange
+            viser denne veien seg å være alt annet enn sikker.</strong
+          >
         </p>
         <p>
           Fagbrev blir ofte fremstilt som en sikker inngang til arbeidslivet,
@@ -38,14 +52,18 @@
           opp som en blindvei. For mange unge kan dette være en tung byrde å
           bære – både mentalt og økonomisk.
         </p>
-        <figure>
-          <img
-            class="artimg"
-            src="https://images.unsplash.com/photo-1644752655562-55bbe863713e?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Depressed dude"
-          />
-          <h2><q>En blindvei for unge i arbeidslivet?</q></h2>
-        </figure>
+        <div data-aos="zoom-out">
+          <figure>
+            <img src="assets/img/spire.png" class="artimg" alt="" />
+            <figcaption>Bilde: Privat</figcaption>
+          </figure>
+        </div>
+        <div data-aos="zoom-in">
+          <figure>
+            <img src="assets/img/soloppgang.png" class="artimg" alt="" />
+            <figcaption>Bilde: Privat</figcaption>
+          </figure>
+        </div>
         <p>
           Konsekvensene av å stå utenfor arbeidslivet er ikke bare begrenset til
           tap av inntekt. Forskning viser en klar sammenheng mellom arbeid og
@@ -75,5 +93,8 @@
         </p>
       </article>
     </section>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
