@@ -1,0 +1,51 @@
+body {
+  height: 200vh;
+  margin: 0;
+}
+
+.parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/13/03/41/man-937665_1280.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
+  animation: fadeIn 0.5s;
+
+  h1 {
+    font-family: Inter, sans-serif;
+    font-size: 3rem;
+    height: fit-content;
+    color: white;
+    padding: 2rem;
+    background-color: #01010169;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: saturate(0);
+  }
+  to {
+    opacity: 1;
+    filter: saturate(1);
+  }
+}
+
+.article-section {
+  font-family: Helvetica, sans-serif;
+  padding: 20px;
+  margin: 20px;
+
+  article {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
