@@ -13,6 +13,11 @@
   }
 }
 
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 body {
   height: 200vh;
   margin: 0;
@@ -21,8 +26,8 @@ body {
 
 header {
   display: flex;
-  height: 7dvh;
   position: sticky;
+  height: 7dvh;
   padding: 0 2rem;
   top: 0;
   justify-content: space-between;
@@ -46,6 +51,21 @@ header {
   }
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    position: absolute;
+    font-family: Helvetica, sans-serif;
+    font-size: 5rem;
+    height: fit-content;
+    color: white;
+    padding: 2rem;
+    background-color: #01010169;
+  }
+}
+
 .parallax {
   display: flex;
   justify-content: center;
@@ -57,7 +77,6 @@ header {
   background-size: cover;
   height: 100dvh;
   animation: fadeIn 5s;
-
   h1 {
     font-family: Helvetica, sans-serif;
     font-size: 5rem;
@@ -80,6 +99,14 @@ header {
     p {
       justify-self: center;
       padding: 0 1rem;
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+    .gap {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
