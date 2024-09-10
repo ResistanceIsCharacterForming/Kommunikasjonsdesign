@@ -33,47 +33,22 @@ a {
 }
 
 
+
 .parallax {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 1px;
-    perspective: 1px;
-    padding: 0;
+    height: 100dvh;
 }
 
-.parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-1px) scale(2);
-    transform: translateZ(-1px) scale(2);
-  }
-
-.parallax img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    transform: translateZ(-10px);
-    min-height: 100dvw;
-    object-fit: cover;
+.parallax:first-child {
+    background-image: url("./../assets/img/1.jpg");
 }
-
-/*
-.parallax__layer {
-    padding: 100vh 0;
-  }*/
 
   .content2
     {
