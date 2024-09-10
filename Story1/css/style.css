@@ -64,6 +64,8 @@ a {
     position: absolute;
     top: 0;
     transform: translateZ(-10px);
+    min-height: 100dvw;
+    object-fit: cover;
 }
 
 .parallax__layer {
