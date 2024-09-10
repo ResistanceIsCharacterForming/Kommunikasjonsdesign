@@ -55,6 +55,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   h1 {
     position: absolute;
     font-family: Helvetica, sans-serif;
@@ -66,18 +67,27 @@ header {
   }
 }
 
-.parallax {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("https://cdn.pixabay.com/photo/2015/09/13/03/41/man-937665_1280.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100dvh;
-  animation: fadeIn 5s;
-  h1 {
+.parallaxcontainer {
+  position: relative;
+
+  .parallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/13/03/41/man-937665_1280.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100dvh - 7vh);
+    animation: fadeIn 2s;
+    filter: brightness(200%);
+  }
+  .header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: Helvetica, sans-serif;
     font-size: 5rem;
     height: fit-content;
