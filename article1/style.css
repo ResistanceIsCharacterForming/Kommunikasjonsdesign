@@ -1,0 +1,208 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif, Arial;
+    line-height: 1.8;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navigasjon */
+#sticky-menu {
+    position: fixed;
+    height: 60px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1001;
+}
+
+#menu-toggle {
+    background-color: beige;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    max-width: 35px;
+    margin: 1rem 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 0rem 2rem;
+    width: 250px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+#main-menu.active {
+    transform: translateX(0);
+}
+
+h2.name {
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 5rem;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding-bottom: 1.5rem;
+    font-size: medium;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(126, 126, 126);
+}
+
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 35px; 
+}
+
+.social-icons a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+/* Main */
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+.content {
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+h2.content {
+    text-align: center;
+    color: #c11c1c;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.bg1 {
+    background-image: url('../assets/img/graduation-6840941_1280.png');
+    min-height: 500px;
+
+}
+
+.bg2 {
+    background-image: url('../assets/img/woman-8286277_1280.jpg');
+    min-height: 400px;
+}
+
+.bg3 {
+    background-image: url('../assets/img/failure-6115826_1280.jpg');
+    min-height: 400px;
+}
+
+.bg4 {
+    background-image: url('../assets/img/stone-2127669_1280.png');
+    min-height: 400px;
+}
+
+.bg5 {
+    background-image: url('../assets/img/balloon-4401242_1280.png');
+    min-height: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #c11c1c;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    text-align: center;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5ba0d94e;
+    color: white;
+}
+
+/* Media query for større skjermer */
+@media only screen and (min-width: 760px) {
+
+    main {
+        background-color: #f4f4f4;
+        padding-left: 300px;
+        margin: 0;
+    }
+
+    /* Navigasjon */
+    #sticky-menu {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #main-menu {
+        transform: translateX(0);
+    }
+
+    /* Footer */
+    footer {
+        margin-left: 300px;
+    }
+
+
+}
+
