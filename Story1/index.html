@@ -43,7 +43,14 @@
             <span class="bufferSmall"></span>
             <div>
                 <canvas id="chart1"></canvas>
-            </div>  
+                <p>Fagbrev sysselsetting, fra 2018+2019 til 2022+2023</p>
+            </div>
+
+            <div>
+                <canvas id="chart2"></canvas>
+                <p>Livskvalitet i Norge 2020: Tilfredshet med psykisk helse. Prosent og gjennomsnitt</p>
+            </div>
+
             <span class="bufferSmall"></span>
             <p>Nam at efficitur orci, sed varius massa. Phasellus volutpat interdum finibus. Vivamus at iaculis ligula. Etiam accumsan magna quis lacus ornare, a bibendum nibh iaculis. Curabitur in lacinia arcu, non laoreet ante.</p>
     </section>
@@ -98,15 +105,26 @@
     <span class="bufferMedium"></span>
 
     <script>
-        const ctx = document.getElementById('chart1');
+        const ctx1 = document.getElementById('chart1')
+        const ctx2 = document.getElementById('chart2')
       
-        new Chart(ctx, {
-          type: 'bar',
+        new Chart(ctx1, {
+          type: 'line',
           data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['2018+2019', '2019+2020', '2020+2021', '2021+2022', '2022+2023'],
             datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
+              label: 'I arbeid',
+              data: [81.6, 80.2, 80.2, 82.5, 83.3],
+              borderWidth: 1
+            },
+            {
+              label: 'I utdanning',
+              data: [12.4, 13.2, 13.6, 12.4, 11.6],
+              borderWidth: 1
+            },
+            {
+              label: 'Utenfor arbeid og utdanning',
+              data: [6.0, 6.6, 6.2, 5.1, 5.1],
               borderWidth: 1
             }]
           },
@@ -117,7 +135,38 @@
               }
             }
           }
-        });
+        })
+
+        new Chart(ctx2, {
+            type: 'bar',
+            data: {
+            labels: ['Yrkesaktiv', 'Student/elev', 'Pensjonist', 'Ufør/ikke i stand til å arbeide', 'Arbeidsledig'],
+            datasets: [{
+                label: 'Lite fornøyd med sin psykiske helse (0-5)',
+                data: [18, 30, 16, 47, 44],
+                borderWidth: 1
+            },
+            {
+                label: 'Middels fornøyd med sin psykiske helse (6-8)',
+                data: [44, 44, 40, 35, 36],
+                borderWidth: 1
+            },
+            {
+                label: 'Svært fornøyd med sin psykiske helse (9-10)',
+                data: [38, 26, 44, 19, 20],
+                borderWidth: 1
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            }
+            }
+        })
+
+
       </script>
 </body>
 </html>
