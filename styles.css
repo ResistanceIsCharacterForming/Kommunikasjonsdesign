@@ -6,11 +6,9 @@
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
     filter: saturate(0);
   }
   to {
-    opacity: 1;
     filter: saturate(1);
   }
 }
@@ -27,11 +25,10 @@ header {
   top: 0;
   justify-content: center;
   align-items: center;
-  background-color: #333;
+  background-color: var(--primary-color);
   color: white;
   font-size: 1.5rem;
   font-family: Inter, sans-serif;
-  height: 5rem;
   z-index: 9999;
   span {
     font-weight: 900;
@@ -57,7 +54,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100dvh;
-  animation: fadeIn 0.5s;
+  animation: fadeIn 5s;
 
   h1 {
     font-family: Helvetica, sans-serif;
