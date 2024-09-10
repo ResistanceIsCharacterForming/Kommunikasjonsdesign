@@ -67,8 +67,8 @@ section {
   transform: translate(-50%, 0);
 }
 
-.paddingLR10 {
-  padding: 0 10dvw;
+.paddingLR15 {
+  padding: 0 15dvw;
   align-items: center;
   justify-content: center;
 }
