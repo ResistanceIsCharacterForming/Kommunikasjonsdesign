@@ -144,6 +144,7 @@ nav.hidden {
     p {
         font-size: 18px;
         line-height: 1.5;
+        padding-top: 2rem;
     }
 }
 
@@ -168,7 +169,7 @@ nav.hidden {
 }
 
 .bg5 {
-    background-image: url('../assets/img/brain-3141247_1280.jpg');
+    background-image: url('../assets/img/woman-8286277_1280.jpg');
     min-height: 500px;
 }
 
