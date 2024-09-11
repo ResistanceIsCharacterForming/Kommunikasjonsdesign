@@ -10,8 +10,8 @@ body {
     font-family: sans-serif, Arial;
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
-    color: white;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
     margin: 0;
 }
 
@@ -32,6 +32,11 @@ header {
 }*/
 
 /* Navigasjon */
+
+.logo {
+    padding: 1.2rem;
+} 
+
 #menu-toggle {
     font-size: 1.5rem;
     color: black;
@@ -127,17 +132,22 @@ nav.hidden {
 }
 
 .content {
-    padding: 50px 80px;
+    padding: 60px; ;
     text-align: justify;
-}
+    
 
-h2.content {
-    text-align: center;
-    color: #c11c1c;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+    h2 {
+        text-align: center;
+        color: #c11c1c;
+        font-size: 25px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
 }
 
 .bg1 {
@@ -164,15 +174,6 @@ h2.content {
 .bg5 {
     background-image: url('../assets/img/balloon-4401242_1280.png');
     min-height: 400px;
-}
-
-h2 {
-    text-align: center;
-    color: #c11c1c;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
 }
 
 .caption {
@@ -281,7 +282,7 @@ footer {
     }
 
     .caption span.border {
-        background-color: #cf6c6c;
+        background-color: #484848;
         opacity: 0.8;
         color: #ffffff;
         padding: 18px;
@@ -291,9 +292,28 @@ footer {
         margin-bottom: 1rem;
     }
 
+    .content {
+        padding: 60px; ;
+        text-align: justify;
+        
+    
+        h2 {
+            text-align: center;
+            color: #c11c1c;
+            font-size: 25px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+    
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+
     .border2 {
         display: flex;
-        background-color: #cf6c6c;
+        background-color: #484848;
         opacity: 0.8;
         color: #ffffff;
         padding: 18px;
