@@ -24,12 +24,12 @@ header {
     max-width: 100%;
 }
 
-#head {
+/*#head {
     color: white;
     text-align: center;
     padding: 40px;
     margin-top: 60px;
-}
+}*/
 
 /* Navigasjon */
 #menu-toggle {
@@ -207,9 +207,9 @@ footer {
 @media only screen and (min-width: 760px) {
 
     /* Header */
-    #head {
+    /*#head {
         padding: 5em;
-    }
+    }*/
     
     /* Navigasjon */
     #menu-toggle {
@@ -226,6 +226,10 @@ footer {
         gap: 1.5rem;
         width: auto;
         transform: translateX(0);
+
+        a {
+            font-size: 1rem;
+        }
     }
     
     #main-menu.active {
@@ -243,7 +247,7 @@ footer {
         display: flex;
         justify-content: space-between; 
         align-items: center; 
-        padding: 2rem;
+        padding: 1rem;
     }
 
     nav h2 {
@@ -257,6 +261,11 @@ footer {
         margin: 0;
         padding: 0;
         gap: 1.5rem;
+    }
+
+    footer {
+        padding: 2rem;
+        font-size: 1rem;
     }
 
 
