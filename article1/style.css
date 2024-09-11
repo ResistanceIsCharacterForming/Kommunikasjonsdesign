@@ -24,12 +24,12 @@ header {
     max-width: 100%;
 }
 
-/*#head {
+#head {
     color: white;
     text-align: center;
     padding: 40px;
     margin-top: 60px;
-}*/
+}
 
 /* Navigasjon */
 #menu-toggle {
@@ -61,6 +61,10 @@ header {
     background-color: rgb(255, 239, 239);
     transform: translateX(100%);
     transition: transform 0.4s ease;
+
+    a {
+        font-size: 0.9rem;
+    }
 }
 
 #main-menu.active {
@@ -82,7 +86,7 @@ nav {
 }
 
 nav h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: black;
     margin: 0;
 }
