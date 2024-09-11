@@ -148,29 +148,28 @@ nav.hidden {
 }
 
 .bg1 {
-    background-image: url('../assets/img/graduation-6840941_1280.png');
-    min-height: 500px;
-
+    background-image: url('../assets/img/school-7012848_1280.png');
+    min-height: 700px;
 }
 
 .bg2 {
-    background-image: url('../assets/img/woman-8286277_1280.jpg');
-    min-height: 400px;
+    background-image: url('../assets/img/man-8948930_1280.png');
+    min-height: 500px;
 }
 
 .bg3 {
     background-image: url('../assets/img/failure-6115826_1280.jpg');
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .bg4 {
-    background-image: url('../assets/img/stone-2127669_1280.png');
-    min-height: 400px;
+    background-image: url('../assets/img/puzzle-654957_1280.jpg');
+    min-height: 500px;
 }
 
 .bg5 {
-    background-image: url('../assets/img/balloon-4401242_1280.png');
-    min-height: 400px;
+    background-image: url('../assets/img/brain-3141247_1280.jpg');
+    min-height: 500px;
 }
 
 .caption {
@@ -212,7 +211,7 @@ canvas {
     width: 100%;
     height: auto;
     max-width: 100%;
-    padding-top: 2rem;
+    margin-top: 3rem;
 } 
 
 /* Footer */
@@ -339,6 +338,7 @@ footer {
         max-width: 50%;
         display: block;
         margin: 0 auto;
+        margin-top: 3rem;
     }
     
     /* Footer */
