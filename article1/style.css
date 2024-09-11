@@ -24,12 +24,12 @@ header {
     max-width: 100%;
 }
 
-/*#head {
+#head {
     color: white;
     text-align: center;
     padding: 40px;
     margin-top: 60px;
-}*/
+}
 
 /* Navigasjon */
 #menu-toggle {
@@ -41,7 +41,7 @@ header {
     cursor: pointer;
     z-index: 1001;
     position: fixed;
-    top: 1.2rem;
+    top: 1.5rem;
     right: 2rem;
 }
 
@@ -75,10 +75,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
     background-color: white;
     position: fixed;
     top: 0;
+    padding: 0.5rem;
     right: 0;
     left: 0;
     z-index: 1000;
