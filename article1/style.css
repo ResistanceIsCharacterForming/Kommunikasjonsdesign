@@ -1,95 +1,115 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: sans-serif, Arial;
-    line-height: 1.8;
-    color: #333;
-    overflow-x: hidden;
+/* Generelt */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+body {
+    font-size: calc(0.6em + 0.6vw);
+    font-family: sans-serif, Arial;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfbdc1;
+    color: white;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: auto;
+    max-width: 100%;
+}
+
+/*#head {
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+}*/
 
 /* Navigasjon */
-#sticky-menu {
-    position: fixed;
-    height: 60px;
-    right: 0;
-    left: 0;
-    background-color: white;
-    z-index: 1001;
-}
-
 #menu-toggle {
-    background-color: beige;
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: black;
     max-width: 35px;
-    margin: 1rem 2rem;
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 1001;
+    position: fixed;
+    top: 1.2rem;
+    right: 2rem;
 }
 
 #main-menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     position: fixed;
-    left: 0;
+    gap: 1rem;
+    right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgb(255, 255, 255);
     padding: 0rem 2rem;
+    padding-top: 5.5rem;
     width: 250px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 1000;
+    background-color: rgb(255, 239, 239);
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
 }
 
 #main-menu.active {
     transform: translateX(0);
 }
 
-h2.name {
-    font-size: 32px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    margin-top: 5rem;
-    padding: 0;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+nav h2 {
+    font-size: 1.5rem;
+    color: black;
     margin: 0;
 }
 
-nav ul li {
-    padding-bottom: 1.5rem;
-    font-size: medium;
-}
-
-nav ul li a {
+nav a {
     color: black;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: rgb(126, 126, 126);
 }
 
-.social-icons ul {
+nav ul {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
-    gap: 35px; 
+    gap: 1.5rem; 
 }
 
-.social-icons a {
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 2rem;
+nav.hidden {
+    transform: translateY(-100%); 
+}
+
+#home {
+    font-weight: bold;
 }
 
 /* Main */
@@ -162,10 +182,12 @@ h2 {
 
 .caption span.border {
     background-color: #111;
+    opacity: 0.8;
     color: #fff;
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+    
 }
 
 /* Footer */
@@ -179,28 +201,57 @@ footer {
 /* Media query for større skjermer */
 @media only screen and (min-width: 760px) {
 
-    main {
-        background-color: #f4f4f4;
-        padding-left: 300px;
-        margin: 0;
+    /* Header */
+    #head {
+        padding: 5em;
     }
-
+    
     /* Navigasjon */
-    #sticky-menu {
-        display: none;
-    }
-
     #menu-toggle {
         display: none;
     }
-
+    
     #main-menu {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end; 
+        align-items: center;
+        background-color: white;
+        padding: 0;
+        gap: 1.5rem;
+        width: auto;
         transform: translateX(0);
     }
+    
+    #main-menu.active {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end; 
+        align-items: center;
+        background-color: white;
+        padding: 0;
+        gap: 1.5rem;
+        width: auto;
+    }
 
-    /* Footer */
-    footer {
-        margin-left: 300px;
+    nav {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 2rem;
+    }
+
+    nav h2 {
+        padding-right: 0; 
+        margin: 0; 
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 1.5rem;
     }
 
 
