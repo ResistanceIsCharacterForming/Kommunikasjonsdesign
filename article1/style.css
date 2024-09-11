@@ -129,8 +129,10 @@ nav.hidden {
 }
 
 .content {
-    padding: 55px; 
-    text-align: justify;
+    padding: 65px; 
+    text-align: left;
+    letter-spacing: 0.4px;
+  
 
     h2 {
         text-align: center;
