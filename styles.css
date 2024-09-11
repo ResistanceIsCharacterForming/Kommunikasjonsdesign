@@ -13,6 +13,10 @@
   }
 }
 
+.logo {
+  height: 3rem;
+}
+
 a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -27,7 +31,6 @@ body {
 header {
   display: flex;
   position: sticky;
-  height: 7dvh;
   padding: 0 2rem;
   top: 0;
   justify-content: space-between;
@@ -73,7 +76,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://cdn.pixabay.com/photo/2015/09/13/03/41/man-937665_1280.jpg");
+    background-image: url("assets/img/basse.JPG");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
