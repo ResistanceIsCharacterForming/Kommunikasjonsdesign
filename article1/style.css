@@ -24,12 +24,12 @@ header {
     max-width: 100%;
 }
 
-#head {
+/*#head {
     color: white;
     text-align: center;
     padding: 40px;
     margin-top: 60px;
-}
+}*/
 
 /* Navigasjon */
 #menu-toggle {
@@ -187,7 +187,7 @@ h2 {
 }
 
 .caption span.border {
-    background-color: #cf6c6c;
+    background-color: #484848;
     opacity: 0.8;
     color: #ffffff;
     padding: 1rem;
@@ -201,7 +201,7 @@ h2 {
 
 .border2 {
     display: flex;
-    background-color: #cf6c6c;
+    background-color: #484848;
     opacity: 0.8;
     color: #ffffff;
     padding: 1rem;
@@ -223,9 +223,10 @@ footer {
 @media only screen and (min-width: 760px) {
 
     /* Header */
-    #head {
+    
+    /*#head {
         padding: 3rem;
-    }
+    }*/
 
     /* Navigasjon */
     #menu-toggle {
