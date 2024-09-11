@@ -65,6 +65,7 @@
                 fullfører fagbrev</a> enten uten jobb eller velger høyere utdanning året etter. Dette tallet har holdt 
                 seg stabilt over flere år, noe som antyder at fagbrevet i mange tilfeller ikke gir den verdien i 
                 arbeidsmarkedet som man skulle tro.</p>
+                <canvas data-aos="fade-up" id="chart2"></canvas>
         </section>
         <!--Seksjon 5-->
         <section class="parallax bg3">
@@ -110,5 +111,70 @@
         <span>&copy; FNTT Kommunikasjonsdesign Høst 2024</span>
     </footer>
     <script src="script.js"></script>
+    <script>
+        const ctx1 = document.getElementById('chart1')
+        const ctx2 = document.getElementById('chart2')
+      
+        new Chart(ctx1, {
+          type: 'line',
+          data: {
+            labels: ['2018+2019', '2019+2020', '2020+2021', '2021+2022', '2022+2023'],
+            datasets: [{
+              label: 'I arbeid',
+              data: [81.6, 80.2, 80.2, 82.5, 83.3],
+              borderWidth: 1
+            },
+            {
+              label: 'I utdanning',
+              data: [12.4, 13.2, 13.6, 12.4, 11.6],
+              borderWidth: 1
+            },
+            {
+              label: 'Utenfor arbeid og utdanning',
+              data: [6.0, 6.6, 6.2, 5.1, 5.1],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        })
+
+        new Chart(ctx2, {
+            type: 'bar',
+            data: {
+            labels: ['Yrkesaktiv', 'Student/elev', 'Pensjonist', 'Ufør/ikke i stand til å arbeide', 'Arbeidsledig'],
+            datasets: [{
+                label: 'Lite fornøyd med sin psykiske helse (0-5)',
+                data: [18, 30, 16, 47, 44],
+                borderWidth: 1,
+
+            },
+            {
+                label: 'Middels fornøyd med sin psykiske helse (6-8)',
+                data: [44, 44, 40, 35, 36],
+                borderWidth: 1
+            },
+            {
+                label: 'Svært fornøyd med sin psykiske helse (9-10)',
+                data: [38, 26, 44, 19, 20],
+                borderWidth: 1
+            }]
+            },
+            options: {
+                scales: {
+                    y: {
+                    beginAtZero: true
+                    }
+                }
+            }
+        })
+
+        AOS.init();
+      </script>
 </body>
 </html>
