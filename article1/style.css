@@ -7,7 +7,7 @@
 
 body {
     font-size: calc(0.6em + 0.6vw);
-    font-family: sans-serif, Arial;
+    font-family: Inter, sans-serif;
     display: flex;
     flex-direction: column;
     background-color: rgb(238, 238, 238);
@@ -129,9 +129,8 @@ nav.hidden {
 }
 
 .content {
-    padding: 60px; ;
+    padding: 55px; 
     text-align: justify;
-    
 
     h2 {
         text-align: center;
@@ -290,25 +289,24 @@ footer {
     }
 
     .content {
-        display: flex;
         font-family: Inter, sans-serif;
         justify-content: center;
     
         h2 {
-            display: flex;
             text-align: center;
             color: #c11c1c;
             font-size: 25px;
             letter-spacing: 4px;
             text-transform: uppercase;
-        }
+            margin-bottom: 20px;
+            }
     
         p {
-            justify-self: center;
-            max-width: 65%;
+            max-width: 60%;
             font-size: 1.2rem;
-            line-height: 1.5
-        }
+            line-height: 1.5;
+            margin: 0 auto;
+            }
     }
 
     .border2 {
