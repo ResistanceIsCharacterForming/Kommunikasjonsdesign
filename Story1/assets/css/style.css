@@ -1,18 +1,17 @@
+/* || Global */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 body {
   scroll-behavior: smooth;
 }
 
-/* || Global font */
+/* || Font */
 body {
   font-size: min(20px, calc(0.8em + 0.8dvw));
 }
-
 h2 {
   font-family: "League Gothic", sans-serif;
   font-weight: 400;
@@ -24,6 +23,7 @@ p, a {
   font-weight: 300;
 }
 
+/* || Parallax */
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -35,41 +35,33 @@ p, a {
     align-items: center;
     z-index:0;
 }
-
 .parallaxImg1 {
     background-image: url("./../img/1.jpg");
 }
-
 .parallaxImg2 {
   background-image: url("./../img/3.jpg");
 }
-
 .containerRelative {
   position: relative;
   overflow: hidden;
 }
-
 .hasBlur {
   filter: blur(5px);
   -webkit-filter: blur(5px);
 }
 
+/* || Height */ 
 .height150 {
   height: 150dvh;
 }
-
 .height100 {
   height: 100dvh;
 }
-
 .fitContent {
   height: fit-content;
 }
 
-section {
-  margin-bottom: 2rem;
-}
-
+/* || position / placement */
 .centerMT {
   position: absolute;
   left: 50%;
@@ -77,63 +69,55 @@ section {
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-
-.center2 {
-  position:absolute;
-  top:0;
-  left:50%;
-  z-index:1;
-}
-
-.paddingLR15 {
-  padding: 0 15dvw;
-  align-items: center;
-  justify-content: center;
-}
-
 .gap10 {
-    display: flex;
-    gap: 10rem;
-    flex-direction: column;
+  display: flex;
+  gap: 10rem;
+  flex-direction: column;
 }
-
 .gap5 {
   display: flex;
   gap: 5rem;
   flex-direction: column;
 }
 
+/* || padding */
+.paddingLR15 {
+  padding: 0 15dvw;
+  align-items: center;
+  justify-content: center;
+}
+.paddingT20 {
+  padding-top: 20dvh;
+}
+.paddingT15 {
+  padding-top: 15dvh;
+}
+
+/* || margin */
+.marginTB15 {
+  margin: 15dvh 0;
+}
+
+/* || Colors & readebility  */
 .colorWhite {
   color: white;  
 }
-
 .contrast p {
   color: black;  
   background: rgba(255, 255, 255, 0.70);
   padding: 0.5rem;
 }
-
 .colorBlack {
   color: black;
 }
 
+/* || canvas element */
 canvas {
   width: 100%;
   height: auto;
 }
 
-.paddingT20 {
-  padding-top: 20dvh;
-}
-
-.paddingT15 {
-  padding-top: 15dvh;
-}
-
-.marginTB15 {
-  margin: 15dvh 0;
-}
-
+/* || video elements */
 video {
   width: 100%;
   max-height: 130dvh;
@@ -141,11 +125,12 @@ video {
   z-index:0;
 }
 
+/* || CSS for mobile */
 @media only screen and (max-width: 960px) {
+  /* || Font */
   body {
     font-size: min(16px, calc(0.8em + 0.8dvw));
   }
-
   h2 {
     font-size: calc(3.5rem + 1dvw);
   }
