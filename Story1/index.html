@@ -20,6 +20,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Story 1</title>
 </head>
 <body>
@@ -37,62 +40,65 @@
             </ul>
         </nav>
     </header>
-    -->
+    -->    
+
 
     <main>
-        <section class="parallaxContainer">
-            <picture class="parallax parallaxImg1 height150"></picture>
-            <article class="colorWhite gap10 centerMT">
-                <h2>Lorem + ipsum = ...?</h2>
-                <p>... dolor sit amet, consectetur adipiscing elit. Proin commodo rhoncus mollis.</p>
-                <p>Donec at ante eu augue ultrices gravida. Donec quis blandit magna, id sagittis erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam nec ipsum rutrum, tristique mauris ac, iaculis quam.</p>
+        <section class="containerRelative">
+            <picture class="parallax parallaxImg1 hasBlur height150"></picture>
+            <article class="colorWhite gap5 centerMT contrast">
+                <h2>Fagbrev + Innsats = ?</h2>
+                <p>Kjenner du deg igjen? Du er ung, har fremtidsplaner, jobber hardt, og allikevel går ikke ting som forventet.</p>
+                <p>Hvorfor hendte det og var det noe du kunne gjort annerledes?</p>
+                <p>Slik er virkeligheten for mange som tar fagbrev. To år på videregående, så to år med praksis i bedrift. Du blir ferdig med fagbrevet og forventer at det neste steget er en trygg og fast jobb.</p>
+                <p>Men det hender ikke.</p>
             </article>
+            <p>Photo by <a href="https://unsplash.com/@neonbrand?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kenny Eliason</a> on <a href="https://unsplash.com/photos/a-framed-diploma-with-a-gold-seal-on-it-lJvU6RQno0g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
         </section>
-
-        <article class="paddingLR15">
-            <p>Duis et rhoncus lectus, a lobortis odio. Nunc quis scelerisque quam. Aenean ac nulla ex. Sed sit amet est lacinia, molestie nunc sit amet, lacinia enim. Sed placerat mi mauris.</p>
-            <span class="bufferSmall"></span>
-            
-            <section class="canvasContainer">
-                <canvas id="chart1"></canvas>
-                <p>Fagbrev sysselsetting, fra 2018+2019 til 2022+2023</p>
-            </section>
-
-            <section class="canvasContainer">
-                <canvas id="chart2"></canvas>
-                <p>Livskvalitet i Norge 2020: Tilfredshet med psykisk helse. Prosent og gjennomsnitt</p>
-            </section>
-
-            <p>Nam at efficitur orci, sed varius massa. Phasellus volutpat interdum finibus. Vivamus at iaculis ligula. Etiam accumsan magna quis lacus ornare, a bibendum nibh iaculis. Curabitur in lacinia arcu, non laoreet ante.</p>
+  
+        <article class="paddingLR15 marginTB15">
+            <p>Slik fagbrev blir snakket om av forskjellige personer, kan det nesten føles som det burde lønne seg mer enn det gjør.</p>
+            <p>Du sitter kanskje igjen med flere gode minner. Og har opparbeidet deg litt penger. Det er flott, men så har du resten av livet å tenke på.
+            <p>Resten av livet hvor du må forsørge deg på noen måte.</p>
+            <p>Hva nå?</p>
         </article>
 
-        <section>
-                <div id="imageContainer">
-                    <img src="./assets/img/2.jpg">
-                </div>
+        <article class="paddingLR15 marginTB15">
+            <p>Ifølge Udir så får omtrent 16% av de som består fagbrev ikke jobb.</p>
+            <canvas data-aos="fade-up" id="chart1"></canvas>
+            <i><a target="_blank" href="https://www.udir.no/tall-og-forskning/statistikk/statistikk-fag-og-yrkesopplaring/tall-for-sysselsetting-av-fagutdannede/sysselsetting-av-fagutdannede-utdanningsprogram/">Udir: Fagbrev sysselsetting, fra 2018+2019 til 2022+2023</a></i>
+            <p>Hva sier det til personer som vil jobbe, at fagbrevet ikke er like mye verdt som en bachelor eller master?</p>
+            <p>Er det rimelig å forvente at alle skal ta høyere utdanning?</p>
+            <p>Du følger en vei som du forventer skal føre deg inn arbeidslivet, og så sitter du igjen med… ingenting?</p>
+        </article>
 
-                <article class="paddingLR15">
-                    <p>Proin nec purus lacus. Phasellus vitae cursus mauris, non imperdiet purus. Nunc dapibus lorem a quam venenatis, et consequat lectus vulputate. Maecenas tincidunt eu enim id posuere. Aliquam rhoncus magna at egestas accumsan. Quisque ut augue ac eros efficitur tempor.</p>
-                </article>
-        </section>
+        <article class="paddingLR15 marginTB15">
+            <p>Det virker ganske urettferdig å presse alle til å ta høyere utdannelse. Å forvente at uansett hvem noen er så er det bedre med ren teori, i motsetning til en praktisk opplæring.</p>
+            <p>Ser vi på denne Livskvalitet undersøkelsen fra Statistisk sentralbyrå kommer noe tydelig frem. Det er en klar kobling mellom å drive med noe som føles meningsfylt og psykisk helse.</p>
+            <canvas data-aos="fade-up" id="chart2"></canvas>
+            <i><a target="_blank" href="https://www.ssb.no/sosiale-forhold-og-kriminalitet/artikler-og-publikasjoner/_attachment/433414?_ts=17554096418">SSB: Livskvalitet i Norge 2020: Tilfredshet med psykisk helse. Prosent og gjennomsnitt</a></i>
+            <p>Både arbeidsledige og uføre var svært misfornøyd med sin psykiske helse. I motsetning var yrkesaktive og studenter middels til veldig fornøyd.</p>
+        </article>
 
-        <section class="containerRelative">
-            <picture class="parallax parallaxImg2 height150"></picture>
-            <article class="centerMT gap10 colorWhite">
-                <p>Morbi tristique sem gravida sagittis accumsan. Aenean in purus nec nunc dictum maximus ac in nisl. Pellentesque a risus in urna bibendum consectetur. Phasellus suscipit consectetur mauris. Donec sed quam eu enim sagittis auctor a sed urna. Nulla sapien neque, congue ultricies ex et, auctor vestibulum nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-                <p>In hac habitasse platea dictumst. Ut ac dolor vitae mi vestibulum volutpat. Donec facilisis vel est et dignissim. Aenean vulputate metus ac vestibulum volutpat.</p>
-                <p>... suspendisse volutpat malesuada lacus</p>
+        <section class="containerRelative marginTB15">
+            <video class="hasBlur" autoplay muted loop id="myVideo">
+                <source src="./assets/vid/1.mp4" type="video/mp4">
+            </video>
+            <article class="centerMT colorWhite paddingT15 contrast">
+                <p>Gitt hvor metaforisk grå og sakte noen dager kan føles, gir dette kanskje en del mening.</p>
             </article>
         </section>
 
-        <video autoplay muted loop id="myVideo">
-            <source src="./assets/vid/1.mp4" type="video/mp4">
-        </video>
+        <section class="containerRelative marginTB15">
+            <picture class="parallax parallaxImg2 hasBlur height100"></picture>
+            <article class="centerMT colorWhite paddingT20 contrast">
+                <p>Personer ønsker som oftest å være aktive, jobbe med noe de føler givende.</p>
+                <p>I den retningen ting går kommer det til å bli mer og mer vanskelig.</p>
+            </article>
+        </section>
 
-        <article class="paddingLR15">
-            <p>Vestibulum tempor, felis id tincidunt tincidunt, velit ligula hendrerit ante, in convallis tellus ligula ut metus. Ut lectus sapien, aliquam quis vulputate tempus, accumsan ac augue.</p>          
-            <p>Pellentesque diam ligula, bibendum vel semper ut, facilisis quis ante. Curabitur sit amet ultrices metus. Sed consequat semper. </p>
+        <article class="paddingLR15 marginTB15">
+            <p>Fagbrev og innsats burde åpne dører for personer, ikke føles som en blindvei.</p>
         </article>
     </main>
 
@@ -158,6 +164,8 @@
                 }
             }
         })
+
+        AOS.init();
       </script>
 </body>
 </html>
