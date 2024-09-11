@@ -10,7 +10,7 @@ body {
     font-family: sans-serif, Arial;
     display: flex;
     flex-direction: column;
-    background-color: #dfbdc1;
+    background-color: lightgrey;
     color: white;
     margin: 0;
 }
@@ -105,11 +105,11 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 1.5rem; 
+    gap: 1.5rem;
 }
 
 nav.hidden {
-    transform: translateY(-100%); 
+    transform: translateY(-100%);
 }
 
 #home {
@@ -123,7 +123,7 @@ nav.hidden {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative; 
+    position: relative;
 }
 
 .content {
@@ -179,19 +179,21 @@ h2 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
 }
 
 .caption span.border {
-    background-color: #111;
+    background-color: #cf6c6c;
     opacity: 0.8;
-    color: #fff;
+    color: #ffffff;
     padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-    
+    font-size: 20px;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    max-width: 80%; 
 }
 
 /* Footer */
@@ -207,19 +209,19 @@ footer {
 @media only screen and (min-width: 760px) {
 
     /* Header */
-    /*#head {
-        padding: 5em;
-    }*/
-    
+    #head {
+        padding: 3rem;
+    }
+
     /* Navigasjon */
     #menu-toggle {
         display: none;
     }
-    
+
     #main-menu {
         position: relative;
         flex-direction: row;
-        justify-content: flex-end; 
+        justify-content: flex-end;
         align-items: center;
         background-color: white;
         padding: 0;
@@ -231,11 +233,11 @@ footer {
             font-size: 1rem;
         }
     }
-    
+
     #main-menu.active {
         position: relative;
         flex-direction: row;
-        justify-content: flex-end; 
+        justify-content: flex-end;
         align-items: center;
         background-color: white;
         padding: 0;
@@ -245,14 +247,14 @@ footer {
 
     nav {
         display: flex;
-        justify-content: space-between; 
-        align-items: center; 
+        justify-content: space-between;
+        align-items: center;
         padding: 1rem;
     }
 
     nav h2 {
-        padding-right: 0; 
-        margin: 0; 
+        padding-right: 0;
+        margin: 0;
     }
 
     nav ul {
@@ -268,6 +270,4 @@ footer {
         font-size: 1rem;
     }
 
-
 }
-
