@@ -121,7 +121,7 @@
         new Chart(ctx1, {
           type: 'line',
           data: {
-            labels: ['2018+2019', '2019+2020', '2020+2021', '2021+2022', '2022+2023'],
+            labels: ['2018-19', '2019-20', '2020-21', '2021-22', '2022-23'],
             datasets: [{
               label: 'I arbeid',
               data: [81.6, 80.2, 80.2, 82.5, 83.3],
@@ -139,6 +139,8 @@
             }]
           },
           options: {
+            responsive: true,
+            maintainAspectRatio: true,
             scales: {
               y: {
                 beginAtZero: true
@@ -169,6 +171,8 @@
             }]
             },
             options: {
+                responsive: true,
+                maintainAspectRatio: true,
                 scales: {
                     y: {
                     beginAtZero: true
