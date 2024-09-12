@@ -10,7 +10,7 @@ body {
     font-family: sans-serif, Arial;
     display: flex;
     flex-direction: column;
-    background-color: #dfbdc1;
+    background-color: #af9598;
     color: white;
     margin: 0;
 }
@@ -97,7 +97,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(126, 126, 126);
+    color: rgb(211, 199, 199);
 }
 
 nav ul {
@@ -164,7 +164,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 0.8rem;
-    background-color: black;
+    background-color: rgb(211, 199, 199);
     color: white;
 }
 
