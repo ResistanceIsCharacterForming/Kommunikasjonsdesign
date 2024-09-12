@@ -218,6 +218,12 @@ canvas {
     margin-top: 3rem;
 } 
 
+figcaption {
+    margin-top: 2rem;
+    max-width: 100%;
+    font-size: 13px;    
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -344,6 +350,14 @@ footer {
         display: block;
         margin: 0 auto;
         margin-top: 3rem;
+    }
+
+    figcaption {
+        margin-top: 2rem;
+        max-width: 50%;
+        margin: 0 auto;
+        display: block;
+        font-size: 13px;
     }
     
     /* Footer */
