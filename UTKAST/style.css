@@ -10,7 +10,7 @@ body {
     font-family: sans-serif, Arial;
     display: flex;
     flex-direction: column;
-    background-color: #af9598;
+    background-color: rgb(238, 238, 238);
     color: white;
     margin: 0;
 }
