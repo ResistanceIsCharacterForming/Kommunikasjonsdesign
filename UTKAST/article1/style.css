@@ -32,7 +32,6 @@ body {
 }*/
 
 /* Navigasjon */
- 
 #menu-toggle {
     font-size: 1.5rem;
     color: black;
@@ -94,8 +93,7 @@ nav a {
 nav h2 {
     padding: 1rem;
     margin: 0;
-    font-size: 1.7rem;
-    
+    font-size: 1.7rem;   
 }
 
 nav a:hover {
@@ -119,7 +117,6 @@ nav.hidden {
 }
 
 /* Main */
-
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -291,6 +288,7 @@ footer {
         gap: 1.5rem;
     }
 
+    /* Main */
     .caption span.border {
         background-color: #484848;
         opacity: 0.8;
@@ -349,7 +347,6 @@ footer {
     }
     
     /* Footer */
-
     footer {
         padding: 2rem;
         font-size: 1rem;
