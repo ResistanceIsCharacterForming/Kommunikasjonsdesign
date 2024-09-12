@@ -212,7 +212,7 @@ footer {
         display: flex;
         justify-content: space-between; 
         align-items: center; 
-        padding: 2rem;
+        padding: 1rem;
     }
 
     nav h2 {
