@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(238, 238, 238);
-    color: white;
+    color: rgb(34, 34, 34);
     margin: 0;
 }
 
