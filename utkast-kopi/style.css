@@ -1,0 +1,49 @@
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .map-title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .map-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .map-controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .map-controls button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .map-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
