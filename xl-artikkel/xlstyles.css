@@ -1,0 +1,58 @@
+:root {
+  --font: "Inter", sans-serif;
+  --headline-color: #d54e76;
+  --bg-color: #f1f1f1;
+  --paragraph-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+body {
+  background-color: var(--bg-color);
+}
+
+h2 {
+  color: var(--headline-color);
+}
+
+p {
+  color: var(--paragraph-color);
+}
+
+.parallaxcontainer {
+  z-index: -1;
+  position: relative;
+  height: 200dvh;
+  .background {
+    height: 200dvh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .bg1 {
+    background-image: url("img/brain.gif");
+    filter: brightness(170%) contrast(90%);
+  }
+  .headline {
+    width: 100%;
+  }
+  .headlineimg {
+    position: absolute;
+    top: 15%;
+    filter: contrast(200%);
+    mix-blend-mode: multiply;
+  }
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 3rem;
+  border: 10px solid var(--headline-color);
+}

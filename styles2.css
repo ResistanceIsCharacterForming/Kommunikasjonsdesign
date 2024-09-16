@@ -1,6 +1,12 @@
+:root {
+  --headline-color: #d54e76;
+  --paragraph-color: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Inter, sans-serif;
 }
 
 #map {
@@ -15,4 +21,85 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.parallax {
+  background-image: url("xl-artikkel/img/brain.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: brightness(200%);
+}
+
+main {
+  min-height: 100dvh;
+}
+
+.headline {
+  position: absolute;
+  top: 50%;
+}
+
+.parallaxcontainer {
+  position: relative;
+  height: 200dvh;
+  .background {
+    height: 200dvh;
+    background-size: 75%;
+    background-position: 20dvh -20dvh;
+    background-repeat: no-repeat;
+  }
+  .bg1 {
+    background-image: url("xl-artikkel/img/brain.gif");
+    filter: brightness(170%) contrast(90%);
+    mix-blend-mode: multiply;
+  }
+  .bg2 {
+    background-image: url("xl-artikkel/img/confused.gif");
+    filter: brightness(170%) contrast(90%);
+    mix-blend-mode: multiply;
+  }
+
+  .headlineimg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    filter: contrast(200%);
+    mix-blend-mode: multiply;
+  }
+
+  h1 {
+    position: absolute;
+    padding: 2rem;
+    top: 50dvh;
+    left: 50dvw;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+.paragraph {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transform: scale(1.2);
+  h2 {
+    font-weight: 900;
+    color: var(--headline-color);
+  }
+  p {
+    color: var(--paragraph-color);
+    max-width: 50ch;
+    text-align: left;
+  }
 }

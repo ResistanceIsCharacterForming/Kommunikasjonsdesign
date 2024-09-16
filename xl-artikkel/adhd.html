@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="xlstyles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="parallaxcontainer">
+        <div class="background bg1"></div>
+        <div class="headline">
+          <img src="img/headline.png" alt="" class="headlineimg" />
+        </div>
+      </div>
+      <section class="paragraph">
+        <h2>HVA ER ADHD?</h2>
+        <p>
+          ADHD er forkortelse for Attention Deficit Hyperactivity Disorder.
+          Bokstavene ADHD beskriver symptomene oppmerksomhetssvikt og
+          hyperaktivitet. Det kan være flere årsaker til tilstanden, og
+          utviklingen av den er genetisk betinget.
+        </p>
+      </section>
+    </main>
+    <script>
+      window.addEventListener("scroll", function () {
+        const scrollPosition = window.pageYOffset
+        document.querySelector(".background").style.transform =
+          "translateY(" + scrollPosition * 0.5 + "px)"
+      })
+    </script>
+  </body>
+</html>
