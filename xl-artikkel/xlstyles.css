@@ -35,15 +35,6 @@ p {
     background-image: url("img/brain.gif");
     filter: brightness(170%) contrast(90%);
   }
-  .headline {
-    width: 100%;
-  }
-  .headlineimg {
-    position: absolute;
-    top: 15%;
-    filter: contrast(200%);
-    mix-blend-mode: multiply;
-  }
 }
 
 .paragraph {
