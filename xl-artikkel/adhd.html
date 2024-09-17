@@ -4,29 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="xlstyles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <title>Document</title>
   </head>
   <body>
     <main>
       <div class="parallaxcontainer">
         <div class="background bg1"></div>
+        <img class="headlineimg" src="img/headline.png" alt="" />
       </div>
-      <section class="paragraph">
-        <h2>HVA ER ADHD?</h2>
-        <p>
-          ADHD er forkortelse for Attention Deficit Hyperactivity Disorder.
-          Bokstavene ADHD beskriver symptomene oppmerksomhetssvikt og
-          hyperaktivitet. Det kan være flere årsaker til tilstanden, og
-          utviklingen av den er genetisk betinget.
-        </p>
-      </section>
+
+      <article class="article">
+        <section class="paragraph">
+          <h2>HVA ER ADHD?</h2>
+          <p>
+            ADHD er forkortelse for Attention Deficit Hyperactivity Disorder.
+            <br />Bokstavene ADHD beskriver symptomene oppmerksomhetssvikt og
+            hyperaktivitet. Det kan være flere årsaker til tilstanden, og
+            utviklingen av den er genetisk betinget.
+          </p>
+          <p>
+            Tidligere har man delt inn diagnosen i to distinkte typer: ADHD og
+            ADD.<br />
+            ADHD er kanskje den mest typiske, og også den som er lettest å
+            oppdage. Man opplever ofte problemer med å sitte stille, uro i
+            kroppen, tidsforvirring og vansker med å følge med på en samtale.
+          </p>
+        </section>
+        <section class="paragraph">
+          <h2>Hvem får ADHD?</h2>
+          <p>
+            ADHD er en nevrobiologisk tilstand som kjennetegnes av
+            konsentrasjonsvansker, hyperaktivitet og impulsivitet. Tilstanden
+            debuterer i barndommen, og symptomene vedvarer ofte inn i voksen
+            alder.
+            <br />
+            <br />
+            ADHD er en av de vanligste nevrobiologiske tilstandene hos barn og
+            unge. Tilstanden er ofte arvelig, og det er vanlig at flere i samme
+            familie har ADHD. Det er også vanlig at barn med ADHD har andre
+            vansker, som for eksempel lærevansker, atferdsvansker, angst eller
+            depresjon.
+          </p>
+        </section>
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+      </article>
     </main>
-    <script>
-      window.addEventListener("scroll", function () {
-        const scrollPosition = window.pageYOffset
-        document.querySelector(".background").style.transform =
-          "translateY(" + scrollPosition * 0.5 + "px)"
-      })
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
