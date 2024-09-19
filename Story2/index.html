@@ -30,14 +30,14 @@
         let geojson
 
         function getColor(d) {
-            return d > 7 ? '#b8202f' :
-                d > 6  ? '#ff8359' :
-                d > 5  ? '#ffc88d' :
+            return d > 7 ? '#1761a6' :
+                d > 6  ? '#5b9ec3' :
+                d > 5  ? '#c4d8e2' :
                 d > 4  ? '#fdfbc8' :
-                d > 3  ? '#c4d8e2' :
-                d > 2   ? '#5b9ec3' :
-                d > 1  ? '#1761a6' :
-                          '#1761a6';
+                d > 3  ? '#ffc88d' :
+                d > 2   ? '#ff8359' :
+                d > 1  ? '#b8202f' :
+                          '#808080';
         }
 
         function style(feature) {

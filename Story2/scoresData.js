@@ -88,7 +88,7 @@ const scores = [
     "score": "6,733"
   },
   {
-    "country": "UNITED STATES OF AMERICA",
+    "country": "United States of America",
     "score": "6,725"
   },
   {
@@ -352,7 +352,7 @@ const scores = [
     "score": "5,281"
   },
   {
-    "country": "Democratic Republic of Congo",
+    "country": "Democratic Republic of the Congo",
     "score": "5,221"
   },
   {
@@ -384,7 +384,7 @@ const scores = [
     "score": "5,080"
   },
   {
-    "country": "Guinea",
+    "country": "Guinea-Bissau",
     "score": "5,023"
   },
   {
@@ -408,7 +408,7 @@ const scores = [
     "score": "4,881"
   },
   {
-    "country": "WEST BANK AND GAZA",
+    "country": "Palestine",
     "score": "4,879"
   },
   {
@@ -444,7 +444,7 @@ const scores = [
     "score": "4,505"
   },
   {
-    "country": "THE GAMBIA",
+    "country": "Gambia",
     "score": "4,485"
   },
   {
@@ -520,7 +520,7 @@ const scores = [
     "score": "3,861"
   },
   {
-    "country": "Tanzania",
+    "country": "United Republic of Tanzania",
     "score": "3,781"
   },
   {
@@ -552,7 +552,7 @@ const scores = [
     "score": "3,341"
   },
   {
-    "country": "Congo",
+    "country": "Republic of Congo",
     "score": "3,295"
   },
   {
