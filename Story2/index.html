@@ -97,11 +97,9 @@
             zoom: 0
         })
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
-            attribution: '<a href="https://openstreetmap.org/copyright">Open Street Map</a>',
-            subdomains: 'abcd',
-	        maxZoom: 20
-        }).addTo(mapMain)
+        mapMain.createPane('labels')
+        mapMain.getPane('labels').style.zIndex = 650
+        mapMain.getPane('labels').style.pointerEvents = 'none'
 
         /*
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -129,6 +127,13 @@
         };
 
         info.addTo(mapMain)
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
+            attribution: '<a href="https://openstreetmap.org/copyright">Open Street Map</a>',
+            subdomains: 'abcd',
+	        maxZoom: 20,
+            pane: 'labels'
+        }).addTo(mapMain)
 
     </script>
     
