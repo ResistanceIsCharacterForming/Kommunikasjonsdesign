@@ -10,9 +10,6 @@
   padding: 0;
   font-family: var(--font);
 }
-body {
-  background-color: var(--bg-color);
-}
 
 h2 {
   color: var(--headline-color);
@@ -34,7 +31,8 @@ p {
   height: 200dvh;
   .background {
     height: 300dvh;
-    background-size: contain;
+    background-size: 200%;
+    background-position: top left;
     background-repeat: no-repeat;
   }
   .bg1 {
@@ -48,8 +46,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    mix-blend-mode: multiply;
-    filter: drop-shadow(0 0 10px #d54e76);
+    filter: drop-shadow(3px 3px 1px var(--bg-color));
   }
 }
 
@@ -68,8 +65,14 @@ p {
   margin: 15dvw;
   background-color: var(--bg-color);
   border: #d54e76 10px solid;
+  padding: 2rem;
 }
 
 .headline {
   position: relative;
+}
+@media (max-width: 800px) {
+  .background {
+    background-size: 100%;
+  }
 }
