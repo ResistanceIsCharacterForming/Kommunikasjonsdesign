@@ -23,7 +23,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--white);
-    color: var(--white);
     margin: 0;
 }
 
@@ -164,11 +163,13 @@ nav.hidden {
         h3 {
             margin-bottom: 0;
             font-size: 1rem;
+            color: var(--white);
         }
 
         p {
             font-size: 0.8rem;
             letter-spacing: 0.03em;
+            color: var(--white);
         }
 
         a {
@@ -276,6 +277,11 @@ canvas {
 }
 
 /* Main Article 2*/
+
+.section1, .section2, .section3, .section4, .section5, .section6 {
+    color: var(--black);
+
+}
 
 
 
