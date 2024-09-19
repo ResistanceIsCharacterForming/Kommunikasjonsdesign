@@ -30,14 +30,11 @@
         let geojson
 
         function getColor(d) {
-            return d > 7 ? '#1761a6' :
-                d > 6  ? '#5b9ec3' :
-                d > 5  ? '#c4d8e2' :
-                d > 4  ? '#fdfbc8' :
-                d > 3  ? '#ffc88d' :
-                d > 2   ? '#ff8359' :
-                d > 1  ? '#b8202f' :
-                          '#808080';
+            return d > 7 ? '#0571b0' :
+                d > 5  ? '#92c5de' :
+                d > 3  ? '#ff7e00' :
+                d > 1  ? '#ca0020' :
+                          '#A9A9A9';
         }
 
         function style(feature) {
@@ -132,7 +129,8 @@
             attribution: '<a href="https://openstreetmap.org/copyright">Open Street Map</a>',
             subdomains: 'abcd',
 	        maxZoom: 20,
-            pane: 'labels'
+            pane: 'labels',
+            noWrap: true
         }).addTo(mapMain)
 
     </script>
