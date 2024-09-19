@@ -278,9 +278,8 @@ canvas {
 
 /* Main Article 2*/
 
-.section1, .section2, .section3, .section4, .section5, .section6 {
-    color: var(--black);
-
+main {
+    padding-top: 80px; 
 }
 
 
