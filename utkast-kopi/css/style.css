@@ -194,7 +194,7 @@ nav.hidden {
 
     h2 {
         text-align: center;
-        color: #c11c1c;
+        color: var(--red);
         font-size: 25px;
         letter-spacing: 4px;
         text-transform: uppercase;
@@ -258,7 +258,7 @@ nav.hidden {
 
 .border2 {
     display: flex;
-    background-color: #484848;
+    background-color: var(--dark-grey);
     opacity: 0.8;
     color: #ffffff;
     padding: 1rem;
@@ -291,8 +291,8 @@ footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 0.9rem;
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
 
     ul {
         display: flex;
@@ -304,7 +304,7 @@ footer {
             list-style: none;
 
             a {
-                color: white;
+                color: var(--white);
             }
         }
     }
