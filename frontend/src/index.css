@@ -1,68 +1,423 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Generelt */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  font-size: calc(0.6em + 0.6vw);
+  font-family: sans-serif, Arial;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  background-color: white;
+  color: white;
+  margin: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#body-a1 {
+  font-family: Inter, sans-serif;
+  background-color: rgb(238, 238, 238);
+  color: rgb(0, 0, 0);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: auto;
+  max-width: 100%;
+}
+
+#head {
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+/* Navigasjon */
+#menu-toggle {
+  font-size: 1.5rem;
+  color: black;
+  max-width: 35px;
+  background: none;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  z-index: 1001;
+  position: fixed;
+  right: 2rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+#main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: fixed;
+  gap: 1rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0rem 2rem;
+  padding-top: 5.5rem;
+  width: 250px;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+
+  a {
+      font-size: 1rem;
   }
-  a:hover {
-    color: #747bff;
+}
+
+#main-menu.active {
+  transform: translateX(0);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+
+  h2 {
+      font-size: 1.7rem;
+      color: black;
+      margin: 0;
   }
-  button {
-    background-color: #f9f9f9;
+
+  a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+          color: rgb(126, 126, 126);
+      }
+  }
+
+  ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 1.5rem; 
+  }
+}
+
+nav.hidden {
+  transform: translateY(-100%); 
+}
+
+#home {
+  font-weight: bold;
+}
+
+/* Main */
+#front-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+
+  article {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      padding: 1.5rem;
+      background-color: black;
+      margin-bottom: 20px;
+
+      img {
+          max-width: 100%;
+          max-height: 450px;
+          height: auto;
+          padding-bottom: 1rem;
+      }
+
+      time {
+          font-size: 0.75rem;
+          color: grey;
+      }
+
+      h3 {
+          margin-bottom: 0;
+          font-size: 1rem;
+      }
+
+      p {
+          font-size: 0.8rem;
+          letter-spacing: 0.03em;
+      }
+
+      a {
+          color: white;
+      }
+  }
+}
+
+/* Main Article1 */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content {
+  padding: 65px; 
+  text-align: left;
+  letter-spacing: 0.4px;
+
+
+  h2 {
+      text-align: center;
+      color: #c11c1c;
+      font-size: 25px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+  }
+
+  p {
+      font-size: 18px;
+      line-height: 1.5;
+      padding-top: 2rem;
+  }
+}
+
+.bg1 {
+  background-image: url('../assets/img/school-7012848_1280.png');
+  min-height: 650px;
+
+}
+
+.bg2 {
+  background-image: url('../assets/img/man-8948930_1280.png');
+  min-height: 500px;
+}
+
+.bg3 {
+  background-image: url('../assets/img/failure-6115826_1280.jpg');
+  min-height: 500px;
+}
+
+.bg4 {
+  background-image: url('../assets/img/puzzle-654957_1280.jpg');
+  min-height: 500px;
+}
+
+.bg5 {
+  background-image: url('../assets/img/woman-8286277_1280.jpg');
+  min-height: 500px;
+}
+
+.caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 750px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.caption span.border {
+  background-color: #484848;
+  opacity: 0.8;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 25px;
+  letter-spacing: 5px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  max-width: 80%; 
+}
+
+.border2 {
+  display: flex;
+  background-color: #484848;
+  opacity: 0.8;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 5px;    
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 3rem;
+} 
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background-color: black;
+  color: white;
+
+  ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding-left: 0;
+
+      li {
+          list-style: none;
+
+          a {
+              color: white;
+          }
+      }
+  }
+}
+
+/* Media query for større skjermer */
+@media only screen and (min-width: 760px) {
+
+  /* Header */
+  #head {
+      padding: 5em;
+  }
+  
+  /* Navigasjon */
+  #menu-toggle {
+      display: none;
+  }
+  
+  #main-menu {
+      position: relative;
+      flex-direction: row;
+      justify-content: flex-end; 
+      align-items: center;
+      background-color: white;
+      padding: 0;
+      gap: 1.5rem;
+      width: auto;
+      transform: translateX(0);
+
+      a {
+          font-size: 1rem;
+      }
+  }
+  
+  #main-menu.active {
+      position: relative;
+      flex-direction: row;
+      justify-content: flex-end; 
+      align-items: center;
+      background-color: white;
+      padding: 0;
+      gap: 1.5rem;
+      width: auto;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center; 
+      padding: 2rem;
+  }
+
+  nav h2 {
+      padding-right: 0; 
+      margin: 0; 
+  }
+
+  nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 1.5rem;
+  }
+
+  /* Main */
+  #front-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+
+      article {
+          max-width: 700px;
+      }
+  }
+
+  /* Main Article1 */
+  .caption span.border {
+      background-color: #484848;
+      opacity: 0.8;
+      color: #ffffff;
+      padding: 18px;
+      font-size: 30px;
+      letter-spacing: 5px;
+      display: inline-block;
+      margin-bottom: 1rem;
+  }
+
+  .border2 {
+      display: flex;
+      background-color: #484848;
+      opacity: 0.8;
+      color: #ffffff;
+      padding: 18px;
+      font-size: 20px;
+      letter-spacing: 5px;
+      width: 80%;
+      margin: 0 auto;
+      
+  }
+
+  .content {
+      font-family: Inter, sans-serif;
+      justify-content: center;
+  
+      h2 {
+          text-align: center;
+          color: #c11c1c;
+          font-size: 25px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          max-width: 60%;
+          margin: 0 auto;
+          padding: 1rem;
+          }
+  
+      p {
+          max-width: 60%;
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin: 0 auto;
+          }
+  }
+
+  canvas {
+      width: 100%;
+      height: auto;
+      max-width: 50%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 3rem;
+  }
+
+  footer {
+      padding: 2rem;
+      font-size: 1rem;
   }
 }
