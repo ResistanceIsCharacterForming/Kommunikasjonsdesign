@@ -68,7 +68,7 @@ const scores = [
     "score": "6,838"
   },
   {
-    "country": "Czechia",
+    "country": "Czech Republic",
     "score": "6,822"
   },
   {
