@@ -7,6 +7,7 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/article" element={<h1>HER KOMMER ARTIKKEL</h1>} />
       </Routes>
     </Layout>
   )
