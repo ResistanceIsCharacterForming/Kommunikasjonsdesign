@@ -328,7 +328,7 @@ footer {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        background-color: white;
+        background-color: var(--white);
         padding: 0;
         gap: 1.5rem;
         width: auto;
@@ -344,8 +344,7 @@ footer {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        background-color: white;
-        padding: 0;
+        background-color: var(--white)
         gap: 1.5rem;
         width: auto;
     }
@@ -384,7 +383,7 @@ footer {
 
     /* Main Article1 */
     .caption span.border {
-        background-color: #484848;
+        background-color: var(--dark-grey);
         opacity: 0.8;
         color: #ffffff;
         padding: 18px;
