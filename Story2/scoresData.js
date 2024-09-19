@@ -384,7 +384,7 @@ const scores = [
     "score": "5,080"
   },
   {
-    "country": "Guinea-Bissau",
+    "country": "Guinea",
     "score": "5,023"
   },
   {
