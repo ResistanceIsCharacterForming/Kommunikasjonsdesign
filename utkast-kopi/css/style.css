@@ -1,3 +1,15 @@
+/* Variabler */
+:root {
+    --white: white;
+    --black: black;
+    --light-grey: rgb(238, 238, 238);
+    --dark-grey: #484848;
+    --red: #c11c1c;
+    --grey: grey;
+    --light-grey-hover: rgb(142, 104, 104);
+    --transparent-black: rgba(0, 0, 0, 0.8);
+}
+
 /* Generelt */
 * {
     -moz-box-sizing: border-box;
@@ -10,28 +22,28 @@ body {
     font-family: sans-serif, Arial;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    color: white;
+    background-color: var(--white);
+    color: var(--white);
     margin: 0;
 }
 
 #body-a1 {
     font-family: Inter, sans-serif;
-    background-color: rgb(238, 238, 238);
-    color: rgb(0, 0, 0);
+    background-color: var(--light-grey);
+    color: var(--black);
 }
 
 /* Header */
 header {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: var(--black);
     height: auto;
     max-width: 100%;
 }
 
 #head {
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 40px;
     margin-top: 60px;
@@ -40,7 +52,7 @@ header {
 /* Navigasjon */
 #menu-toggle {
     font-size: 1.5rem;
-    color: black;
+    color: var(--black);
     max-width: 35px;
     background: none;
     border: none;
@@ -63,7 +75,7 @@ header {
     padding: 0rem 2rem;
     padding-top: 5.5rem;
     width: 250px;
-    background-color: white;
+    background-color: var(--white);
     transform: translateX(100%);
     transition: transform 0.4s ease;
 
@@ -81,7 +93,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    background-color: white;
+    background-color: var(--white);
     position: fixed;
     top: 0;
     right: 0;
@@ -91,16 +103,16 @@ nav {
 
     h2 {
         font-size: 1.7rem;
-        color: black;
+        color: var(--black);
         margin: 0;
     }
 
     a {
-        color: black;
+        color: var(--black);
         text-decoration: none;
 
         &:hover {
-            color: rgb(126, 126, 126);
+            color: var(--light-grey-hover);
         }
     }
 
@@ -109,12 +121,12 @@ nav {
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 1.5rem; 
+        gap: 1.5rem;
     }
 }
 
 nav.hidden {
-    transform: translateY(-100%); 
+    transform: translateY(-100%);
 }
 
 #home {
@@ -134,7 +146,7 @@ nav.hidden {
         flex-direction: column;
         max-width: 600px;
         padding: 1.5rem;
-        background-color: black;
+        background-color: var(--black);
         margin-bottom: 20px;
 
         img {
@@ -146,7 +158,7 @@ nav.hidden {
 
         time {
             font-size: 0.75rem;
-            color: grey;
+            color: var(--grey);
         }
 
         h3 {
@@ -160,7 +172,7 @@ nav.hidden {
         }
 
         a {
-            color: white;
+            color: var(--white);
         }
     }
 }
@@ -175,10 +187,10 @@ nav.hidden {
 }
 
 .content {
-    padding: 65px; 
+    padding: 65px;
     text-align: left;
     letter-spacing: 0.4px;
-  
+
 
     h2 {
         text-align: center;
@@ -241,7 +253,7 @@ nav.hidden {
     letter-spacing: 5px;
     display: inline-block;
     margin-bottom: 1rem;
-    max-width: 80%; 
+    max-width: 80%;
 }
 
 .border2 {
@@ -252,7 +264,7 @@ nav.hidden {
     padding: 1rem;
     margin: 0 auto;
     font-size: 20px;
-    letter-spacing: 5px;    
+    letter-spacing: 5px;
 }
 
 canvas {
@@ -260,7 +272,7 @@ canvas {
     height: auto;
     max-width: 100%;
     margin-top: 3rem;
-} 
+}
 
 /* Main Article 2*/
 
@@ -304,16 +316,16 @@ footer {
     #head {
         padding: 5em;
     }
-    
+
     /* Navigasjon */
     #menu-toggle {
         display: none;
     }
-    
+
     #main-menu {
         position: relative;
         flex-direction: row;
-        justify-content: flex-end; 
+        justify-content: flex-end;
         align-items: center;
         background-color: white;
         padding: 0;
@@ -325,11 +337,11 @@ footer {
             font-size: 1rem;
         }
     }
-    
+
     #main-menu.active {
         position: relative;
         flex-direction: row;
-        justify-content: flex-end; 
+        justify-content: flex-end;
         align-items: center;
         background-color: white;
         padding: 0;
@@ -339,14 +351,14 @@ footer {
 
     nav {
         display: flex;
-        justify-content: space-between; 
-        align-items: center; 
+        justify-content: space-between;
+        align-items: center;
         padding: 2rem;
     }
 
     nav h2 {
-        padding-right: 0; 
-        margin: 0; 
+        padding-right: 0;
+        margin: 0;
     }
 
     nav ul {
@@ -383,7 +395,7 @@ footer {
 
     .border2 {
         display: flex;
-        background-color: #484848;
+        background-color: var(--dark-grey);
         opacity: 0.8;
         color: #ffffff;
         padding: 18px;
@@ -391,16 +403,16 @@ footer {
         letter-spacing: 5px;
         width: 80%;
         margin: 0 auto;
-        
+
     }
 
     .content {
         font-family: Inter, sans-serif;
         justify-content: center;
-    
+
         h2 {
             text-align: center;
-            color: #c11c1c;
+            color: var(--red);
             font-size: 25px;
             letter-spacing: 4px;
             text-transform: uppercase;
@@ -408,14 +420,14 @@ footer {
             max-width: 60%;
             margin: 0 auto;
             padding: 1rem;
-            }
-    
+        }
+
         p {
             max-width: 60%;
             font-size: 1.2rem;
             line-height: 1.5;
             margin: 0 auto;
-            }
+        }
     }
 
     canvas {
