@@ -144,7 +144,7 @@ const scores = [
     "score": "6,421"
   },
   {
-    "country": "Serbia",
+    "country": "Republic of Serbia",
     "score": "6,411"
   },
   {
