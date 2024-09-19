@@ -7,7 +7,6 @@
     --red: #c11c1c;
     --grey: grey;
     --light-grey-hover: rgb(142, 104, 104);
-    --transparent-black: rgba(0, 0, 0, 0.8);
 }
 
 /* Generelt */
@@ -246,7 +245,7 @@ nav.hidden {
 }
 
 .caption span.border {
-    background-color: #484848;
+    background-color: var(--dark-grey);
     opacity: 0.8;
     color: #ffffff;
     padding: 1rem;
@@ -261,7 +260,7 @@ nav.hidden {
     display: flex;
     background-color: var(--dark-grey);
     opacity: 0.8;
-    color: #ffffff;
+    color: var(--white);
     padding: 1rem;
     margin: 0 auto;
     font-size: 20px;
