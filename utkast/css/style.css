@@ -246,6 +246,7 @@ nav.hidden {
 
 .border2 {
     display: flex;
+    justify-content: center;
     background-color: #484848;
     opacity: 0.8;
     color: #ffffff;
