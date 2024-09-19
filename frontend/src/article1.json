@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Article 1",
+        "author": "Author 1",
+        "content": [
+            {
+                "type": "paragraph",
+                "header": "This is the first paragraph header of the article.",
+                "text": "This is the first paragraph of the article."
+            },
+            {
+                "type": "paragraph",
+                "header": "This is the second paragraph header of the article.",
+                "text": "This is the second paragraph of the article."
+            },
+            {
+                "type": "image",
+                "src": "https://example.com/image1.jpg",
+                "alt": "Image 1"
+            }
+        ]
+
+    }
+]
