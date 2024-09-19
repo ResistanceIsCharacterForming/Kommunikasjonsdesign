@@ -97,9 +97,14 @@
             zoom: 0
         })
 
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
             attribution: '<a href="https://openstreetmap.org/copyright">Open Street Map</a>'
         }).addTo(mapMain)
+
+        /*
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '<a href="https://openstreetmap.org/copyright">Open Street Map</a>'
+        }).addTo(mapMain)*/
 
         geojson = L.geoJson(countries, {
             style: style,
