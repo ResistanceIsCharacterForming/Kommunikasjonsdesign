@@ -344,7 +344,7 @@ footer {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        background-color: var(--white)
+        background-color: var(--white);
         gap: 1.5rem;
         width: auto;
     }
