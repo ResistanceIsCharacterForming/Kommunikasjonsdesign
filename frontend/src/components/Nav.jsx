@@ -37,6 +37,9 @@ export default function Nav() {
     }
   }, [])
 
+  const location = window.location.pathname
+  console.log(window)
+
   return (
     <nav>
       <h2>
@@ -47,18 +50,16 @@ export default function Nav() {
       </button>
       <ul id="main-menu">
         <li>
-          <Link to="/" id="home">
-            Hjem
-          </Link>
+          <Link to="/">Hjem</Link>
         </li>
         <li>
-          <Link to="#">Våre artikler</Link>
+          <Link to="/articles">Våre artikler</Link>
         </li>
         <li>
-          <Link to="#">Om oss</Link>
+          <Link to="/about">Om oss</Link>
         </li>
         <li>
-          <Link to="#">Kontakt oss</Link>
+          <Link to="/contact">Kontakt oss</Link>
         </li>
       </ul>
     </nav>

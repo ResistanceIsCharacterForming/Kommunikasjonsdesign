@@ -16,9 +16,9 @@ export default function Card() {
       {articleCards?.map((card, index) => (
         <article key={crypto.randomUUID()}>
           <img src={card.img} alt={card.title} />
-          <h2>{card.title}</h2>
+          <h3>{card.title}</h3>
           <p>{card.text}</p>
-          <Link to="/article">Les mer</Link>
+          <Link to="/articles/article">Les mer</Link>
           <time>{card.date}</time>
         </article>
       ))}

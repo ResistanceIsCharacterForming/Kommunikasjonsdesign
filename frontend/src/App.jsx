@@ -9,10 +9,20 @@ function App() {
 
   return (
     <Layout>
-      <Card />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/article" element={<h1>HER KOMMER ARTIKKEL</h1>} />
+        <Route path="/articles" element={<h3>HER KOMMER ALLE ARTIKLENE</h3>}>
+          <Route
+            path="/articles/article"
+            element={
+              <h3>
+                HER KOMMER DET <strong>EN</strong> ARTIKKEL
+              </h3>
+            }
+          />
+        </Route>
+        <Route path="/about" />
+        <Route path="/contact" />
       </Routes>
     </Layout>
   )
