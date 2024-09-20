@@ -23,6 +23,13 @@ export default function Card() {
       title: "Slik unngår du å bli lurt på nett",
       text: "Svindel på nett er et økende problem",
     },
+    {
+      id: "article4",
+      img: "https://images.unsplash.com/photo-1508277499252-08cd32ea0bf6?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      date: "2024-09-28",
+      title: "Hvordan går det egentlig?",
+      text: "En undersøkelse viser at mange sliter med å få endene til å møtes",
+    },
   ]
 
   return (
