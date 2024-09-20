@@ -1,6 +1,4 @@
 import { useEffect } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom"
 
 export default function Nav() {
@@ -38,16 +36,13 @@ export default function Nav() {
   }, [])
 
   const location = window.location.pathname
-  console.log(window)
 
   return (
     <nav>
       <h2>
         <Link to="/">FNTT</Link>
       </h2>
-      <button id="menu-toggle" aria-label="meny">
-        <FontAwesomeIcon icon={faBars} />
-      </button>
+      <button id="menu-toggle" aria-label="meny"></button>
       <ul id="main-menu">
         <li>
           <Link to="/">Hjem</Link>
