@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
 
 export default function Card() {
-  const articleCard = [
+  const articleCards = [
     {
+      id: 1,
       img: "assets/img/school-7012848_1280.png",
       date: "2024-09-07",
       title: "Fagbrev - En blindvei for unge i arbeidslivet?",
@@ -12,17 +13,15 @@ export default function Card() {
 
   return (
     <>
-      <article>
-        <div className="card">
-          <img src={articleCard[0].img} alt="School" />
-          <div className="card-content">
-            <p>{articleCard[0].date}</p>
-            <h3>{articleCard[0].title}</h3>
-            <p>{articleCard[0].text}</p>
-            <Link to="/article">Les mer</Link>
-          </div>
-        </div>
-      </article>
+      {articleCards?.map((card, index) => (
+        <article key={crypto.randomUUID()}>
+          <img src={card.img} alt={card.title} />
+          <h2>{card.title}</h2>
+          <p>{card.text}</p>
+          <Link to="/article">Les mer</Link>
+          <time>{card.date}</time>
+        </article>
+      ))}
     </>
   )
 }
