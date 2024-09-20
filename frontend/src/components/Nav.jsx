@@ -1,5 +1,7 @@
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function Nav() {
   const navItems = [
@@ -60,7 +62,7 @@ export default function Nav() {
         <Link to="/">FNTT</Link>
       </h2>
       <button id="menu-toggle" aria-label="meny">
-        HAM
+        <FontAwesomeIcon icon={faBars} />
       </button>
       <ul id="main-menu">
         {navItems?.map((item, index) => (
