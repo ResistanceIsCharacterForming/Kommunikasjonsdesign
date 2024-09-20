@@ -200,22 +200,22 @@ nav.hidden {
 }
 
 .bg2 {
-  background-image: url("../assets/img/man-8948930_1280.png");
+  background-image: url("./assets/img/man-8948930_1280.png");
   min-height: 500px;
 }
 
 .bg3 {
-  background-image: url("../assets/img/failure-6115826_1280.jpg");
+  background-image: url("./assets/img/failure-6115826_1280.jpg");
   min-height: 500px;
 }
 
 .bg4 {
-  background-image: url("../assets/img/puzzle-654957_1280.jpg");
+  background-image: url("./assets/img/puzzle-654957_1280.jpg");
   min-height: 500px;
 }
 
 .bg5 {
-  background-image: url("../assets/img/woman-8286277_1280.jpg");
+  background-image: url("./assets/img/woman-8286277_1280.jpg");
   min-height: 500px;
 }
 
