@@ -2,6 +2,21 @@ import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 export default function Nav() {
+  const navItems = [
+    {
+      name: "Hjem",
+      url: "/",
+    },
+    {
+      name: "Om oss",
+      url: "/about",
+    },
+    {
+      name: "Kontakt oss",
+      url: "/contact",
+    },
+  ]
+
   const toggleMenu = () => {
     const mainMenu = document.getElementById("main-menu")
     mainMenu.classList.toggle("active")
@@ -35,6 +50,8 @@ export default function Nav() {
     }
   }, [])
 
+  console.log(navItems)
+
   const location = window.location.pathname
 
   return (
@@ -42,20 +59,20 @@ export default function Nav() {
       <h2>
         <Link to="/">FNTT</Link>
       </h2>
-      <button id="menu-toggle" aria-label="meny"></button>
+      <button id="menu-toggle" aria-label="meny">
+        HAM
+      </button>
       <ul id="main-menu">
-        <li>
-          <Link to="/">Hjem</Link>
-        </li>
-        <li>
-          <Link to="/articles">Våre artikler</Link>
-        </li>
-        <li>
-          <Link to="/about">Om oss</Link>
-        </li>
-        <li>
-          <Link to="/contact">Kontakt oss</Link>
-        </li>
+        {navItems?.map((item, index) => (
+          <li key={index}>
+            <Link
+              to={item.url}
+              className={location === item.url ? "active" : ""}
+            >
+              {item.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   )
