@@ -24,10 +24,11 @@ export default function Nav() {
     mainMenu.classList.toggle("active")
   }
 
+  let lastScrollY = window.scrollY
+
   const handleScroll = () => {
     const nav = document.querySelector("nav")
     const mainMenu = document.getElementById("main-menu")
-    let lastScrollY = window.scrollY
 
     if (!mainMenu.classList.contains("active")) {
       if (window.scrollY > lastScrollY) {

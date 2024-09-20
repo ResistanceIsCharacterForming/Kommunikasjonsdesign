@@ -9,6 +9,20 @@ export default function Card() {
       title: "Fagbrev - En blindvei for unge i arbeidslivet?",
       text: "Er du ung, har ambisjoner, jobbet hardt – men opplever at ting likevel ikke går som planlagt? Dette er realiteten for mange som tar fagbrev i Norge...",
     },
+    {
+      id: "article2",
+      img: "https://images.unsplash.com/photo-1586115457457-b3753fe50cf1?q=80&w=3188&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      date: "2024-09-14",
+      title: "Hvordan lykkes med hjemmekontor?",
+      text: "Pandemien har endret arbeidshverdagen for mange",
+    },
+    {
+      id: "article3",
+      img: "https://images.unsplash.com/photo-1635907487589-4b8b2a63f704?q=80&w=3059&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      date: "2024-09-21",
+      title: "Slik unngår du å bli lurt på nett",
+      text: "Svindel på nett er et økende problem",
+    },
   ]
 
   return (
