@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom'
 import { Route, Routes } from "react-router-dom"
 import Layout from "./components/Layout"
 import Home from "./components/Home"
@@ -20,6 +21,7 @@ function App() {
   console.log(window)
 
   return (
+    <BrowserRouter basename="/Kommunikasjonsdesign">
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -29,6 +31,7 @@ function App() {
         <Route path="/contact" />
       </Routes>
     </Layout>
+    </BrowserRouter>
   )
 }
 
