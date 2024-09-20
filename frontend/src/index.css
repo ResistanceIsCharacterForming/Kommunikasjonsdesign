@@ -27,16 +27,15 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  background-color: black;
   height: auto;
   max-width: 100%;
 }
 
 #head {
+  background-color: black;
   color: white;
   text-align: center;
   padding: 40px;
-  margin-top: 60px;
 }
 
 /* Navigasjon */
