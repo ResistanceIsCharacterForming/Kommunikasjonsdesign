@@ -3,6 +3,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -128,6 +129,7 @@ nav.hidden {
   margin: 0;
 
   article {
+    color: white;
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -149,7 +151,7 @@ nav.hidden {
 
     h3 {
       margin-bottom: 0;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     p {
@@ -158,7 +160,12 @@ nav.hidden {
     }
 
     a {
-      color: white;
+      color: blue;
+      text-decoration: none;
+      transition: color 0.3s;
+      &:hover {
+        color: lightblue;
+      }
     }
   }
 }
@@ -193,7 +200,7 @@ nav.hidden {
 }
 
 .bg1 {
-  background-image: url("../assets/img/school-7012848_1280.png");
+  background-image: url("./assets/img/school-7012848_1280.png");
   min-height: 650px;
 }
 
