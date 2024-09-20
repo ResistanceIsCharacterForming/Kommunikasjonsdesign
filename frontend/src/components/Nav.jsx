@@ -1,7 +1,7 @@
 import { useEffect } from "react"
-import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Link, useLocation } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 export default function Nav() {
   const navItems = [
@@ -52,9 +52,7 @@ export default function Nav() {
     }
   }, [])
 
-  console.log(navItems)
-
-  const location = window.location.pathname
+  const location = useLocation()
 
   return (
     <nav>
@@ -69,7 +67,7 @@ export default function Nav() {
           <li key={index}>
             <Link
               to={item.url}
-              className={location === item.url ? "active" : ""}
+              className={location.pathname === item.url ? "active" : ""}
             >
               {item.name}
             </Link>
