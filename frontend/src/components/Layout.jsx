@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       </header>
       <main>{children}</main>
       <footer>
-        <p>&copy; 2024</p>
+        <p>&copy; FNTT Kommunikasjonsdesign Høst 2024 (Gruppe 13)</p>
       </footer>
     </>
   )
