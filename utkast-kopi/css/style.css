@@ -305,6 +305,7 @@ canvas {
 
 .article-content {
     max-width: 800px;
+    overflow: hidden;
     margin: 0 auto;
     padding: 2rem 1rem;
 
