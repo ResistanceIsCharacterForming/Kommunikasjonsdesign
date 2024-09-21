@@ -12,7 +12,17 @@
     crossorigin=""></script>
 
     <style>
-        #mapContainer { width: 800px; height: 600px; }
+        #mapContainer {
+            height: 100%;
+            width: 100%;
+        }
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
     </style>
 
     <title>Map Cheat Sheet</title>
@@ -34,7 +44,7 @@
                 d > 5  ? '#92c5de' :
                 d > 3  ? '#ff7e00' :
                 d > 1  ? '#ca0020' :
-                          '#A9A9A9';
+                          '#A9A9A9'
         }
 
         function style(feature) {
@@ -73,7 +83,6 @@
 
         function resetHighlight(e) {
             geojson.resetStyle(e.target)
-
             info.update()
         }
         
@@ -91,17 +100,44 @@
 
         let mapMain = L.map('mapContainer', {
             center: [centerLat, centerLong],
-            zoom: 0
+            zoom: 0,
         })
+
+        const modifyNav = (lock) => {
+            toModify = [
+                mapMain.zoomControl,
+                mapMain.boxZoom,
+                mapMain.doubleClickZoom,
+                mapMain.dragging,
+                mapMain.keyboard,
+                mapMain.scrollWheelZoom,
+                mapMain.touchZoom
+            ]
+
+            if (lock === true) {
+                for (let i = 0; i < toModify.length; i++) {
+                    toModify[i].disable()
+                }
+            } else {
+                for (let i = 0; i < toModify.length; i++) {
+                    toModify[i].enable()
+                }
+            }
+        }
+
+        modifyNav(true)
+
+        const modifyControls = (lock) => {
+            if (lock === true) {
+                info.removeFrom(mapMain)
+            } else {
+                mapMain.addControl( L.zoomControl );
+            }
+        }
 
         mapMain.createPane('labels')
         mapMain.getPane('labels').style.zIndex = 650
         mapMain.getPane('labels').style.pointerEvents = 'none'
-
-        /*
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '<a href="https://openstreetmap.org/copyright">Open Street Map</a>'
-        }).addTo(mapMain)*/
 
         geojson = L.geoJson(countries, {
             style: style,
@@ -119,7 +155,6 @@
         // method that we will use to update the control based on feature properties passed
         info.update = function (props) {
             return
-
             this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
                 '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
                 : 'Hover over a state');
@@ -134,6 +169,26 @@
             pane: 'labels',
             noWrap: true
         }).addTo(mapMain)
+
+
+
+        const body = document.body, html = document.documentElement;
+
+        const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight)
+
+        let scrolled = 0;
+
+        function onScroll(direction) {
+            direction === "up" ? scrolled+=10 : scrolled-=10
+                if (scrolled > (height/2)) {
+                    mapMain.flyTo([62.1983366 , 17.5671981], 4)
+                }
+            console.log(scrolled)
+        }
+
+        L.DomEvent.on(mapMain.getContainer(), 'wheel', function(e) {
+            onScroll(e.deltaY < 0 ? "up" : "down")
+        })
 
     </script>
     
