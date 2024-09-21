@@ -1,13 +1,14 @@
 {
   "name": "frontend",
   "homepage": "https://ResistanceIsCharacterForming.github.io/Kommunikasjonsdesign",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
+    "start": "vite start",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
