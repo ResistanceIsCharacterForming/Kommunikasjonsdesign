@@ -7,6 +7,9 @@ export default function Layout({ children }) {
         <Nav />
       </header>
       <main>{children}</main>
+      <footer>
+        <p>&copy; 2024</p>
+      </footer>
     </>
   )
 }

@@ -3,6 +3,7 @@ import Layout from "./components/Layout"
 import Home from "./components/Home"
 import { useEffect, useState } from "react"
 import Article1 from "./pages/article1"
+import Article2 from "./pages/article2"
 
 function App() {
   const [article, setArticle] = useState(null)
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/articles" element={<h3>HER KOMMER ALLE ARTIKLENE</h3>} />
         <Route path="/articles/article1" element={<Article1 />} />
+        <Route path="/articles/article2" element={<Article2 />} />
         <Route path="/about" />
         <Route path="/contact" />
       </Routes>
