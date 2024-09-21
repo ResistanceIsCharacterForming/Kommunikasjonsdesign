@@ -336,9 +336,27 @@ canvas {
 
 .lykkeindex {
     margin: 1rem 0;
-    text-align: left;
     line-height: 1.3;
+    font-size: 13px;
+}
 
+.portrait {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 1rem auto; 
+}
+
+figcaption {
+    font-size: 12px;  
+    text-align: left;
+    margin-top: 0.5rem;
 }
 
 /* Animations */

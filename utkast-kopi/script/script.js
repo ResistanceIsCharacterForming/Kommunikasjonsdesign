@@ -87,3 +87,8 @@ const ctx1 = document.getElementById('chart1')
                 }
             }
         })
+        
+        AOS.init();
+
+
+
