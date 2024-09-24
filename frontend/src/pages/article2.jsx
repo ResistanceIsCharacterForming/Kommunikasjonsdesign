@@ -119,7 +119,7 @@ export default function Article2() {
                         hvordan nasjoner rangeres på den globale lykkeskalaen, og resultatene utfordrer våre
                         antakelser om hva som virkelig bidrar til et lykkelig samfunn.
                     </p>
-                    
+                    {/*Datawrapper-visualisering*/}
                     <div className="data-visualization" data-aos="zoom-in">
                         <figcaption className="lykkeindex">
                             Kartet viser den globale lykkeindeksen for 2024, der land er fargekodet fra rødt (lavest lykkenivå) til blått (høyest lykkenivå).
