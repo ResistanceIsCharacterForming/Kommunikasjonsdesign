@@ -236,6 +236,7 @@ nav.hidden {
       font-size: 25px;
       letter-spacing: 4px;
       text-transform: uppercase;
+      line-height: 1.5;
   }
 
   p {
