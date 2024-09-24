@@ -1,34 +1,49 @@
 {
-  "hash": "849a0569",
-  "configHash": "15c2a61f",
-  "lockfileHash": "2bd7cc6b",
-  "browserHash": "f12dbf9c",
+  "hash": "b1325a0f",
+  "configHash": "d75bcd5b",
+  "lockfileHash": "be01e177",
+  "browserHash": "73e9c08b",
   "optimized": {
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "0a5c35c9",
+      "fileHash": "dd21abd2",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "61893731",
+      "fileHash": "125f767e",
       "needsInterop": false
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "da066194",
+      "fileHash": "d8526e5f",
       "needsInterop": true
+    },
+    "@fortawesome/react-fontawesome": {
+      "src": "../../node_modules/@fortawesome/react-fontawesome/index.es.js",
+      "file": "@fortawesome_react-fontawesome.js",
+      "fileHash": "1cce28ec",
+      "needsInterop": false
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "69f2149d",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-QPG7G3M7": {
-      "file": "chunk-QPG7G3M7.js"
+    "chunk-HCGKX5ED": {
+      "file": "chunk-HCGKX5ED.js"
     },
-    "chunk-UTEJFLXC": {
-      "file": "chunk-UTEJFLXC.js"
+    "chunk-WNPTCGAH": {
+      "file": "chunk-WNPTCGAH.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
     }
   }
 }
