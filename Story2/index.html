@@ -15,13 +15,46 @@
         #mapContainer {
             height: 100%;
             width: 100%;
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
 
         html, body{
             margin: 0;
             padding: 0;
-            height: 100%;
+            height: 300%;
             width: 100%;
+            position: relative;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+        }
+
+        .content {
+            position: absolute;
+            z-index: 5;
+            height: 100vh;
+            left: 50%;
+            bottom: 20px;
+            transform: translate(-50%, -10%);
+            margin: 0 auto;
+        }
+
+        .text {
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        #scrollable {
+            position: absolute;
+            z-index: 10;
+            height: 200vh;
+            width: 100%;
+        }
+
+        .vanish {
+            display: none;
         }
     </style>
 
@@ -29,6 +62,29 @@
 </head>
 <body>
 
+    <section id="scrollable">
+        <div class="content" id="box-0">
+            <article class="text"><h2>Er det noe poeng i lykke egentlig?</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris a augue semper varius. Etiam viverra felis interdum velit venenatis tristique. Sed at ante sagittis nisi rutrum blandit. Mauris vehicula sit amet nibh eget sodales. Vestibulum mollis accumsan convallis.</p></article>
+        </div>
+        <div class="content vanish" id="box-1">
+            <article class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris a augue semper varius. Etiam viverra felis interdum velit venenatis tristique. Sed at ante sagittis nisi rutrum blandit. Mauris vehicula sit amet nibh eget sodales. Vestibulum mollis accumsan convallis.</p></article>
+        </div>
+        <div class="content vanish" id="box-2">
+            <article class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris a augue semper varius. Etiam viverra felis interdum velit venenatis tristique. Sed at ante sagittis nisi rutrum blandit. Mauris vehicula sit amet nibh eget sodales. Vestibulum mollis accumsan convallis.</p></article>
+        </div>
+        <div class="content vanish" id="box-3">
+            <article class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris a augue semper varius. Etiam viverra felis interdum velit venenatis tristique. Sed at ante sagittis nisi rutrum blandit. Mauris vehicula sit amet nibh eget sodales. Vestibulum mollis accumsan convallis.</p></article>
+        </div>
+        <div class="content vanish" id="box-4">
+            <article class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris a augue semper varius. Etiam viverra felis interdum velit venenatis tristique. Sed at ante sagittis nisi rutrum blandit. Mauris vehicula sit amet nibh eget sodales. Vestibulum mollis accumsan convallis.</p></article>
+        </div>
+        <div class="content vanish" id="box-5">
+            <article class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris a augue semper varius. Etiam viverra felis interdum velit venenatis tristique. Sed at ante sagittis nisi rutrum blandit. Mauris vehicula sit amet nibh eget sodales. Vestibulum mollis accumsan convallis.</p></article>
+        </div>
+        <div class="content vanish" id="box-6">
+            <article class="text"><p>BOX 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris a augue semper varius. Etiam viverra felis interdum velit venenatis tristique. Sed at ante sagittis nisi rutrum blandit. Mauris vehicula sit amet nibh eget sodales. Vestibulum mollis accumsan convallis.</p></article>
+        </div>
+    </section>
     <section id="mapContainer"></section>
 
     <script type="text/javascript" src="countriesData.js"></script>
@@ -47,7 +103,7 @@
                           '#A9A9A9'
         }
 
-        function style(feature) {
+        function style(feature, isHighlighted = false) {
             let score = 0
 
             let thisScore = scores.find(item => item.country === feature.properties.ADMIN)
@@ -58,32 +114,27 @@
 
             return {
                 fillColor: getColor(score),
-                weight: 2,
+                weight: isHighlighted ? 4 : 2,
                 opacity: 1,
-                color: 'white',
-                dashArray: '3',
-                fillOpacity: 0.7
-            };
+                color: isHighlighted ? 'purple' : 'white',
+                dashArray: ' ',
+                fillOpacity: isHighlighted ? 1 : 0.7
+            }
         }
 
         function highlightFeature(e) {
             let layer = e.target;
-
             layer.setStyle({
                 weight: 1.5,
                 color: '#000',
                 dashArray: '',
                 fillOpacity: 0.7
-            });
-
+            })
             layer.bringToFront()
-
-            info.update(layer.feature.properties)
         }
 
         function resetHighlight(e) {
             geojson.resetStyle(e.target)
-            info.update()
         }
         
         function zoomToFeature(e) {
@@ -95,12 +146,12 @@
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
                 click: zoomToFeature
-            });
+            })
         }
 
         let mapMain = L.map('mapContainer', {
             center: [centerLat, centerLong],
-            zoom: 0,
+            zoom: 0
         })
 
         const modifyNav = (lock) => {
@@ -144,24 +195,6 @@
             onEachFeature: onEachFeature
         }).addTo(mapMain)
 
-        let info = L.control();
-
-        info.onAdd = function (map) {
-            this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-            this.update();
-            return this._div;
-        };
-
-        // method that we will use to update the control based on feature properties passed
-        info.update = function (props) {
-            return
-            this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-                '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
-                : 'Hover over a state');
-        };
-
-        info.addTo(mapMain)
-
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
             subdomains: 'abcd',
@@ -170,25 +203,95 @@
             noWrap: true
         }).addTo(mapMain)
 
+        let highlightedCountry = null
 
+        let countryIndex = 0
 
-        const body = document.body, html = document.documentElement;
+        countryCords = [
+            [62.1983366, 17.5671981],
+            [51.1642292, 10.4541194],
+            [46.71109, 1.7191036],
+            [41.29246, 12.5736108],
+            [33.7931605, 9.5607653],
+            [64.9146659, 26.0672554]
+        ]
+        countryNames = [
+            "Sweden",
+            "Germany",
+            "France",
+            "Italy",
+            "Tunisia",
+            "Finland"
+        ]
 
-        const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight)
+        const goNext = () => {
+            oldIndex = countryIndex
+            newIndex = oldIndex+1
 
-        let scrolled = 0;
+            unWatch(`box-${oldIndex}`)
 
-        function onScroll(direction) {
-            direction === "up" ? scrolled+=10 : scrolled-=10
-                if (scrolled > (height/2)) {
-                    mapMain.flyTo([62.1983366 , 17.5671981], 4)
+            const oldBox = document.getElementById(`box-${oldIndex}`)
+
+            if (newIndex > countryCords.length) {
+                oldBox.classList.add("vanish")
+                modifyNav(false)
+                highlightedCountry = null
+                geojson.setStyle(feature => style(feature, feature.properties.ADMIN === highlightedCountry))
+                return
+            }
+            
+            if (countryIndex < countryCords.length) {
+                highlightedCountry = countryNames[countryIndex]
+
+                if (highlightedCountry !== null) {
+                    geojson.setStyle(feature => style(feature, feature.properties.ADMIN === highlightedCountry))
                 }
-            console.log(scrolled)
+
+                mapMain.flyTo(countryCords[countryIndex], 4)
+
+                setWatch(`box-${newIndex}`)
+
+                const newBox = document.getElementById(`box-${newIndex}`)
+                const oldBoxH = oldBox.offsetHeight
+                const oldBox0T = oldBox.offsetTop
+                const newTop = oldBox0T + oldBoxH + 20
+                newBox.style.top = newTop + "px"
+
+                oldBox.classList.add("vanish")
+                newBox.classList.remove("vanish")
+
+                countryIndex++
+            }
+        } 
+
+        const callback = (entries, observer) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                goNext()
+                unWatch("box-0")
+            }
+            })
         }
 
-        L.DomEvent.on(mapMain.getContainer(), 'wheel', function(e) {
-            onScroll(e.deltaY < 0 ? "up" : "down")
-        })
+        const options = {
+            root: null,
+            rootMargin: "0px 0px -100% 0px",
+            threshold: 0,
+        }
+
+        const observer = new IntersectionObserver(callback, options)
+
+        const setWatch = (id) => { 
+            const target = document.getElementById(id);
+            observer.observe(target)
+        }
+
+        const unWatch = (id) => {
+            const target = document.getElementById(id);
+            observer.unobserve(target)
+        }
+
+        setWatch("box-0")
 
     </script>
     
