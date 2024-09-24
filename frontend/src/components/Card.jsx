@@ -41,6 +41,7 @@ export default function Card() {
             <time>{card.date}</time>
             <h3>{card.title}</h3>
             <p>{card.text}</p>
+            {/* Om vi ønsker ha med "Les mer"-knapp */}
             <Link to={`/articles/${card.id}`} className="read-more-btn">
               Les mer
             </Link>
