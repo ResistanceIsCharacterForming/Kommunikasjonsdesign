@@ -314,6 +314,12 @@ canvas {
   margin-top: 3rem;
 }
 
+.chart1fig, .chart2fig {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
 /* Main Article 2*/
 
 .article-header {

@@ -125,7 +125,7 @@ export default function Article1() {
         </p>
         <figure>
           <canvas data-aos="fade-up" id="chart1"></canvas>
-          <figcaption>
+          <figcaption className='chart1fig'>
             Figur 1: Statistikk over arbeidsmarkedet for fagbrevkandidater.
             Generert med Chart.js.
           </figcaption>
@@ -148,7 +148,7 @@ export default function Article1() {
         </p>
         <figure>
           <canvas data-aos="fade-up" id="chart2"></canvas>
-          <figcaption>
+          <figcaption className='chart2fig'>
             Figur 2: Arbeidsledighetsnivået i Norge og dets sammenheng med
             psykisk helse. Generert med Chart.js
           </figcaption>
