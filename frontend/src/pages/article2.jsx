@@ -3,8 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Article2() {
-    const dataWrapperRef = useRef(null); // Bruker useRef for bedre håndtering av DOM-elementer
-
     useEffect(() => {
         // Initialiserer AOS for animasjoner
         AOS.init({
@@ -12,25 +10,10 @@ export default function Article2() {
             once: true,
             offset: 50,
         });
-
-        // Legger til Datawrapper-skriptet for å vise visualiseringen
-        const script = document.createElement("script");
-        script.src = "https://datawrapper.dwcdn.net/nLQfN/embed.js";
-        script.async = true;
-        script.charSet = "utf-8";
-
-        // Finner containeren for Datawrapper
-        if (dataWrapperRef.current) {
-            dataWrapperRef.current.appendChild(script);
-        }
-
-        // Rydder opp ved avmontering av komponenten
-        return () => {
-            if (dataWrapperRef.current) {
-                dataWrapperRef.current.removeChild(script);
-            }
-        };
     }, []);
+    
+
+        // Legge til Datawrapper-visualisering
 
     return (
         <article>
@@ -54,8 +37,7 @@ export default function Article2() {
                     <p>
                         <a href="https://www.forskning.no/lykke-ntb/norge-minst-lykkelige-i-norden-nok-en-gang/2341299">
                             Forskning.no
-                        </a> 
-                        sin siste rapport kaster lys over situasjonen. Til tross for et robust velferdssystem og økonomisk stabilitet,
+                        </a> sin siste rapport kaster lys over situasjonen. Til tross for et robust velferdssystem og økonomisk stabilitet,
                         virker det som om noe mangler i nordmenns liv. Stress, høy arbeidsbelastning og en prestasjonskultur pekes ut som mulige syndebukker.
                         Er vi i ferd med å ofre vår lykke på karrierens alter?
                     </p>
@@ -139,8 +121,6 @@ export default function Article2() {
                     </p>
                     
                     <div className="data-visualization" data-aos="zoom-in">
-                        {/* Div-container for Datawrapper-visualisering */}
-                        <div ref={dataWrapperRef}></div>
                         <figcaption className="lykkeindex">
                             Kartet viser den globale lykkeindeksen for 2024, der land er fargekodet fra rødt (lavest lykkenivå) til blått (høyest lykkenivå).
                             Skalaen går fra 1.72 til 7.74, noe som indikerer en betydelig variasjon i opplevd lykke verden over.
