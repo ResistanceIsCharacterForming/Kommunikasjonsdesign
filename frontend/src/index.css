@@ -281,7 +281,9 @@ nav.hidden {
   padding: 1rem;
   margin: 0 auto;
   font-size: 20px;
-  letter-spacing: 5px;
+  width: 80%;
+  letter-spacing: 4px;
+  line-height: 1.5;
 }
 
 canvas {
