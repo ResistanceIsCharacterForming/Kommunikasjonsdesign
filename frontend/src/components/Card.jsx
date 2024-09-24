@@ -35,15 +35,16 @@ export default function Card() {
   return (
     <>
       <div id="front-main">
-        {articleCards?.map((card, index) => (
-          <Link key={crypto.randomUUID()} to={`/articles/${card.id}`}>
-            <article className="articleCards">
-              <img src={card.img} alt={card.title} />
-              <time>{card.date}</time>
-              <h3>{card.title}</h3>
-              <p>{card.text}</p>
-            </article>
-          </Link>
+        {articleCards?.map((card) => (
+          <article className="articleCards" key={card.id}>
+            <img src={card.img} alt={card.title} />
+            <time>{card.date}</time>
+            <h3>{card.title}</h3>
+            <p>{card.text}</p>
+            <Link to={`/articles/${card.id}`} className="read-more-btn">
+              Les mer
+            </Link>
+          </article>
         ))}
       </div>
     </>
