@@ -6,10 +6,8 @@ import 'aos/dist/aos.css';
 //Lage som egen komponent
 export default function Article1() {
   useEffect(() => {
-    // Initialiser AOS
     AOS.init();
 
-    // Initialiser Chart.js for chart1
     const ctx1 = document.getElementById('chart1').getContext('2d');
     new Chart(ctx1, {
       type: 'line',
@@ -50,7 +48,6 @@ export default function Article1() {
       },
     });
 
-    // Initialiser Chart.js for chart2
     const ctx2 = document.getElementById('chart2').getContext('2d');
     new Chart(ctx2, {
       type: 'bar',
