@@ -326,7 +326,7 @@ canvas {
 .article-header {
   background-color: var(--blue);
   color: var(--light-grey);
-  padding: 7rem 0;
+  padding: 5rem 0;
   padding-bottom: 4rem;
   text-align: center;
 }
