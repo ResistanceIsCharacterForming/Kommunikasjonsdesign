@@ -65,8 +65,8 @@ export default function Article2() {
                         </p>
                     </blockquote>
                     <p>Men det stopper ikke der. Olivia understreker betydningen av sterke sosiale bånd:
-                        "Vår lykke bygger på fellesskap og gjensidig støtte. Det handler ikke bare om penger,
-                        men om å vite at du har et nettverk som støtter deg."
+                        "Vi bygger vår lykke på fellesskap og gjensidig støtte. Det handler ikke bare om økonomisk velstand, 
+                        men om å vite at du har et nettverk av mennesker som alltid er der for deg."
                     </p>
                     <figure>
                         <img className="portrait" src="/src/assets/img/woman-1274056_1280.jpg" alt="Olivia Halonen" />
