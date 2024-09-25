@@ -7,18 +7,6 @@ import Article1 from "./pages/article1"
 function App() {
   const [article, setArticle] = useState(null)
 
-  const fetchAllArticles = async () => {
-    fetch("./articles.json").then((data) => {
-      console.log(data)
-    })
-  }
-
-  useEffect(() => {
-    fetchAllArticles()
-  }, [])
-
-  console.log(window)
-
   return (
     <Layout>
       <Routes>
