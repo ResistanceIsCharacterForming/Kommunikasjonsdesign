@@ -176,7 +176,7 @@ export default function Article2() {
 
         {/* Top 7 landene */}
         <section data-aos="fade-up">
-          <h2 className="section-title">Top 7 lykkeligste landene</h2>
+          <h2 className="section-title">Top 7 lykkeligste land</h2>
           <article className="country-boxes">
             {/* Finland */}
             <section className="country-box" data-aos="fade-up">
@@ -184,7 +184,7 @@ export default function Article2() {
               <p>
                 Finland topper lykkesrangeringene på grunn av lav
                 inntektsulikhet, høy sosial støtte, og frihet til å ta egne valg.
-                Landet har også lav korrupsjon og et sterkt velferdssystem [1].
+                Landet har også lav korrupsjon og et sterkt velferdssystem <a href="https://theconversation.com/why-finland-is-the-happiest-country-in-the-world-an-expert-explains-203016">[1]</a>.
               </p>
             </section>
 
@@ -194,7 +194,7 @@ export default function Article2() {
               <p>
                 Dansker er kjent for sin "hygge"-kultur, som fremmer koselige og
                 intime sosiale samlinger. Landet har også høy sosial likhet, lav
-                kriminalitet, og et robust velferdssystem [2] [3].
+                kriminalitet, og et robust velferdssystem <a href="https://www.weforum.org/agenda/2018/03/why-denmark-dominates-the-world-happiness-report-rankings-year-after-year/">[2]</a> <a href="https://denmark.dk/people-and-culture/happiness">[3]</a>.
               </p>
             </section>
 
@@ -204,7 +204,7 @@ export default function Article2() {
               <p>
                 Island har en sterk følelse av fellesskap og sosial støtte.
                 Landet er kjent for sin naturskjønnhet, som gir innbyggerne
-                muligheter til å koble av og nyte friluftsliv [5].
+                muligheter til å koble av og nyte friluftsliv <a href="edgeservices.bing.com/edgesvc/redirect?url=https%3A%2F%2Fwww.bbc.com%2Ftravel%2Farticle%2F20160509-the-truth-about-icelandic-happiness&hash=jUchmmPupFeStq96FZU9Lv%2F8wTs62pa4hgBDJtbgjdg%3D&key=psc-underside&usparams=cvid%3A51D%7CBingProd%7C3F011BAE49276A61BA107ACA31F086269E0A9BF09778AC9739FF712433DF5681%5Ertone%3ACreative">[4]</a>.
               </p>
             </section>
 
@@ -214,7 +214,7 @@ export default function Article2() {
               <p>
                 Sverige har en god balanse mellom arbeid og fritid, med fleksible
                 arbeidsordninger og generøse foreldrepermisjoner. Landet har også
-                høy tillit til offentlige institusjoner og lav korrupsjon [26].
+                høy tillit til offentlige institusjoner og lav korrupsjon <a href="https://worldhappiness.report/ed/2020/the-nordic-exceptionalism-what-explains-why-the-nordic-countries-are-constantly-among-the-happiest-in-the-world/">[5]</a> <a href="https://www.weforum.org/agenda/2019/05/sweden-is-a-top-performer-on-well-being-here-s-why/">[6]</a>.
               </p>
             </section>
 
@@ -224,7 +224,7 @@ export default function Article2() {
               <p>
                 Israel scorer høyt på livstilfredshet, økonomi, helse og sosial
                 støtte. Landet har også en sterk følelse av nasjonal stolthet og
-                optimisme [12] [14].
+                optimisme <a href="http://edgeservices.bing.com/edgesvc/redirect?url=https%3A%2F%2Fwww.israel21c.org%2Fwhy-israelis-are-so-happy-and-how-we-can-all-feel-happier%2F&hash=KJnxZNIN%2FU%2BNkHjT%2F9XtqDK76G5O9kFOmNxxrDWoze8%3D&key=psc-underside&usparams=cvid%3A51D%7CBingProd%7C3F011BAE49276A61BA107ACA31F086269E0A9BF09778AC9739FF712433DF5681%5Ertone%3ACreative">[7]</a>.
               </p>
             </section>
 
@@ -235,7 +235,7 @@ export default function Article2() {
                 Nederland har høye nivåer av sosial støtte og tillit til
                 offentlige institusjoner. Landet er kjent for sin pragmatiske
                 tilnærming til livets utfordringer og en kultur som verdsetter
-                individuell frihet [8].
+                individuell frihet <a href="https://dutchreview.com/expat/dutch-mindset-secret-to-happiness/">[8]</a>.
               </p>
             </section>
 
@@ -245,7 +245,7 @@ export default function Article2() {
               <p>
                 Norge har et høyt BNP per innbygger, god sosial støtte og høy
                 forventet levealder. Landet scorer også høyt på frihet til å ta
-                egne valg og har lav korrupsjon [17].
+                egne valg og har lav korrupsjon <a href="https://worldhappiness.report/ed/2020/the-nordic-exceptionalism-what-explains-why-the-nordic-countries-are-constantly-among-the-happiest-in-the-world/">[9]</a>.
               </p>
             </section>
           </article>
