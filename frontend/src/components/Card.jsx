@@ -4,7 +4,7 @@ export default function Card() {
   const articleCards = [
     {
       id: "article1",
-      img: "../src/assets/img/school-7012848_1280.png",
+      img: "src/assets/img/school-7012848_1280.png",
       date: "2024-09-07",
       title: "Fagbrev - En blindvei for unge i arbeidslivet?",
       text: "Er du ung, har ambisjoner, jobbet hardt – men opplever at ting likevel ikke går som planlagt? Dette er realiteten for mange som tar fagbrev i Norge...",
