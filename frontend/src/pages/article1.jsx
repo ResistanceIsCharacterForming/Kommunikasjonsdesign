@@ -6,10 +6,6 @@ import "aos/dist/aos.css"
 // Linjediagram
 const LineChart = ({ id, labels, datasets }) => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
-  useEffect(() => {
     const ctx = document.getElementById(id).getContext("2d")
     new Chart(ctx, {
       type: "line",
@@ -60,6 +56,7 @@ const BarChart = ({ id, labels, datasets }) => {
 // Hovedkomponenten
 export default function Article1() {
   useEffect(() => {
+    window.scrollTo(0, 0)
     AOS.init()
   }, [])
 

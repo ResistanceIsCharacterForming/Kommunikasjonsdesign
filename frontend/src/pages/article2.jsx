@@ -91,7 +91,6 @@ export default function Article2() {
             <figcaption className="txt-portrait">Foto: Olivia Halonen</figcaption>
           </figure>
         </section>
-
         {/* Seksjon 4 */}
         <section data-aos="fade-left">
           <h2 className="section-title">Andrea's norske realitet</h2>
@@ -114,7 +113,7 @@ export default function Article2() {
           <figure>
             <img
               className="portrait"
-              src="/src/assets/img/woman-8552807_1280.jpg"
+              src="../public/assets/img/woman.jpg"
               alt="Andrea Johnsen"
             />
             <figcaption className="txt-portrait">Foto: Andrea Johnsen</figcaption>
