@@ -1,25 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 import Layout from "./components/Layout"
 import Home from "./components/Home"
-import { useEffect, useState } from "react"
 import Article1 from "./pages/article1"
 import Article2 from "./pages/article2"
 
 function App() {
-  const [article, setArticle] = useState(null)
-
-  const fetchAllArticles = async () => {
-    fetch("./articles.json").then((data) => {
-      console.log(data)
-    })
-  }
-
-  useEffect(() => {
-    fetchAllArticles()
-  }, [])
-
-  console.log(window)
-
   return (
     <Layout>
       <Routes>

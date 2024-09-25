@@ -11,7 +11,7 @@ export default function Nav() {
     },
     {
       name: "Om oss",
-      url: "Kommunikasjonsdesign/about",
+      url: "/about",
     },
     {
       name: "Kontakt oss",
