@@ -13,6 +13,9 @@ export default function Article2() {
   }, [])
 
   // Legge til Datawrapper-visualisering
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <article>
