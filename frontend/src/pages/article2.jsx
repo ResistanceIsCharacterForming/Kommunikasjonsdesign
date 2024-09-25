@@ -70,17 +70,14 @@ export default function Article2() {
           </p>
           <blockquote className="quote" data-aos="fade-left">
             <p>
-              "I Finland er balanse nøkkelen," forklarer hun. "Vi elsker naturen
-              og ser på friluftsliv som vår hemmelige ingrediens for velvære.
-              Enten det er en skogstur eller en stille stund ved innsjøen,
-              finner vi ro i det enkle."
+            "I Finland er balanse nøkkelen," forteller hun. 
+            "Vi har en dyp kjærlighet for naturen, og friluftsliv er ofte vår oppskrift på velvære. 
+            Enten det er en tur i skogen eller en rolig stund ved innsjøen, finner vi fred i de enkle tingene."
             </p>
           </blockquote>
           <p>
             Men det stopper ikke der. Olivia understreker betydningen av sterke
-            sosiale bånd: "Vi bygger vår lykke på fellesskap og gjensidig
-            støtte. Det handler ikke bare om økonomisk velstand, men om å vite
-            at du har et nettverk av mennesker som alltid er der for deg."
+            sosiale bånd: "Vår lykke er basert på fellesskap og gjensidig støtte. Det handler ikke bare om økonomisk velstand, men om å vite at du har et nettverk av mennesker som alltid er der for deg."
           </p>
           <figure>
             <img
@@ -106,9 +103,8 @@ export default function Article2() {
             </p>
           </blockquote>
           <p>
-            Andrea peker på utfordringen med å finne balanse: "Vi har flotte
-            ordninger for fri og ferie, men å virkelig koble av? Det er en kunst
-            vi fortsatt strever med å mestre."
+            Andrea peker på utfordringen med å finne balanse: "Vi har gode ordninger for fri og ferie, 
+            men å faktisk klare og koble helt av? Det er noe vi fortsatt strever å mestre."
           </p>
           <figure>
             <img
