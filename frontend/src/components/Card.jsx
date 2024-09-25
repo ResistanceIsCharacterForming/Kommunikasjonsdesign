@@ -13,8 +13,8 @@ export default function Card() {
       id: "article2",
       img: "https://images.unsplash.com/photo-1586115457457-b3753fe50cf1?q=80&w=3188&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       date: "2024-09-14",
-      title: "Hvordan lykkes med hjemmekontor?",
-      text: "Pandemien har endret arbeidshverdagen for mange",
+      title: "Norge og jakten på lykken: Hva kan vi lære av våre nordiske naboer?",
+      text: "Er gresset virkelig grønnere på den andre siden av grensen? Nye tall avslører at Norge, til tross for sin velstand og høye levestandard, fortsatt sliter med å klatre oppover på lykkestigen i Norden...",
     },
     {
       id: "article3",
@@ -35,15 +35,17 @@ export default function Card() {
   return (
     <>
       <div id="front-main">
-        {articleCards?.map((card, index) => (
-          <Link key={crypto.randomUUID()} to={`/articles/${card.id}`}>
-            <article className="articleCards">
-              <img src={card.img} alt={card.title} />
-              <time>{card.date}</time>
-              <h3>{card.title}</h3>
-              <p>{card.text}</p>
-            </article>
-          </Link>
+        {articleCards?.map((card) => (
+          <article className="articleCards" key={card.id}>
+            <img src={card.img} alt={card.title} />
+            <time>{card.date}</time>
+            <h3>{card.title}</h3>
+            <p>{card.text}</p>
+            {/* Om vi ønsker ha med "Les mer"-knapp */}
+            <Link to={`/articles/${card.id}`} className="read-more-btn">
+              Les mer
+            </Link>
+          </article>
         ))}
       </div>
     </>
