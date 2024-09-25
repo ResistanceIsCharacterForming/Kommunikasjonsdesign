@@ -10,12 +10,10 @@ export default function Article2() {
       once: true,
       offset: 50,
     })
+    window.scrollTo(0, 0)
   }, [])
 
   // Legge til Datawrapper-visualisering
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
 
   return (
     <article>
@@ -89,7 +87,7 @@ export default function Article2() {
           <figure>
             <img
               className="portrait"
-              src="/src/assets/img/woman-1274056_1280.jpg"
+              src="../public/assets/img/woman.jpg"
               alt="Olivia Halonen"
             />
             <figcaption className="txt-portrait">
