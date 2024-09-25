@@ -30,13 +30,6 @@ header {
   max-width: 100%;
 }
 
-#head {
-  color: white;
-  text-align: center;
-  padding: 40px;
-  margin-top: 60px;
-}
-
 /* Navigasjon */
 #menu-toggle {
   font-size: 1.5rem;
@@ -288,11 +281,6 @@ footer {
 
 /* Media query for større skjermer */
 @media only screen and (min-width: 760px) {
-
-  /* Header */
-  #head {
-      padding: 5em;
-  }
   
   /* Navigasjon */
   #menu-toggle {
