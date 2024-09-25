@@ -24,9 +24,18 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/articles" element={<h3>HER KOMMER ALLE ARTIKLENE</h3>} />
-        <Route path="/articles/article1" element={<Article1 />} />
-        <Route path="/articles/article2" element={<Article2 />} />
+        <Route
+          path="/Kommunikasjonsdesign/articles"
+          element={<h3>HER KOMMER ALLE ARTIKLENE</h3>}
+        />
+        <Route
+          path="/Kommunikasjonsdesign/articles/article1"
+          element={<Article1 />}
+        />
+        <Route
+          path="/Kommunikasjonsdesign/articles/article2"
+          element={<Article2 />}
+        />
         <Route path="/about" />
         <Route path="/contact" />
       </Routes>
