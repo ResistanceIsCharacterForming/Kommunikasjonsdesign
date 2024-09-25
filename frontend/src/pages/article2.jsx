@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
+import { useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Article2() {
   useEffect(() => {
@@ -9,15 +9,13 @@ export default function Article2() {
       duration: 1000,
       once: true,
       offset: 50,
-    })
-    window.scrollTo(0, 0)
-  }, [])
-
-  // Legge til Datawrapper-visualisering
+    });
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <article>
-      <header className="article-header">
+      <section className="article-header">
         <h1 className="article-title">
           Lykke i Norden: Hva kan Norge lære av Finland?
         </h1>
@@ -27,7 +25,7 @@ export default function Article2() {
           fortsatt sliter med å klatre oppover på lykkestigen i Norden. La oss
           dykke ned i hva som ligger bak disse overraskende funnene.
         </p>
-      </header>
+      </section>
       <div className="article-content">
         {/* Seksjon 1 */}
         <section data-aos="fade-up">
@@ -90,9 +88,7 @@ export default function Article2() {
               src="../public/assets/img/woman.jpg"
               alt="Olivia Halonen"
             />
-            <figcaption className="txt-portrait">
-              Foto: Olivia Halonen
-            </figcaption>
+            <figcaption className="txt-portrait">Foto: Olivia Halonen</figcaption>
           </figure>
         </section>
 
@@ -121,9 +117,7 @@ export default function Article2() {
               src="/src/assets/img/woman-8552807_1280.jpg"
               alt="Andrea Johnsen"
             />
-            <figcaption className="txt-portrait">
-              Foto: Andrea Johnsen
-            </figcaption>
+            <figcaption className="txt-portrait">Foto: Andrea Johnsen</figcaption>
           </figure>
         </section>
 
@@ -162,17 +156,15 @@ export default function Article2() {
             rangeres på den globale lykkeskalaen, og resultatene utfordrer våre
             antakelser om hva som virkelig bidrar til et lykkelig samfunn.
           </p>
-          {/*Datawrapper-visualisering*/}
           <div className="data-visualization" data-aos="zoom-in">
             <figcaption className="lykkeindex">
               Kartet viser den globale lykkeindeksen for 2024, der land er
               fargekodet fra rødt (lavest lykkenivå) til blått (høyest
-              lykkenivå). Skalaen går fra 1.72 til 7.74, noe som indikerer en
+              lykkkenivå). Skalaen går fra 1.72 til 7.74, noe som indikerer en
               betydelig variasjon i opplevd lykke verden over. Kilde: World
               Happiness Report 2024
             </figcaption>
           </div>
-
           <p>
             Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer
             høye nivåer av lykke. Likevel avslører de små nyansene interessante
@@ -182,7 +174,84 @@ export default function Article2() {
             forbi de vanlige økonomiske kriteriene.
           </p>
         </section>
+
+        {/* Top 7 landene */}
+        <section data-aos="fade-up">
+          <h2 className="section-title">Top 7 lykkeligste landene</h2>
+          <article className="country-boxes">
+            {/* Finland */}
+            <section className="country-box" data-aos="fade-up">
+              <h3>1. Finland</h3>
+              <p>
+                Finland topper lykkesrangeringene på grunn av lav
+                inntektsulikhet, høy sosial støtte, og frihet til å ta egne valg.
+                Landet har også lav korrupsjon og et sterkt velferdssystem [1].
+              </p>
+            </section>
+
+            {/* Danmark */}
+            <section className="country-box" data-aos="fade-up">
+              <h3>2. Danmark</h3>
+              <p>
+                Dansker er kjent for sin "hygge"-kultur, som fremmer koselige og
+                intime sosiale samlinger. Landet har også høy sosial likhet, lav
+                kriminalitet, og et robust velferdssystem [2] [3].
+              </p>
+            </section>
+
+            {/* Island */}
+            <section className="country-box" data-aos="fade-up">
+              <h3>3. Island</h3>
+              <p>
+                Island har en sterk følelse av fellesskap og sosial støtte.
+                Landet er kjent for sin naturskjønnhet, som gir innbyggerne
+                muligheter til å koble av og nyte friluftsliv [5].
+              </p>
+            </section>
+
+            {/* Sverige */}
+            <section className="country-box" data-aos="fade-up">
+              <h3>4. Sverige</h3>
+              <p>
+                Sverige har en god balanse mellom arbeid og fritid, med fleksible
+                arbeidsordninger og generøse foreldrepermisjoner. Landet har også
+                høy tillit til offentlige institusjoner og lav korrupsjon [26].
+              </p>
+            </section>
+
+            {/* Israel */}
+            <section className="country-box" data-aos="fade-up">
+              <h3>5. Israel</h3>
+              <p>
+                Israel scorer høyt på livstilfredshet, økonomi, helse og sosial
+                støtte. Landet har også en sterk følelse av nasjonal stolthet og
+                optimisme [12] [14].
+              </p>
+            </section>
+
+            {/* Nederland */}
+            <section className="country-box" data-aos="fade-up">
+              <h3>6. Nederland</h3>
+              <p>
+                Nederland har høye nivåer av sosial støtte og tillit til
+                offentlige institusjoner. Landet er kjent for sin pragmatiske
+                tilnærming til livets utfordringer og en kultur som verdsetter
+                individuell frihet [8].
+              </p>
+            </section>
+
+            {/* Norge */}
+            <section className="country-box" data-aos="fade-up">
+              <h3>7. Norge</h3>
+              <p>
+                Norge har et høyt BNP per innbygger, god sosial støtte og høy
+                forventet levealder. Landet scorer også høyt på frihet til å ta
+                egne valg og har lav korrupsjon [17].
+              </p>
+            </section>
+          </article>
+        </section>
       </div>
     </article>
-  )
+  );
 }
