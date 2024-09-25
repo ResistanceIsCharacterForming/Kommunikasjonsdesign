@@ -261,7 +261,7 @@
                 const newBox = document.getElementById(`box-${newIndex}`)
                 const oldBoxH = oldBox.offsetHeight
                 const oldBox0T = oldBox.offsetTop
-                const newTop = oldBox0T + oldBoxH + 30
+                const newTop = oldBox0T + oldBoxH + 5
                 newBox.style.top = newTop + "px"
 
                 oldBox.classList.add("vanish")
@@ -282,7 +282,7 @@
 
         const options = {
             root: null,
-            rootMargin: "0px 0px -85% 0px",
+            rootMargin: "0px 0px -100% 0px",
             threshold: 0,
         }
 
