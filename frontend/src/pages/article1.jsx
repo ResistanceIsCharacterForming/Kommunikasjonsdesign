@@ -178,6 +178,44 @@ export default function Article1() {
       </section>
       <section className="parallax bg3">
         <h2 className="caption">
+          <span className="border">FRUSTRASJON</span>
+        </h2>
+      </section>
+      <section className="content">
+        <h2>Fra drøm til skuffelse</h2>
+        <p>
+          Martin, en ung mann med et fagbrev innen IT, har kjent på kroppen hva det vil si å 
+          møte stengte dører i arbeidslivet. 
+        </p>
+        <blockquote className="quote">
+          <p>
+            "Jeg var sikker på at fagbrevet skulle være min 
+            billett inn i IT-bransjen," sier han med et snev av frustrasjon. 
+            "Jeg har investert fire år i denne utdanningen, men hver gang jeg søker jobb, 
+            får jeg høre at de heller vil ha noen med bachelorgrad. Det føles som om alt jeg har jobbet for blir oversett."
+          </p>
+        </blockquote>
+        <p>
+          Til tross for solid praktisk erfaring fra læretiden og et brennende engasjement 
+          for faget sitt, har Martin fortsatt å kjempe for å få innpass i arbeidsmarkedet. 
+        </p>
+        <blockquote className="quote">
+          <p>
+          "Det er demotiverende," innrømmer han. 
+          "Jeg vet at jeg har både ferdighetene og 
+          kunnskapen til å gjøre jobben, men det føles som om jeg aldri får sjansen til å bevise det." 
+          </p>
+        </blockquote>
+        <p>
+          Han har vurdert å starte på en bachelorgrad, men tanken på flere år uten inntekt 
+          og den økonomiske belastningen som følger med, gjør det til et vanskelig valg.
+          Martins erfaring er ikke bare en personlig kamp; den speiler et større problem 
+          i Norge – et arbeidsmarked som tilsynelatende overser verdien av fagbrev, 
+          spesielt i yrker hvor høyere utdanning blir sett på som standarden.
+        </p>
+      </section>
+      <section className="parallax bg4">
+        <h2 className="caption">
           <span className="border">KONSEKVENSER</span>
         </h2>
       </section>
@@ -210,7 +248,7 @@ export default function Article1() {
           </figcaption>
         </figure>
       </section>
-      <section className="parallax bg4">
+      <section className="parallax bg5">
         <h2 className="caption">
           <span className="border">LØSNINGER</span>
         </h2>
@@ -225,7 +263,7 @@ export default function Article1() {
           kompetanse – også den som kommer fra fagbrev.
         </p>
       </section>
-      <section className="parallax bg5">
+      <section className="parallax bg6">
         <h2 className="caption">
           <span className="border">REFLEKTER</span>
         </h2>

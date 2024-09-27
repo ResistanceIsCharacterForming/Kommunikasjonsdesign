@@ -256,16 +256,21 @@ nav.hidden {
 }
 
 .bg3 {
-  background-image: url("/public/assets/img/failure.jpg");
+  background-image: url("/public/assets/img/employe.png");
   min-height: 500px;
 }
 
 .bg4 {
-  background-image: url("/public/assets/img/puzzle.jpg");
+  background-image: url("/public/assets/img/failure.jpg");
   min-height: 500px;
 }
 
 .bg5 {
+  background-image: url("/public/assets/img/puzzle.jpg");
+  min-height: 500px;
+}
+
+.bg6 {
   background-image: url("/public/assets/img/woman.jpg");
   min-height: 500px;
 }
