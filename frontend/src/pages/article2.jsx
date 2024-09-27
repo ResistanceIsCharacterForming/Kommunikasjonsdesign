@@ -105,7 +105,7 @@ export default function Article2() {
           </blockquote>
           <p>
             Andrea peker på utfordringen med å finne balanse: "Vi har flotte ordninger for fri og ferie,
-            men å virkelig koble av? Det er en kunst vi fortsatt strever med å mestre."
+            men å virkelig koble av? Det er noe vi fortsatt strever med å mestre."
           </p>
           <figure>
             <img
