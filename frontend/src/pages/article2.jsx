@@ -83,7 +83,7 @@ export default function Article2() {
           <figure>
             <img
               className="portrait"
-              src="../public/assets/img/woman.jpg"
+              src="../public/assets/img/finnish.jpg"
               alt="Olivia Halonen"
             />
             <figcaption className="txt-portrait">Foto: Olivia Halonen</figcaption>
@@ -110,7 +110,7 @@ export default function Article2() {
           <figure>
             <img
               className="portrait"
-              src="../public/assets/img/woman.jpg"
+              src="../public/assets/img/norwegian.jpg"
               alt="Andrea Johnsen"
             />
             <figcaption className="txt-portrait">Foto: Andrea Johnsen</figcaption>
