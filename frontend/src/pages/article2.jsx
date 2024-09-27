@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 
 export default function Article2() {
   useEffect(() => {
-    // Initialiserer AOS for animasjoner
     AOS.init({
       duration: 1000,
       once: true,
