@@ -12,6 +12,7 @@
   --dark-indigo: #2c2c54;
   --deep-purple-gray: #474787;
   --cool-gray: #aaabb8;
+  --green: #27a85d;
 }
 
 /* Generelt */
@@ -240,8 +241,15 @@ nav.hidden {
 
   p {
     font-size: 18px;
-    line-height: 1.5;
-    padding-top: 2rem;
+    line-height: 1.6;
+    padding-top: 1rem;
+  }
+
+  .quote1 {
+    font-size: 1rem;
+    border-left: 4px solid var(--green);
+    padding-left: 1rem;
+    margin: 1rem auto;
   }
 }
 
@@ -326,7 +334,6 @@ canvas {
 }
 
 /* Main Article 2*/
-
 .article-header {
   background-color: var(--blue);
   color: var(--light-grey);
@@ -338,6 +345,7 @@ canvas {
 .article-title {
   font-size: 35px;
   color: var(--light-grey);
+  line-height: 1.4;
 }
 
 .article-intro {
@@ -352,12 +360,14 @@ canvas {
 .article-content {
   max-width: 800px;
   overflow: hidden;
+  padding: 2rem;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  line-height: 1.4;
 
   p {
     font-size: 1.1rem;
     line-height: 1.6;
+    margin-bottom: 2rem;
   }
 }
 

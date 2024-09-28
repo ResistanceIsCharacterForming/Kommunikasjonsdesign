@@ -187,23 +187,23 @@ export default function Article1() {
           Martin, en ung mann med et fagbrev innen IT, har kjent på kroppen hva det vil si å 
           møte stengte dører i arbeidslivet. 
         </p>
-        <blockquote className="quote">
+        <blockquote className="quote1">
           <p>
-            "Jeg var sikker på at fagbrevet skulle være min 
-            billett inn i IT-bransjen," sier han med et snev av frustrasjon. 
-            "Jeg har investert fire år i denne utdanningen, men hver gang jeg søker jobb, 
-            får jeg høre at de heller vil ha noen med bachelorgrad. Det føles som om alt jeg har jobbet for blir oversett."
+            <em>"Jeg var sikker på at fagbrevet skulle være min 
+            billett inn i IT-bransjen," </em> sier han med et snev av frustrasjon. 
+            <em>"Jeg har investert fire år i denne utdanningen, men hver gang jeg søker jobb, 
+            får jeg høre at de heller vil ha noen med bachelorgrad. Det føles som om alt jeg har jobbet for blir oversett." </em>
           </p>
         </blockquote>
         <p>
           Til tross for solid praktisk erfaring fra læretiden og et brennende engasjement 
           for faget sitt, har Martin fortsatt å kjempe for å få innpass i arbeidsmarkedet. 
         </p>
-        <blockquote className="quote">
+        <blockquote className="quote1">
           <p>
-          "Det er demotiverende," innrømmer han. 
-          "Jeg vet at jeg har både ferdighetene og 
-          kunnskapen til å gjøre jobben, men det føles som om jeg aldri får sjansen til å bevise det." 
+          <em>"Det er demotiverende,"</em> innrømmer han. 
+          <em>"Jeg vet at jeg har både ferdighetene og 
+          kunnskapen til å gjøre jobben, men det føles som om jeg aldri får sjansen til å bevise det." </em>
           </p>
         </blockquote>
         <p>
@@ -224,16 +224,16 @@ export default function Article1() {
         <p>
           Konsekvensene av å stå utenfor arbeidslivet er ikke bare begrenset til
           tap av inntekt.
-          <a href="https://www.ssb.no/sosiale-forhold-og-kriminalitet/artikler-og-publikasjoner/livskvalitet-i-norge-2020">
-            Forskning viser en klar sammenheng mellom arbeid og psykiskhelse;
+          <a href="https://www.ssb.no/sosiale-forhold-og-kriminalitet/artikler-og-publikasjoner/livskvalitet-i-norge-2020">{" "}
+          Forskning viser en klar sammenheng mellom arbeid og psykiskhelse;
           </a>{" "}
           de som står utenfor arbeidslivet, har ofte en høyere risiko for å
           utvikle psykiske helseproblemer som depresjon og angst. På dager hvor
           alt føles tungt og grått, kan denne følelsen av meningsløshet være
           vanskelig å takle.
-          <a href="https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/relatert-informasjon/arbeidsledighet-utdanning">
-            Når vi samtidig ser at arbeidsledigheten i Norge fortsatt ligger på
-            et høyt nivå
+          <a href="https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/relatert-informasjon/arbeidsledighet-utdanning">{" "}
+          Når vi samtidig ser at arbeidsledigheten i Norge fortsatt ligger på
+          et høyt nivå
           </a>
         </p>
         <figure>
