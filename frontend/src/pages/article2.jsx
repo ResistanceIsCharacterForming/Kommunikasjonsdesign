@@ -7,7 +7,6 @@ export default function Article2() {
     AOS.init({
       duration: 1000,
       once: true,
-      offset: 50,
     });
     window.scrollTo(0, 0);
   }, []);
