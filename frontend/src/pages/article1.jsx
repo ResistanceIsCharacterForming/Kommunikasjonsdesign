@@ -187,8 +187,8 @@ export default function Article1() {
           Martin, en ung mann med et fagbrev innen IT, har kjent på kroppen hva det vil si å 
           møte stengte dører i arbeidslivet. 
         </p>
-        <blockquote className="quote1">
-          <p>
+        <blockquote>
+          <p className="quotetext"> 
             <em>"Jeg var sikker på at fagbrevet skulle være min 
             billett inn i IT-bransjen," </em> sier han med et snev av frustrasjon. 
             <em>"Jeg har investert fire år i denne utdanningen, men hver gang jeg søker jobb, 
@@ -199,8 +199,8 @@ export default function Article1() {
           Til tross for solid praktisk erfaring fra læretiden og et brennende engasjement 
           for faget sitt, har Martin fortsatt å kjempe for å få innpass i arbeidsmarkedet. 
         </p>
-        <blockquote className="quote1">
-          <p>
+        <blockquote>
+          <p className="quotetext">
           <em>"Det er demotiverende,"</em> innrømmer han. 
           <em>"Jeg vet at jeg har både ferdighetene og 
           kunnskapen til å gjøre jobben, men det føles som om jeg aldri får sjansen til å bevise det." </em>

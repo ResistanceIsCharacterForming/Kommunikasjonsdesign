@@ -13,6 +13,7 @@
   --deep-purple-gray: #474787;
   --cool-gray: #aaabb8;
   --green: #27a85d;
+  --light-green: #f5fcf6;
 }
 
 /* Generelt */
@@ -226,7 +227,7 @@ nav.hidden {
 }
 
 .content {
-  padding: 65px;
+  padding: 60px;
   text-align: left;
   letter-spacing: 0.4px;
 
@@ -243,13 +244,13 @@ nav.hidden {
     font-size: 18px;
     line-height: 1.6;
     padding-top: 1rem;
-  }
+  }  
 
-  .quote1 {
+  .quotetext {
     font-size: 1rem;
     border-left: 4px solid var(--green);
     padding-left: 1rem;
-    margin: 1rem auto;
+    background-color: var(--light-green);
   }
 }
 
@@ -379,7 +380,6 @@ canvas {
 }
 
 .quote {
-  font-style: italic;
   font-size: 1.1rem;
   border-left: 4px solid var(--blue);
   padding-left: 1rem;
@@ -626,6 +626,14 @@ footer {
       font-size: 1.2rem;
       line-height: 1.5;
       margin: 0 auto;
+    }
+
+    .quotetext {
+      max-width: 60%;
+      margin: 0 auto;
+      font-size: 1rem;
+      border-left: 4px solid var(--green);
+      padding-left: 1rem;
     }
   }
 
