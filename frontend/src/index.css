@@ -13,6 +13,7 @@
   --deep-purple-gray: #474787;
   --cool-gray: #aaabb8;
   --green: #27a85d;
+  --light-green: #f5fcf6;
 }
 
 /* Generelt */
@@ -226,7 +227,8 @@ nav.hidden {
 }
 
 .content {
-  padding: 65px;
+  width: 100%;
+  padding: 2.5rem;
   text-align: left;
   letter-spacing: 0.4px;
 
@@ -243,13 +245,14 @@ nav.hidden {
     font-size: 18px;
     line-height: 1.6;
     padding-top: 1rem;
-  }
+  }  
 
-  .quote1 {
+  .quotetext {
     font-size: 1rem;
+    line-height: 1.6;
     border-left: 4px solid var(--green);
     padding-left: 1rem;
-    margin: 1rem auto;
+    background-color: var(--light-green);
   }
 }
 
@@ -379,7 +382,6 @@ canvas {
 }
 
 .quote {
-  font-style: italic;
   font-size: 1.1rem;
   border-left: 4px solid var(--blue);
   padding-left: 1rem;
@@ -642,4 +644,16 @@ footer {
     padding: 2rem;
     font-size: 1rem;
   }
+}
+
+.xl-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100dvw;
+  background-image: url("/public/assets/img/brain.gif");
+  background-size: 70%;
+  background-position: center;
+  filter: brightness(2) contrast(0.8);
 }
