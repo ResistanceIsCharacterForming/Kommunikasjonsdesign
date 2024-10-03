@@ -643,3 +643,15 @@ footer {
     font-size: 1rem;
   }
 }
+
+.xl-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100dvw;
+  background-image: url("/public/assets/img/brain.gif");
+  background-size: 70%;
+  background-position: center;
+  filter: brightness(2) contrast(0.8);
+}
