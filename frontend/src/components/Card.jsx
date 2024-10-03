@@ -13,7 +13,8 @@ export default function Card() {
       id: "article2",
       img: "https://images.unsplash.com/photo-1586115457457-b3753fe50cf1?q=80&w=3188&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       date: "2024-09-14",
-      title: "Norge og jakten på lykken: Hva kan vi lære av våre nordiske naboer?",
+      title:
+        "Norge og jakten på lykken: Hva kan vi lære av våre nordiske naboer?",
       text: "Er gresset virkelig grønnere på den andre siden av grensen? Nye tall avslører at Norge, til tross for sin velstand og høye levestandard, fortsatt sliter med å klatre oppover på lykkestigen i Norden...",
     },
     {
@@ -25,7 +26,7 @@ export default function Card() {
     },
     {
       id: "article4",
-      img: "https://images.unsplash.com/photo-1508277499252-08cd32ea0bf6?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "public/assets/img/brain.gif",
       date: "2024-09-28",
       title: "Hvordan går det egentlig?",
       text: "En undersøkelse viser at mange sliter med å få endene til å møtes",
