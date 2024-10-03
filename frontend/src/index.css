@@ -248,6 +248,7 @@ nav.hidden {
 
   .quotetext {
     font-size: 1rem;
+    line-height: 1.6;
     border-left: 4px solid var(--green);
     padding-left: 1rem;
     background-color: var(--light-green);
