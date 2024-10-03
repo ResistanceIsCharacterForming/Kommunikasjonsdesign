@@ -227,7 +227,8 @@ nav.hidden {
 }
 
 .content {
-  padding: 60px;
+  width: 100%;
+  padding: 2.5rem;
   text-align: left;
   letter-spacing: 0.4px;
 
@@ -627,14 +628,6 @@ footer {
       font-size: 1.2rem;
       line-height: 1.5;
       margin: 0 auto;
-    }
-
-    .quotetext {
-      max-width: 60%;
-      margin: 0 auto;
-      font-size: 1rem;
-      border-left: 4px solid var(--green);
-      padding-left: 1rem;
     }
   }
 
