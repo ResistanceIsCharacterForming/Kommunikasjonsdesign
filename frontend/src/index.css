@@ -7,13 +7,16 @@
   --red: #c11c1c;
   --grey: grey;
   --light-grey-hover: rgb(142, 104, 104);
-  --blue: #1e4e82;
-  --orange: #e77330;
+  --blue: #1d67b7;
+  --orange: #e99666;
   --dark-indigo: #2c2c54;
   --deep-purple-gray: #474787;
   --cool-gray: #aaabb8;
   --green: #27a85d;
   --light-green: #e3f1e5d1;
+  --light-blue: #8EBED8;
+  --dark-blue: #003366;
+  --forest-green: #5A7D7C;
 }
 
 /* Generelt */
@@ -362,8 +365,8 @@ canvas {
 
 /* Main Article 2*/
 .article-header {
-  background-color: var(--blue);
-  color: var(--light-grey);
+  background-image: url("/public/assets/img/castle.jpg");
+  color: var(--white);
   padding: 5rem 0;
   padding-bottom: 4rem;
   text-align: center;
@@ -371,17 +374,24 @@ canvas {
 
 .article-title {
   font-size: 35px;
-  color: var(--light-grey);
+  color: var(--white);
   line-height: 1.4;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+  display: inline-block;
 }
+
 
 .article-intro {
   font-size: 17px;
-  max-width: 800px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 1rem;
   font-style: italic;
   line-height: 1.4;
+  background-color: rgba(140, 74, 12, 0.7); 
+  padding: 10px; 
+  display: inline-block;
 }
 
 .article-content {
