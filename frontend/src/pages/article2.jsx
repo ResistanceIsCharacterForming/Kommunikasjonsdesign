@@ -107,9 +107,14 @@ export default function Article2() {
             </p>
           </blockquote>
           <p>
-            Andrea peker på utfordringen med å finne balanse: <em>"Vi har flotte ordninger for fri og ferie,
+            Andrea peker på utfordringen med å finne balanse: 
+          </p>
+          <blockquote className="quote" data-aos="fade-left">
+          <p>
+            <em>"Vi har flotte ordninger for fri og ferie,
             men å virkelig koble av? Det er noe vi fortsatt strever med å mestre."</em>
           </p>
+          </blockquote>
           <figure>
             <img
               className="portrait"
