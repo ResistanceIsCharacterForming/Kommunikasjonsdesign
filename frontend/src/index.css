@@ -13,7 +13,7 @@
   --deep-purple-gray: #474787;
   --cool-gray: #aaabb8;
   --green: #27a85d;
-  --light-green: #f5fcf6;
+  --light-green: #e3f1e5d1;
 }
 
 /* Generelt */
@@ -244,16 +244,40 @@ nav.hidden {
   p {
     font-size: 18px;
     line-height: 1.6;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }  
+}
 
-  .quotetext {
-    font-size: 1rem;
-    line-height: 1.6;
-    border-left: 4px solid var(--green);
-    padding-left: 1rem;
-    background-color: var(--light-green);
-  }
+.speech-bubble {
+  background-color: var(--light-green);
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 1rem;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--light-green);
+  border-bottom: 0;
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+
+.bubble-text {
+  color: var(--dark-grey);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto;
+
 }
 
 .bg1 {
@@ -587,7 +611,7 @@ footer {
   .caption span.border {
     background-color: var(--dark-grey);
     opacity: 0.8;
-    color: #ffffff;
+    color: var(--white);
     padding: 18px;
     font-size: 30px;
     letter-spacing: 5px;
@@ -599,7 +623,7 @@ footer {
     display: flex;
     background-color: var(--dark-grey);
     opacity: 0.8;
-    color: #ffffff;
+    color: var(--white);
     padding: 18px;
     font-size: 20px;
     letter-spacing: 5px;
@@ -629,6 +653,38 @@ footer {
       line-height: 1.5;
       margin: 0 auto;
     }
+  }
+
+  .speech-bubble {
+    background-color: var(--light-green);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 1rem;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--light-green);
+    border-bottom: 0;
+    margin-left: -10px;
+    margin-bottom: -10px;
+  }
+  
+  .bubble-text {
+    color: var(--dark-grey);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 90%;
   }
 
   canvas {
