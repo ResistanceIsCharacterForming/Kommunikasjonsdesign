@@ -7,7 +7,6 @@ export default function Article2() {
     AOS.init({
       duration: 1000,
       once: true,
-      offset: 50,
     });
     window.scrollTo(0, 0);
   }, []);
@@ -69,16 +68,21 @@ export default function Article2() {
           </p>
           <blockquote className="quote" data-aos="fade-left">
             <p>
-            "I Finland er balanse nøkkelen," forklarer hun. "Vi elsker naturen og ser på friluftsliv
+            <em>"I Finland er balanse nøkkelen,"</em> forklarer hun. <em>"Vi elsker naturen og ser på friluftsliv
             som vår hemmelige ingrediens for velvære. Enten det er en skogstur eller en stille stund ved innsjøen,
-            finner vi ro i det enkle."
+            finner vi ro i det enkle."</em>
             </p>
           </blockquote>
           <p>
             Men det stopper ikke der. Olivia understreker betydningen av sterke
-            sosiale bånd: "Vår lykke er basert på fellesskap og gjensidig støtte. 
-            Det handler ikke bare om økonomisk velstand, men om å vite at du har et nettverk av mennesker som alltid er der for deg."
+          sosiale bånd:
           </p>
+          <blockquote className="quote" data-aos="fade-right">
+          <p>
+          <em>"Vår lykke er basert på fellesskap og gjensidig støtte. 
+          Det handler ikke bare om økonomisk velstand, men om å vite at du har et nettverk av mennesker som alltid er der for deg."</em>
+          </p>
+          </blockquote>
           <figure>
             <img
               className="portrait"
@@ -97,15 +101,20 @@ export default function Article2() {
           </p>
           <blockquote className="quote" data-aos="fade-right">
             <p>
-            "Det føles som om vi alltid må være på topp," sukker Andrea. 
-            "Selv med alle våre goder, er det et konstant jag etter mer.
-            Lange arbeidsdager og et uendelig press gjør det vanskelig å finne ro."
+            <em>"Det føles som om vi alltid må være på topp,"</em> sukker Andrea. 
+            <em>"Selv med alle våre goder, er det et konstant jag etter mer.
+            Lange arbeidsdager og et uendelig press gjør det vanskelig å finne ro."</em>
             </p>
           </blockquote>
           <p>
-            Andrea peker på utfordringen med å finne balanse: "Vi har flotte ordninger for fri og ferie,
-            men å virkelig koble av? Det er noe vi fortsatt strever med å mestre."
+            Andrea peker på utfordringen med å finne balanse: 
           </p>
+          <blockquote className="quote" data-aos="fade-left">
+          <p>
+            <em>"Vi har flotte ordninger for fri og ferie,
+            men å virkelig koble av? Det er noe vi fortsatt strever med å mestre."</em>
+          </p>
+          </blockquote>
           <figure>
             <img
               className="portrait"

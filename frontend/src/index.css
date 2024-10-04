@@ -7,12 +7,16 @@
   --red: #c11c1c;
   --grey: grey;
   --light-grey-hover: rgb(142, 104, 104);
-  --blue: #1e4e82;
-  --orange: #e77330;
+  --blue: #1d67b7;
+  --orange: #e99666;
   --dark-indigo: #2c2c54;
   --deep-purple-gray: #474787;
   --cool-gray: #aaabb8;
   --green: #27a85d;
+  --light-green: #e3f1e5d1;
+  --light-blue: #8EBED8;
+  --dark-blue: #003366;
+  --forest-green: #5A7D7C;
 }
 
 /* Generelt */
@@ -226,7 +230,8 @@ nav.hidden {
 }
 
 .content {
-  padding: 65px;
+  width: 100%;
+  padding: 2.5rem;
   text-align: left;
   letter-spacing: 0.4px;
 
@@ -242,15 +247,40 @@ nav.hidden {
   p {
     font-size: 18px;
     line-height: 1.6;
-    padding-top: 1rem;
-  }
+    padding-top: 0.5rem;
+  }  
+}
 
-  .quote1 {
-    font-size: 1rem;
-    border-left: 4px solid var(--green);
-    padding-left: 1rem;
-    margin: 1rem auto;
-  }
+.speech-bubble {
+  background-color: var(--light-green);
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 1rem;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--light-green);
+  border-bottom: 0;
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+
+.bubble-text {
+  color: var(--dark-grey);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto;
+
 }
 
 .bg1 {
@@ -335,8 +365,8 @@ canvas {
 
 /* Main Article 2*/
 .article-header {
-  background-color: var(--blue);
-  color: var(--light-grey);
+  background-image: url("/public/assets/img/castle.jpg");
+  color: var(--white);
   padding: 5rem 0;
   padding-bottom: 4rem;
   text-align: center;
@@ -344,17 +374,24 @@ canvas {
 
 .article-title {
   font-size: 35px;
-  color: var(--light-grey);
+  color: var(--white);
   line-height: 1.4;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+  display: inline-block;
 }
+
 
 .article-intro {
   font-size: 17px;
-  max-width: 800px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 1rem;
   font-style: italic;
   line-height: 1.4;
+  background-color: rgba(140, 74, 12, 0.7); 
+  padding: 10px; 
+  display: inline-block;
 }
 
 .article-content {
@@ -379,7 +416,6 @@ canvas {
 }
 
 .quote {
-  font-style: italic;
   font-size: 1.1rem;
   border-left: 4px solid var(--blue);
   padding-left: 1rem;
@@ -585,7 +621,7 @@ footer {
   .caption span.border {
     background-color: var(--dark-grey);
     opacity: 0.8;
-    color: #ffffff;
+    color: var(--white);
     padding: 18px;
     font-size: 30px;
     letter-spacing: 5px;
@@ -597,7 +633,7 @@ footer {
     display: flex;
     background-color: var(--dark-grey);
     opacity: 0.8;
-    color: #ffffff;
+    color: var(--white);
     padding: 18px;
     font-size: 20px;
     letter-spacing: 5px;
@@ -627,6 +663,38 @@ footer {
       line-height: 1.5;
       margin: 0 auto;
     }
+  }
+
+  .speech-bubble {
+    background-color: var(--light-green);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 1rem;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--light-green);
+    border-bottom: 0;
+    margin-left: -10px;
+    margin-bottom: -10px;
+  }
+  
+  .bubble-text {
+    color: var(--dark-grey);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 90%;
   }
 
   canvas {
