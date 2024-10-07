@@ -14,9 +14,9 @@
   --cool-gray: #aaabb8;
   --green: #27a85d;
   --light-green: #e3f1e5d1;
-  --light-blue: #8EBED8;
+  --light-blue: #8ebed8;
   --dark-blue: #003366;
-  --forest-green: #5A7D7C;
+  --forest-green: #5a7d7c;
 }
 
 /* Generelt */
@@ -248,7 +248,7 @@ nav.hidden {
     font-size: 18px;
     line-height: 1.6;
     padding-top: 0.5rem;
-  }  
+  }
 }
 
 .speech-bubble {
@@ -280,7 +280,6 @@ nav.hidden {
   font-size: 1.2rem;
   line-height: 1.5;
   margin: 0 auto;
-
 }
 
 .bg1 {
@@ -376,11 +375,10 @@ canvas {
   font-size: 35px;
   color: var(--white);
   line-height: 1.4;
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
   display: inline-block;
 }
-
 
 .article-intro {
   font-size: 17px;
@@ -389,8 +387,8 @@ canvas {
   padding: 0 1rem;
   font-style: italic;
   line-height: 1.4;
-  background-color: rgba(140, 74, 12, 0.7); 
-  padding: 10px; 
+  background-color: rgba(140, 74, 12, 0.7);
+  padding: 10px;
   display: inline-block;
 }
 
@@ -674,7 +672,7 @@ footer {
     width: 50%;
     margin: 0 auto;
   }
-  
+
   .speech-bubble::before {
     content: "";
     position: absolute;
@@ -688,7 +686,7 @@ footer {
     margin-left: -10px;
     margin-bottom: -10px;
   }
-  
+
   .bubble-text {
     color: var(--dark-grey);
     font-size: 1.2rem;
@@ -713,18 +711,30 @@ footer {
 }
 
 .xl-hero {
-  position: relative;
-  top: 2rem;
+  display: flex;
   height: 100dvh;
-  width: 100dvw;
+  justify-content: center;
   background-image: url("/public/assets/img/brain.gif");
-  background-size: 50%;
+  background-size: 60%;
   background-position: center;
   filter: brightness(2) contrast(0.8);
-  #xlcanvas {
-    position: relative;
-    top: 2rem;
-    left: 60dvh;
-    transform: translate(-50%, 0);
-  }
+}
+
+.container {
+  height: 50dvh;
+}
+
+.info {
+  transition: border-radius 0.5s ease;
+}
+
+.thought {
+  opacity: 0;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  top: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  transition: opacity 0.5s ease;
 }
