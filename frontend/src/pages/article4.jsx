@@ -43,8 +43,8 @@ export default function Article4() {
         const containerWidth = container.clientWidth
         const containerHeight = container.clientHeight
 
-        element.style.width = "70px"
-        element.style.height = "70px"
+        element.style.width = "50px"
+        element.style.height = "50px"
         element.style.position = "absolute"
         element.style.left = randomMinMax(0, containerWidth - 70) + "px"
         element.style.top = randomMinMax(0, containerHeight - 70) + "px"
@@ -94,25 +94,27 @@ export default function Article4() {
   }, [thoughts])
 
   return (
-    <div
-      className="parallax xl-hero"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <div ref={containerRef} className="container">
-        {thoughts.map((thought, index) => (
-          <div
-            key={index}
-            className="info"
-            ref={(el) => (elementsRef.current[index] = el)}
-          ></div>
-        ))}
+    <>
+      <div
+        className="parallax xl-hero"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div ref={containerRef} className="container">
+          {thoughts.map((thought, index) => (
+            <div
+              key={index}
+              className="info"
+              ref={(el) => (elementsRef.current[index] = el)}
+            ></div>
+          ))}
 
-        <div ref={hoverThoughtsRef} className="thought"></div>
+          <div ref={hoverThoughtsRef} className="thought"></div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
