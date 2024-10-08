@@ -30,6 +30,8 @@ export default function Article4() {
   const hoverThoughtsRef = useRef(null)
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+    
     const container = containerRef.current
 
     elementsRef.current.forEach((element, index) => {
