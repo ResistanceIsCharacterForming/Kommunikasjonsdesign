@@ -115,6 +115,45 @@ export default function Article4() {
           <div ref={hoverThoughtsRef} className="thought"></div>
         </div>
       </div>
+      <div className="article4">
+        <section class="intro">
+          <p>For mange voksne er ADHD en tilstand som først diagnostiseres i sen alder. 
+            Deres kamp for å forstå hvorfor dagliglivet er så utfordrende, har ofte vært ensom. 
+            Nå får flere voksne endelig en diagnose som gir mening til mange av livets utfordringer.</p>
+        </section>
+        
+        <section class="personal-stories">
+          <h2>Personlige historier</h2>
+          <article class="story">
+            <h3>Anna, 42 år</h3>
+            <p>Anna har alltid følt at hun lå et skritt bak alle andre. Hun glemte avtaler, misforsto instruksjoner på jobb, og hadde alltid en følelse av å ikke strekke til. Først da hun var 42 år, fikk hun diagnosen ADHD.</p>
+            <blockquote>"Jeg trodde hele tiden at det var meg det var noe galt med, men da jeg fikk diagnosen, falt brikkene på plass."</blockquote>
+          </article>
+        </section>
+
+
+        <section class="facts-myths">
+          <h2>Fakta og myter</h2>
+          <ul>
+            <li><strong>Myte:</strong> ADHD er en barnesykdom.</li>
+            <li><strong>Fakta:</strong> Mange voksne lever udiagnostisert med ADHD. Symptomer som dårlig hukommelse, impulsivitet og konsentrasjonsvansker kan feiltolkes som personlighetsfeil.</li>
+          </ul>
+        </section>
+
+        <section class="expert-input">
+          <h2>Faglige innspill</h2>
+          <p>Psykolog Marianne Hansen sier at voksne ofte ikke gjenkjenner symptomene fordi de har lært seg mestringsstrategier gjennom livet. "Det er først når livet blir for krevende – for eksempel etter en jobbendring eller i foreldrerollen – at ADHD-symptomene blir tydeligere."</p>
+        </section>
+
+        <section class="life-after-diagnosis">
+          <h2>Hvordan livet endrer seg etter diagnosen</h2>
+          <p>For mange representerer diagnosen en slags lettelse. Den gir forklaringer på problemer som har preget hverdagen, og mange opplever en følelse av å endelig bli sett.</p>
+        </section>
+        <section>
+          <h2>Avslutning</h2>
+          <p>"For mange er diagnosen ikke en begrensning, men en nøkkel til å forstå seg selv bedre og ta grep for å forbedre livskvaliteten."</p>
+        </section>
+      </div>
     </>
   )
 }
