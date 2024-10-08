@@ -25,11 +25,14 @@ export default function Article4() {
     "Hvorfor begynner mobilen min alltid å gå tom for batteri når jeg trenger den mest?",
   ]
 
+  const gatheredThoughts = []
+
   const elementsRef = useRef([])
   const containerRef = useRef(null)
   const hoverThoughtsRef = useRef(null)
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     const container = containerRef.current
 
     elementsRef.current.forEach((element, index) => {
@@ -40,13 +43,14 @@ export default function Article4() {
         const containerWidth = container.clientWidth
         const containerHeight = container.clientHeight
 
-        element.style.width = "70px"
-        element.style.height = "70px"
+        element.style.width = "50px"
+        element.style.height = "50px"
         element.style.position = "absolute"
         element.style.left = randomMinMax(0, containerWidth - 70) + "px"
         element.style.top = randomMinMax(0, containerHeight - 70) + "px"
         element.style.borderRadius = "50%"
         element.style.backgroundColor = "white"
+        element.style.cursor = "pointer"
 
         element.addEventListener("mouseover", () => {
           element.style.borderRadius = "0%"
@@ -57,8 +61,10 @@ export default function Article4() {
 
         element.addEventListener("mouseout", () => {
           element.style.borderRadius = "50%"
-          hoverThoughtsRef.current.style.display = "none"
-          hoverThoughtsRef.current.style.opacity = "0"
+          setTimeout(() => {
+            hoverThoughtsRef.current.style.display = "none"
+            hoverThoughtsRef.current.style.opacity = "0"
+          }, 1000)
         })
 
         const moveElement = () => {
@@ -88,36 +94,28 @@ export default function Article4() {
   }, [thoughts])
 
   return (
-    <div
-      className="parallax xl-hero"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <>
       <div
-        ref={containerRef}
-        className="container"
+        className="parallax xl-hero"
         style={{
-          position: "relative",
-          top: "0",
-          height: "100dvh",
-          width: "50dvw",
-          overflow: "hidden",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        {thoughts.map((thought, index) => (
-          <div
-            key={index}
-            className="info"
-            ref={(el) => (elementsRef.current[index] = el)}
-          ></div>
-        ))}
+        <div ref={containerRef} className="container">
+          {thoughts.map((thought, index) => (
+            <div
+              key={index}
+              className="info"
+              ref={(el) => (elementsRef.current[index] = el)}
+            ></div>
+          ))}
 
-        <div ref={hoverThoughtsRef} className="thought"></div>
+          <div ref={hoverThoughtsRef} className="thought"></div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

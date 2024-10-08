@@ -32,7 +32,7 @@ main {
 }
 
 body {
-  min-height: 200dvh;
+  min-height: 100dvh;
   font-size: calc(0.6em + 0.6vw);
   font-family: sans-serif, Arial;
   display: flex;
@@ -718,27 +718,35 @@ footer {
 
 .xl-hero {
   display: flex;
-  height: 100dvh;
   justify-content: center;
   background-image: url("/public/assets/img/brain.gif");
-  background-size: 60%;
+  background-size: 80%;
   background-position: center;
   filter: brightness(2) contrast(0.8);
 }
 
 .container {
-  height: 50dvh;
+  position: "absolute";
+  top: 50dvh;
+  height: 90dvh;
+  width: 100dvw;
+  overflow: hidden;
 }
 
 .info {
+  position: absolute;
   transition: border-radius 0.5s ease;
+  z-index: 100;
 }
 
 .thought {
   opacity: 0;
   background-color: var(--dark-blue);
   color: var(--white);
-  top: 50%;
+  position: absolute;
+  top: 40dvh;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 1rem;
   margin: 1rem;
   text-align: center;
