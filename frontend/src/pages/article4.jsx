@@ -25,11 +25,14 @@ export default function Article4() {
     "Hvorfor begynner mobilen min alltid å gå tom for batteri når jeg trenger den mest?",
   ]
 
+  const gatheredThoughts = []
+
   const elementsRef = useRef([])
   const containerRef = useRef(null)
   const hoverThoughtsRef = useRef(null)
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     const container = containerRef.current
 
     elementsRef.current.forEach((element, index) => {
@@ -47,6 +50,7 @@ export default function Article4() {
         element.style.top = randomMinMax(0, containerHeight - 70) + "px"
         element.style.borderRadius = "50%"
         element.style.backgroundColor = "white"
+        element.style.cursor = "pointer"
 
         element.addEventListener("mouseover", () => {
           element.style.borderRadius = "0%"
@@ -57,8 +61,10 @@ export default function Article4() {
 
         element.addEventListener("mouseout", () => {
           element.style.borderRadius = "50%"
-          hoverThoughtsRef.current.style.display = "none"
-          hoverThoughtsRef.current.style.opacity = "0"
+          setTimeout(() => {
+            hoverThoughtsRef.current.style.display = "none"
+            hoverThoughtsRef.current.style.opacity = "0"
+          }, 1000)
         })
 
         const moveElement = () => {
@@ -96,17 +102,7 @@ export default function Article4() {
         alignItems: "center",
       }}
     >
-      <div
-        ref={containerRef}
-        className="container"
-        style={{
-          position: "relative",
-          top: "0",
-          height: "100dvh",
-          width: "50dvw",
-          overflow: "hidden",
-        }}
-      >
+      <div ref={containerRef} className="container">
         {thoughts.map((thought, index) => (
           <div
             key={index}
