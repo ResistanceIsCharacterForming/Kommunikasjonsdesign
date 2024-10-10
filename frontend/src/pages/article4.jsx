@@ -169,7 +169,7 @@ export default function Article4() {
         </article>
 
         <section className="confused">
-          <img src="../public/assets/img/confused.png" alt="confused"/>
+          <img src="../public/assets/img/confused1.png" alt="confused"/>
         </section>
 
         <section class="parallax-xl">
@@ -203,7 +203,7 @@ export default function Article4() {
         </article>
 
         <section className="confused">
-          <img src="../public/assets/img/confused.png" alt="confused"/>
+          <img src="../public/assets/img/confused2.png" alt="confused"/>
         </section>
 
         <section class="parallax-xl">
@@ -234,7 +234,7 @@ export default function Article4() {
         </article>
 
         <section className="confused">
-          <img src="../public/assets/img/confused.png" alt="confused"/>
+          <img src="../public/assets/img/confused3.png" alt="confused"/>
         </section>
 
         <section class="parallax-xl">
@@ -274,7 +274,7 @@ export default function Article4() {
         </article>
 
         <section className="confused">
-          <img src="../public/assets/img/confused.png" alt="confused"/>
+          <img src="../public/assets/img/confused1.png" alt="confused"/>
         </section>
 
         <section class="parallax-xl">

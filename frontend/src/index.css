@@ -484,6 +484,7 @@ figcaption {
   text-align: center;
   transition: opacity 0.5s ease;
   width: 70%;
+  border-radius: 10px;
 }
 
 .parallax-xl {
@@ -606,7 +607,7 @@ figcaption {
 }
 
 .confused img {
-  width: 200px; /* Juster størrelsen på bildet her */
+  width: 150px; /* Juster størrelsen på bildet her */
   height: auto; /* Opprettholder bildeforholdet */
 }
 
