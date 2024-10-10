@@ -124,7 +124,7 @@ export default function Article4() {
           <div ref={hoverThoughtsRef} className="thought"></div>
         </div>
       </div>
-
+      <body className="body-background">
       <div className="xl-container">
         <section class="parallax-xl">
           <header class="caption-xl">
@@ -132,12 +132,10 @@ export default function Article4() {
           </header>
         </section>
 
-        <article class="section-xl">
           <section class="content-xl">
             <h2>Den skjulte utfordringen</h2>
               <p>ADHD, eller Attention Deficit Hyperactivity Disorder, har lenge vært forbundet med urolige skolebarn og impulsiv oppførsel. Men hva skjer når disse symptomene forblir uoppdaget gjennom barndommen og inn i voksenlivet? Sendiagnostisering av ADHD er et voksende fenomen som kaster lys over de komplekse utfordringene mange voksne står overfor.</p>
           </section>
-        </article>
 
         <section class="parallax-xl">
           <header class="caption-xl">
@@ -145,7 +143,6 @@ export default function Article4() {
           </header>
         </section>
 
-        <article class="section-xl">
           <section class="content-xl">
             <h2>Symptomer i skjul - En livslang kamp</h2>
             
@@ -166,7 +163,6 @@ export default function Article4() {
               <strong>Visste du?</strong> Studier viser at opptil 4% av voksne kan ha ADHD, men mange forblir udiagnostisert gjennom store deler av livet.
             </section>
           </section>
-        </article>
 
         <section className="confused">
           <img src="../public/assets/img/confused1.png" alt="confused"/>
@@ -178,7 +174,6 @@ export default function Article4() {
           </header>
         </section>
 
-        <article class="section-xl">
           <section class="content-xl">
             <h2>Kjønnsperspektivet - Når stereotyper skjuler sannheten</h2>
 
@@ -200,7 +195,6 @@ export default function Article4() {
               <strong>Statistikk:</strong> For hver tredje gutt som diagnostiseres med ADHD, diagnostiseres bare én jente, til tross for at forekomsten antas å være lik mellom kjønnene.
             </section>
           </section>
-        </article>
 
         <section className="confused">
           <img src="../public/assets/img/confused2.png" alt="confused"/>
@@ -212,7 +206,6 @@ export default function Article4() {
           </header>
         </section>
 
-        <article class="section-xl">
           <section class="content-xl">
             <h2>ADHD i arbeidslivet - En tveegget sverd</h2>
 
@@ -231,7 +224,6 @@ export default function Article4() {
               <strong>Interessant fakta:</strong> Noen kjente entreprenører og innovatører, som Richard Branson og Ingvar Kamprad, har åpent delt sine erfaringer med ADHD og hvordan det har påvirket deres karrierer positivt.
             </section>
           </section>
-        </article>
 
         <section className="confused">
           <img src="../public/assets/img/confused3.png" alt="confused"/>
@@ -243,7 +235,6 @@ export default function Article4() {
           </header>
         </section>
 
-        <article class="section-xl">
           <section class="content-xl">
             <h2>Diagnostisering og behandling - En ny start</h2>
 
@@ -271,7 +262,6 @@ export default function Article4() {
               <strong>Visste du?</strong> Studier viser at opptil 70% av voksne med ADHD opplever betydelig symptomlindring med riktig behandling.
             </section>
           </section>
-        </article>
 
         <section className="confused">
           <img src="../public/assets/img/confused1.png" alt="confused"/>
@@ -283,7 +273,6 @@ export default function Article4() {
           </header>
         </section>
 
-        <article class="section-xl">
           <section class="content-xl">
             <h2>ADHD og mellommenneskelige relasjoner</h2>
 
@@ -297,8 +286,8 @@ export default function Article4() {
             <h3>Foreldreskap med ADHD</h3>
             <p>Å være forelder med ADHD bringer med seg unike utfordringer og styrker. Mange foreldre med ADHD rapporterer at de sliter med å opprettholde rutiner og struktur, samtidig som de ofte har en unik evne til å forstå og støtte barnets behov.</p>
           </section>
-        </article>
     </div>
+    </body>
     </>
   )
 }

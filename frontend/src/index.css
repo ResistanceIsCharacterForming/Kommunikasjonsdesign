@@ -1,6 +1,7 @@
 /* Variabler */
 :root {
   --white: white;
+  --smoke: #f7f7f7;
   --black: black;
   --light-grey: rgb(224, 224, 224);
   --dark-grey: #484848;
@@ -448,6 +449,12 @@ figcaption {
 
 /* Main Article 4 */
 
+.body-background {
+  background-color: var(--smoke);
+  background-size: cover;
+  background-position: center;
+}
+
 .xl-hero {
   display: flex;
   justify-content: center;
@@ -489,6 +496,7 @@ figcaption {
 
 .parallax-xl {
   background-image: url("/public/assets/img/brain.gif");
+  background-color: var(--white);
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -527,7 +535,25 @@ figcaption {
 
 .section-xl {
   padding: 60px 20px; 
-  background-color: #f7f7f7; 
+  background-color: var(--smoke);
+}
+
+.content-xl {
+  padding: 40px;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); 
+  border-radius: 12px;
+
+  ul {
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 1.7;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
 
   h1 {
     font-size: 35px;
@@ -544,26 +570,7 @@ figcaption {
   p {
     color: #555;
     line-height: 1.7;
-    font-size: 18px;
-  }
-}
-
-.content-xl {
-  background-color: #ffffff;
-  padding: 40px;
-  max-width: 800px;
-  margin: 50px auto;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); 
-  border-radius: 12px;
-
-  ul {
-    padding-left: 20px;
-    margin-top: 20px;
-    line-height: 1.7;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
+    font-size: 16px;
   }
 }
 
@@ -571,7 +578,7 @@ figcaption {
   position: relative; 
 
   p {
-    font-size: 1.1em;
+    font-size: 14px;
     line-height: 1.3;
     padding-top: 3rem;
     padding-left: 1rem;
@@ -594,7 +601,7 @@ figcaption {
   padding: 20px;
   margin: 30px 0;
   border-radius: 8px;
-  font-size: 1.1em;
+  font-size: 14px;
   line-height: 1.3;
   color: #333;
 }
