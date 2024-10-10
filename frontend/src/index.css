@@ -556,11 +556,13 @@ figcaption {
 .quote-xl {
   font-style: italic;
   font-size: 1.2em;
+  line-height: 1.5;
   border-left: 5px solid #c5134c;
   padding-left: 20px;
   margin: 20px 0;
   background-color: #ffe0e9; /* Softer color for better readability */
   border-radius: 5px;
+  padding: 1rem;
 }
 
 .fact-box {
@@ -845,7 +847,7 @@ footer {
     margin-top: 3rem;
   }
 
-  /* Main Article 4 */
+  /* Main Article4 */
  
   h1 {
     font-size: 28px;
@@ -868,6 +870,8 @@ footer {
   .content-xl {
     padding: 20px;
   }
+
+  /* Footer */
 
   footer {
     padding: 2rem;
