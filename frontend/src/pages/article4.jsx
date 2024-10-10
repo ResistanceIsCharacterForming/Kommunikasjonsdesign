@@ -112,7 +112,7 @@ export default function Article4() {
           alignItems: "center",
         }}
       >
-        <div ref={containerRef} className="container">
+        <div ref={containerRef} className="container-xl">
           {thoughts.map((thought, index) => (
             <div
               key={index}

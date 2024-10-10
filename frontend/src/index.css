@@ -456,7 +456,7 @@ figcaption {
   filter: brightness(2) contrast(0.8);
 }
 
-.container {
+.container-xl {
   position: "absolute";
   top: 50dvh;
   height: 90dvh;
