@@ -601,14 +601,14 @@ figcaption {
 
 .confused {
   display: flex;
-  justify-content: center; /* Sentraliserer horisontalt */
-  align-items: center; /* Sentraliserer vertikalt */
-  height: 50vh; /* Tar opp hele høyden av vinduet */
+  justify-content: center; 
+  align-items: center; 
+  height: 50vh; 
 }
 
 .confused img {
-  width: 150px; /* Juster størrelsen på bildet her */
-  height: auto; /* Opprettholder bildeforholdet */
+  width: 150px; 
+  height: auto; 
 }
 
 
