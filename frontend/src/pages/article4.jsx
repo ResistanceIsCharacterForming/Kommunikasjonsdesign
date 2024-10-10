@@ -134,9 +134,8 @@ export default function Article4() {
 
         <article class="section-xl">
           <section class="content-xl">
-            <h2>Innledning: Den skjulte utfordringen</h2>
+            <h2>Den skjulte utfordringen</h2>
               <p>ADHD, eller Attention Deficit Hyperactivity Disorder, har lenge vært forbundet med urolige skolebarn og impulsiv oppførsel. Men hva skjer når disse symptomene forblir uoppdaget gjennom barndommen og inn i voksenlivet? Sendiagnostisering av ADHD er et voksende fenomen som kaster lys over de komplekse utfordringene mange voksne står overfor.</p>
-              <p>I denne omfattende artikkelen skal vi dykke dypt inn i temaet sendiagnostisering av ADHD, utforske årsakene, konsekvensene og veien framover for de som lever med denne ofte misforståtte tilstanden.</p>
           </section>
         </article>
 
@@ -152,7 +151,7 @@ export default function Article4() {
             
             <h3>De subtile tegnene</h3>
               <p>For mange begynner reisen mot en ADHD-diagnose i voksen alder med en livslang følelse av å være "annerledes". Klassiske symptomer som impulsivitet, konsentrasjonsvansker og hyperaktivitet kan manifestere seg på subtile måter som er lette å overse eller mistolke.</p>
-              <blockquote class="quote">"Jeg trodde alltid det var noe galt med meg. At jeg bare var lat eller umotivert. Det tok 35 år før jeg forsto at det var ADHD," forteller Maria, nylig diagnostisert.</blockquote>
+              <blockquote class="quote-xl">"Jeg trodde alltid det var noe galt med meg. At jeg bare var lat eller umotivert. Det tok 35 år før jeg forsto at det var ADHD," forteller Maria, nylig diagnostisert.</blockquote>
 
             <h3>Mestringsstrategier og maskering</h3>
               <p>Mange voksne med udiagnostisert ADHD har gjennom årene utviklet komplekse mestringsstrategier. Disse kan inkludere overdreven planlegging, bruk av påminnelser og alarmer, eller til og med å unngå visse situasjoner helt. Mens disse strategiene kan være effektive på kort sikt, kan de også maskere de underliggende symptomene og gjøre diagnostisering utfordrende.</p>
@@ -181,7 +180,7 @@ export default function Article4() {
 
             <h3>Interne vs. eksterne symptomer</h3>
               <p>Forskning viser at jenter oftere viser internaliseringssymptomer som angst, depresjon og dagdrømming, i motsetning til de mer synlige eksternaliseringssymptomene som hyperaktivitet og impulsivitet, som oftere ses hos gutter. Denne forskjellen kan føre til at ADHD hos jenter og kvinner ofte blir feildiagnostisert eller oppdages senere i livet.</p>
-              <blockquote class="quote">"Jeg var alltid 'den stille jenta' i klassen. Ingen mistenkte ADHD fordi jeg ikke forstyrret andre. Men inni meg var det kaos," sier Lisa, diagnostisert med ADHD i 40-årene.</blockquote>
+              <blockquote class="quote-xl">"Jeg var alltid 'den stille jenta' i klassen. Ingen mistenkte ADHD fordi jeg ikke forstyrret andre. Men inni meg var det kaos," sier Lisa, diagnostisert med ADHD i 40-årene.</blockquote>
 
             <h3>Hormonelle faktorer</h3>
               <p>Hormonsykluser kan påvirke ADHD-symptomer hos kvinner, noe som kan gjøre diagnostisering enda mer komplisert. Mange kvinner rapporterer at symptomene forverres under visse faser av menstruasjonssyklusen, graviditet eller menopause.</p>
@@ -204,7 +203,7 @@ export default function Article4() {
 
             <h3>Daglige utfordringer</h3>
               <p>For mange voksne blir ADHD-symptomene særlig tydelige i arbeidslivet. Utfordringer med tidsplanlegging, organisering og å fullføre oppgaver kan skape betydelige hindringer i karrieren.</p>
-              <blockquote class="quote">"Jeg har alltid jobbet dobbelt så hardt som kollegene mine for å holde tritt. Det var utmattende, men jeg visste ikke hvorfor før jeg fikk diagnosen," sier Thomas, en IT-konsulent diagnostisert med ADHD i 40-årene.</blockquote>
+              <blockquote class="quote-xl">"Jeg har alltid jobbet dobbelt så hardt som kollegene mine for å holde tritt. Det var utmattende, men jeg visste ikke hvorfor før jeg fikk diagnosen," sier Thomas, en IT-konsulent diagnostisert med ADHD i 40-årene.</blockquote>
 
             <h3>Kreativitet og innovasjon</h3>
               <p>Samtidig er det viktig å anerkjenne de unike styrkene mange med ADHD besitter. Kreativitet, evnen til hyperfokus og en unik problemløsningsevne er ofte fremtredende egenskaper. I yrker som krever innovativ tenkning og evne til å tenke "utenfor boksen", kan disse egenskapene være svært verdifulle.</p>
@@ -226,14 +225,14 @@ export default function Article4() {
 
         <article class="section-xl">
           <section class="content-xl">
-            <h2>Kapittel 4: Diagnostisering og behandling - En ny start</h2>
+            <h2>Diagnostisering og behandling - En ny start</h2>
 
             <h3>Utfordringer i diagnostiseringsprosessen</h3>
               <p>Prosessen med å få en ADHD-diagnose som voksen kan være både utfordrende og tidkrevende. Mange opplever å bli avvist eller misforstått av helsepersonell som ikke er tilstrekkelig oppdatert på ADHD hos voksne.</p>
 
             <h3>Emosjonell berg-og-dalbane</h3>
               <p>Når diagnosen endelig stilles, opplever mange en blanding av lettelse og sorg - lettelse over å endelig forstå seg selv bedre, men også sorg over tapte muligheter og år med misforståelser.</p>
-              <blockquote class="quote">"Å få diagnosen var som å få nøkkelen til å forstå meg selv. Det er utfordrende, men nå kan jeg endelig begynne å bygge et liv som passer for meg," forteller Marte, som fikk sin ADHD-diagnose i 50-årene.</blockquote>
+              <blockquote class="quote-xl">"Å få diagnosen var som å få nøkkelen til å forstå meg selv. Det er utfordrende, men nå kan jeg endelig begynne å bygge et liv som passer for meg," forteller Marte, som fikk sin ADHD-diagnose i 50-årene.</blockquote>
 
             <h3>Behandlingsalternativer</h3>
               <p>Behandling for voksne med ADHD inkluderer ofte en kombinasjon av:</p>
@@ -263,7 +262,7 @@ export default function Article4() {
 
             <h3>Utfordringer i parforhold</h3>
             <p>ADHD kan ha en betydelig innvirkning på romantiske forhold. Problemer med oppmerksomhet, impulsivitet og emosjonell regulering kan skape misforståelser og konflikter.</p>
-              <blockquote class="quote">"Det tok tid for min partner å forstå at når jeg glemte ting, var det ikke fordi jeg ikke brydde meg. ADHD-diagnosen hjalp oss begge å forstå dynamikken bedre," forteller Anders, gift i 15 år.</blockquote>
+              <blockquote class="quote-xl">"Det tok tid for min partner å forstå at når jeg glemte ting, var det ikke fordi jeg ikke brydde meg. ADHD-diagnosen hjalp oss begge å forstå dynamikken bedre," forteller Anders, gift i 15 år.</blockquote>
 
             <h3>Foreldreskap med ADHD</h3>
             <p>Å være forelder med ADHD bringer med seg unike utfordringer og styrker. Mange foreldre med ADHD rapporterer at de sliter med å opprettholde rutiner og struktur, samtidig som de ofte har en unik evne til å forstå og støtte barnets behov.</p>

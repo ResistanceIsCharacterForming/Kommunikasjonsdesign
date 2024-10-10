@@ -485,6 +485,7 @@ figcaption {
 }
 
 .parallax-xl {
+  background-image: url("/public/assets/img/brain.gif");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -512,16 +513,20 @@ figcaption {
   background-color: rgba(186, 76, 110, 0.85); /* Slight transparency for modern feel */
   color: #ffffff;
   padding: 20px;
-  font-size: 26px;
+  font-size: 15px;
   letter-spacing: 3px;
-  max-width: 80%;
   text-align: center;
   border-radius: 8px;
   z-index: 2;
   position: relative;
+}
+
+.section-xl {
+  padding: 60px 20px; /* More padding on smaller screens */
+  background-color: #f7f7f7; /* Softer background color */
 
   h1 {
-    font-size: 36px;
+    font-size: 35px;
   }
   
   h2 {
@@ -539,11 +544,6 @@ figcaption {
   }
 }
 
-.section-xl {
-  padding: 60px 20px; /* More padding on smaller screens */
-  background-color: #f7f7f7; /* Softer background color */
-}
-
 .content-xl {
   background-color: #ffffff;
   padding: 40px;
@@ -551,23 +551,16 @@ figcaption {
   margin: 50px auto;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for cleaner look */
   border-radius: 12px;
-
-  h1, h2, h3 {
-    color: #2c2c2c;
-    width: 100%; /* Better use of space */
-    margin-bottom: 20px; /* Adds more space between headings */
-    text-align: center;
-  }
 }
 
-.quote {
+.quote-xl {
   font-style: italic;
   font-size: 1.2em;
   border-left: 5px solid #c5134c;
   padding-left: 20px;
   margin: 20px 0;
   background-color: #ffe0e9; /* Softer color for better readability */
-  border-radius: 0 8px 8px 0;
+  border-radius: 5px;
 }
 
 .fact-box {
@@ -854,11 +847,6 @@ footer {
 
   /* Main Article 4 */
  
-  .parallax-xl {
-    height: 60vh;
-    background-attachment: scroll;
-  }
-
   h1 {
     font-size: 28px;
   }
