@@ -135,10 +135,10 @@ export default function Article4() {
           </section>
         
           {/*Article section*/}
-          <section class="content-xl">
+          <article class="content-xl">
             <h2>Den skjulte utfordringen</h2>
               <p>ADHD, eller Attention Deficit Hyperactivity Disorder, har lenge vært forbundet med urolige skolebarn og impulsiv oppførsel. Men hva skjer når disse symptomene forblir uoppdaget gjennom barndommen og inn i voksenlivet? Sendiagnostisering av ADHD er et voksende fenomen som kaster lys over de komplekse utfordringene mange voksne står overfor.</p>
-          </section>
+          </article>
 
           {/*Parallax header*/} 
           <section class="parallax-xl">
@@ -148,7 +148,7 @@ export default function Article4() {
           </section>
 
           {/*Article section*/}
-          <section class="content-xl">
+          <article class="content-xl">
             <h2>Symptomer i skjul - En livslang kamp</h2>
             <h3>De subtile tegnene</h3>
               <p>For mange begynner reisen mot en ADHD-diagnose i voksen alder med en livslang følelse av å være "annerledes". Klassiske symptomer som impulsivitet, konsentrasjonsvansker og hyperaktivitet kan manifestere seg på subtile måter som er lette å overse eller mistolke.</p>
@@ -163,7 +163,7 @@ export default function Article4() {
             <section class="fact-box">
               <strong>Visste du?</strong> Studier viser at opptil 4% av voksne kan ha ADHD, men mange forblir udiagnostisert gjennom store deler av livet.
             </section>
-          </section>
+          </article>
           
           {/*Confused img*/}
           <section className="confused">
@@ -178,7 +178,7 @@ export default function Article4() {
           </section>
           
           {/*Article section*/}
-          <section class="content-xl">
+          <article class="content-xl">
             <h2>Kjønnsperspektivet - Når stereotyper skjuler sannheten</h2>
             <h3>Den "typiske" ADHD-pasienten</h3>
               <p>Historisk sett har ADHD ofte blitt oppfattet som en "guttelidelse". Dette stereotypiske bildet av et hyperaktivt, impulsivt barn har ført til at mange jenter og kvinner har blitt oversett i diagnostiseringsprosessen.</p>
@@ -193,7 +193,7 @@ export default function Article4() {
             <section class="fact-box">
               <strong>Statistikk:</strong> For hver tredje gutt som diagnostiseres med ADHD, diagnostiseres bare én jente, til tross for at forekomsten antas å være lik mellom kjønnene.
             </section>
-          </section>
+          </article>
           <section className="confused">
             <img src="../public/assets/img/confused2.png" alt="confused"/>
           </section>
@@ -206,7 +206,7 @@ export default function Article4() {
           </section>
 
           {/*Article section*/}
-          <section class="content-xl">
+          <article class="content-xl">
             <h2>ADHD i arbeidslivet - En tveegget sverd</h2>
             <h3>Daglige utfordringer</h3>
               <p>For mange voksne blir ADHD-symptomene særlig tydelige i arbeidslivet. Utfordringer med tidsplanlegging, organisering og å fullføre oppgaver kan skape betydelige hindringer i karrieren.</p>
@@ -217,7 +217,7 @@ export default function Article4() {
             <section class="fact-box">
               <strong>Interessant fakta:</strong> Noen kjente entreprenører og innovatører, som Richard Branson og Ingvar Kamprad, har åpent delt sine erfaringer med ADHD og hvordan det har påvirket deres karrierer positivt.
             </section>
-          </section>
+          </article>
           
           {/*Confused img*/}
           <section className="confused">
@@ -232,7 +232,7 @@ export default function Article4() {
           </section>
           
           {/*Article section*/}
-          <section class="content-xl">
+          <article class="content-xl">
             <h2>Diagnostisering og behandling - En ny start</h2>
             <h3>Utfordringer i diagnostiseringsprosessen</h3>
               <p>Prosessen med å få en ADHD-diagnose som voksen kan være både utfordrende og tidkrevende. Mange opplever å bli avvist eller misforstått av helsepersonell som ikke er tilstrekkelig oppdatert på ADHD hos voksne.</p>
@@ -254,7 +254,7 @@ export default function Article4() {
             <section class="fact-box">
               <strong>Visste du?</strong> Studier viser at opptil 70% av voksne med ADHD opplever betydelig symptomlindring med riktig behandling.
             </section>
-          </section>
+          </article>
           
           {/*Confused img*/}
           <section className="confused">
@@ -269,7 +269,7 @@ export default function Article4() {
           </section>
           
           {/*Article section*/}
-          <section class="content-xl">
+          <article class="content-xl">
             <h2>ADHD og mellommenneskelige relasjoner</h2>
             <h3>Utfordringer i parforhold</h3>
             <p>ADHD kan ha en betydelig innvirkning på romantiske forhold. Problemer med oppmerksomhet, impulsivitet og emosjonell regulering kan skape misforståelser og konflikter.</p>
@@ -279,7 +279,7 @@ export default function Article4() {
             </section>
             <h3>Foreldreskap med ADHD</h3>
             <p>Å være forelder med ADHD bringer med seg unike utfordringer og styrker. Mange foreldre med ADHD rapporterer at de sliter med å opprettholde rutiner og struktur, samtidig som de ofte har en unik evne til å forstå og støtte barnets behov.</p>
-          </section>
+          </article>
 
           {/*Confused img*/}
           <section className="confused">
