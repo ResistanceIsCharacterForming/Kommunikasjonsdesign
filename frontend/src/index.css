@@ -885,7 +885,9 @@ footer {
 
   /* Main Article4 */
 
-
+  .xl-hero {
+    background-size: 60%;
+  }
  
 
   /* Footer */
