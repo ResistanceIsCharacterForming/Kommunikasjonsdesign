@@ -165,6 +165,10 @@ export default function Article4() {
           </section>
         </article>
 
+        <section className="confused">
+          <img src="../public/assets/img/confused.png" alt="confused"/>
+        </section>
+
         <section class="parallax-xl">
           <header class="caption-xl">
             <h2>KJØNNSFORSKJELLER I ADHD-DIAGNOSTISERING: EN SKJULT EPIDEMI?</h2>
@@ -191,6 +195,10 @@ export default function Article4() {
           </section>
         </article>
 
+        <section className="confused">
+          <img src="../public/assets/img/confused.png" alt="confused"/>
+        </section>
+
         <section class="parallax-xl">
           <header class="caption-xl">
             <h2>ADHD I ARBEIDSLIVET: UTFORDRINGER OG UANTE STYRKER</h2>
@@ -216,6 +224,10 @@ export default function Article4() {
             </section>
           </section>
         </article>
+
+        <section className="confused">
+          <img src="../public/assets/img/confused.png" alt="confused"/>
+        </section>
 
         <section class="parallax-xl">
           <header class="caption-xl">
@@ -249,6 +261,10 @@ export default function Article4() {
             </section>
           </section>
         </article>
+
+        <section className="confused">
+          <img src="../public/assets/img/confused.png" alt="confused"/>
+        </section>
 
         <section class="parallax-xl">
           <header class="caption-xl">

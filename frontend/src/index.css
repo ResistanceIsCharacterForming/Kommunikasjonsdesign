@@ -482,6 +482,7 @@ figcaption {
   margin: 1rem;
   text-align: center;
   transition: opacity 0.5s ease;
+  width: 70%;
 }
 
 .parallax-xl {
@@ -514,6 +515,7 @@ figcaption {
   color: #ffffff;
   padding: 20px;
   font-size: 15px;
+  line-height: 1.3;
   letter-spacing: 3px;
   text-align: center;
   border-radius: 8px;
@@ -551,6 +553,16 @@ figcaption {
   margin: 50px auto;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for cleaner look */
   border-radius: 12px;
+
+  ul {
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 1.7;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
 }
 
 .quote-xl {
@@ -572,19 +584,21 @@ figcaption {
   margin: 30px 0;
   border-radius: 8px;
   font-size: 1.1em;
+  line-height: 1.3;
   color: #333;
 }
 
-ul {
-  padding-left: 20px;
-  margin-top: 20px;
-  line-height: 1.7;
+.confused {
+  display: flex;
+  justify-content: center; /* Sentraliserer horisontalt */
+  align-items: center; /* Sentraliserer vertikalt */
+  height: 50vh; /* Tar opp hele høyden av vinduet */
 }
 
-ul li {
-  margin-bottom: 10px;
+.confused img {
+  width: 200px; /* Juster størrelsen på bildet her */
+  height: auto; /* Opprettholder bildeforholdet */
 }
-
 
 
 /* Animations */
@@ -848,28 +862,9 @@ footer {
   }
 
   /* Main Article4 */
+
+
  
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  .caption-xl {
-    font-size: 20px;
-    padding: 15px;
-    max-width: 90%;
-  }
-
-  .content-xl {
-    padding: 20px;
-  }
 
   /* Footer */
 
