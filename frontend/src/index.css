@@ -450,7 +450,7 @@ figcaption {
 /* Main Article 4 */
 
 .body-background {
-  background-color: var(--smoke);
+  background-color: #fae7edc2;
   background-size: cover;
   background-position: center;
 }
@@ -491,11 +491,11 @@ figcaption {
   text-align: center;
   transition: opacity 0.5s ease;
   width: 70%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .parallax-xl {
-  background-image: url("/public/assets/img/brain.gif");
+  background-image: url("/public/assets/img/background.jpg");
   background-color: var(--white);
   height: 100vh;
   background-attachment: fixed;
@@ -522,6 +522,7 @@ figcaption {
 
 .caption-xl {
   background-color: var(--pink); 
+  opacity: 0.7;
   color: #ffffff;
   padding: 20px;
   font-size: 15px;
@@ -541,6 +542,7 @@ figcaption {
 .content-xl {
   padding: 50px;
   max-width: 800px;
+  margin: 10px auto;
 
   ul {
     padding-left: 20px;
@@ -550,6 +552,7 @@ figcaption {
   
   ul li {
     margin-bottom: 10px;
+    font-size: 12px;
   }
 
   h1 {
