@@ -101,7 +101,7 @@ export default function Article4() {
       el.style.backgroundPositionY = yPos + "px"
     })
   })
-
+  
   return (
     <>
       <div className="card">
@@ -276,7 +276,6 @@ export default function Article4() {
           <section className="confused">
             <img src="../public/assets/img/confused2.png" alt="confused" />
           </section>
-
           {/*Parallax header*/}
           <section class="parallax-xl">
             <header class="caption-xl">
