@@ -46,8 +46,8 @@ export default function Article4() {
         element.style.width = "50px"
         element.style.height = "50px"
         element.style.position = "absolute"
-        element.style.left = randomMinMax(0, containerWidth - 70) + "px"
-        element.style.top = randomMinMax(0, containerHeight - 70) + "px"
+        element.style.left = randomMinMax(0, containerWidth - 50) + "px"
+        element.style.top = randomMinMax(0, containerHeight - 50) + "px"
         element.style.borderRadius = "50%"
         element.style.backgroundColor = "white"
         element.style.cursor = "pointer"
@@ -74,11 +74,11 @@ export default function Article4() {
           left += directionX
           top += directionY
 
-          if (left <= 0 || left >= containerWidth - 70) {
+          if (left <= 0 || left >= containerWidth - 50) {
             directionX = -directionX
           }
 
-          if (top <= 0 || top >= containerHeight - 70) {
+          if (top <= 0 || top >= containerHeight - 50) {
             directionY = -directionY
           }
 
