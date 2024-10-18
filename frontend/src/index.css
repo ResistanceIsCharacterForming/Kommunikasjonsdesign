@@ -30,7 +30,7 @@
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 0;
 }
 
 body {
@@ -365,6 +365,44 @@ canvas {
 }
 
 /* Main Article 2*/
+.article-start, .start-section1, .article-header, .article-content, .section-title, .quote {
+  position: relative;
+  z-index: 1; 
+}
+
+.article-start {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  max-width: 1500px;
+  margin-left: auto; 
+  margin-right: auto; 
+
+  p {
+    color: var(--white);
+  }
+}
+
+.start-section1 {
+  margin-top: 30rem;
+  margin-bottom: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 3rem;
+  max-width: 600px;
+
+  h2 {
+    font-size: 35px;
+  }
+}
+.nd2 {
+  margin-top: 0;
+  margin-bottom: 30rem;
+}
+
 .article-header {
   background-image: url("/public/assets/img/castle.jpg");
   color: var(--white);
@@ -374,7 +412,7 @@ canvas {
 }
 
 .article-title {
-  font-size: 35px;
+  font-size: 45px;
   color: var(--white);
   line-height: 1.4;
   background-color: rgba(0, 0, 0, 0.5);
@@ -395,17 +433,23 @@ canvas {
 }
 
 .article-content {
-  max-width: 800px;
   overflow: hidden;
-  padding: 2rem;
-  margin: 0 auto;
-  line-height: 1.4;
+  padding: 2rem 0; 
+  background-color: var(--white);
+  position: relative;
 
   p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
   }
+}
+
+.article-content .inner-content {
+  max-width: 800px;        
+  margin: 0 auto;       
+  padding: 0 2rem;          
+  line-height: 1.4;        
 }
 
 .section-title {
@@ -795,6 +839,8 @@ footer {
   font-size: 0.9rem;
   background-color: var(--black);
   color: var(--white);
+  position: relative;
+  z-index: 1000;
 
   ul {
     display: flex;
