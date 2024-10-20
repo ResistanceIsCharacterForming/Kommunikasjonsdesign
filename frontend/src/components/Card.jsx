@@ -28,8 +28,8 @@ export default function Card() {
       id: "article4",
       img: "public/assets/img/brain.gif",
       date: "2024-09-28",
-      title: "Hvordan går det egentlig?",
-      text: "En undersøkelse viser at mange sliter med å få endene til å møtes",
+      title: "Sendiagnostisering av ADHD: En livslang reise mot forståelse",
+      text: "ADHD, eller Attention Deficit Hyperactivity Disorder, har lenge vært forbundet med urolige skolebarn og impulsiv oppførsel. Men hva skjer når disse symptomene forblir uoppdaget gjennom barndommen og inn i voksenlivet?...",
     },
   ]
 
