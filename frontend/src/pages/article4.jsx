@@ -1,7 +1,197 @@
 import { useEffect, useRef } from "react"
-import CardFlex from "../components/CardFlex"
+import Chart from "chart.js/auto"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
+// Linjediagram
+const LineChart = ({ id, labels, datasets }) => {
+  useEffect(() => {
+    const ctx = document.getElementById(id).getContext("2d")
+    new Chart(ctx, {
+      type: "line",
+      data: {
+        labels,
+        datasets,
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    })
+  }, [id, labels, datasets])
+
+  return <canvas data-aos="fade-up" id={id}></canvas>
+}
+
+// Stolpediagram
+const BarChart = ({ id, labels, datasets }) => {
+  useEffect(() => {
+    const ctx = document.getElementById(id).getContext("2d")
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels,
+        datasets,
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    })
+  }, [id, labels, datasets])
+
+  return <canvas data-aos="fade-up" id={id}></canvas>
+}
+
+// Hovedkomponeten
 export default function Article4() {
+  // Jenter
+  const lineChartData1 = {
+    labels: [
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+    ],
+    datasets: [
+      {
+        label: "0-5 år",
+        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        borderWidth: 1,
+        borderColor: "rgba(75, 192, 192, 1)",
+        fill: false,
+      },
+      {
+        label: "6-11 år",
+        data: [0.8, 0.8, 0.8, 0.9, 0.9, 0.9, 0.9, 1.0, 1.0, 1.0, 1.2, 1.2, 1.3],
+        borderWidth: 1,
+        borderColor: "rgba(153, 102, 255, 1)",
+        fill: false,
+      },
+      {
+        label: "12-15 år",
+        data: [1.1, 1.1, 1.1, 1.2, 1.2, 1.2, 1.3, 1.3, 1.4, 1.5, 1.6, 2.0, 2.5],
+        borderWidth: 1,
+        borderColor: "rgba(255, 99, 132, 1)",
+        fill: false,
+      },
+      {
+        label: "16-19 år",
+        data: [1.0, 1.0, 1.0, 1.1, 1.1, 1.1, 1.1, 1.2, 1.3, 1.3, 1.5, 2.2, 3.3],
+        borderWidth: 1,
+        borderColor: "rgba(255, 99, 132, 1)",
+        fill: false,
+      },
+      {
+        label: "20-24 år",
+        data: [0.3, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.5, 0.5, 0.6, 0.7, 1.0, 1.3],
+        borderWidth: 1,
+        borderColor: "rgba(255, 99, 132, 1)",
+        fill: false,
+      },
+    ],
+  }
+  // Gutter
+  const lineChartData2 = {
+    labels: [
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+    ],
+    datasets: [
+      {
+        label: "0-5 år",
+        data: [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+        borderWidth: 1,
+        borderColor: "rgba(75, 192, 192, 1)",
+        fill: false,
+      },
+      {
+        label: "6-11 år",
+        data: [2.2, 2.2, 2.2, 2.2, 2.1, 2.2, 2.2, 2.3, 2.3, 2.3, 2.4, 2.6, 2.9],
+        borderWidth: 1,
+        borderColor: "rgba(153, 102, 255, 1)",
+        fill: false,
+      },
+      {
+        label: "12-15 år",
+        data: [2.0, 2.0, 2.0, 1.9, 1.9, 1.9, 1.8, 1.8, 1.8, 1.9, 2.0, 2.1, 2.4],
+        borderWidth: 1,
+        borderColor: "rgba(255, 99, 132, 1)",
+        fill: false,
+      },
+      {
+        label: "16-19 år",
+        data: [1.7, 1.7, 1.6, 1.6, 1.5, 1.6, 1.6, 1.6, 1.7, 1.7, 1.8, 2.0, 2.3],
+        borderWidth: 1,
+        borderColor: "rgba(255, 99, 132, 1)",
+        fill: false,
+      },
+      {
+        label: "20-24 år",
+        data: [0.9, 0.9, 1.0, 1.0, 1.0, 1.1, 1.1, 1.2, 1.2, 1.3, 1.4, 1.6, 1.9],
+        borderWidth: 1,
+        borderColor: "rgba(255, 99, 132, 1)",
+        fill: false,
+      },
+    ],
+  }
+  const barChartData = {
+    labels: ["20-29 år", "30-39 år", "40-49 år", "50+ år"],
+    datasets: [
+      {
+        label: "1995-1996 (%) ",
+        data: [28.8, 39.5, 22.9, 8.8],
+        backgroundColor: "rgba(255, 99, 132, 0.2)",
+        borderColor: "rgba(255, 99, 132, 1)",
+        borderWidth: 1,
+      },
+      {
+        label: "1997-1998 (%)",
+        data: [28.4, 34.5, 31.5, 5.6],
+        backgroundColor: "rgba(54, 162, 235, 0.2)",
+        borderColor: "rgba(54, 162, 235, 1)",
+        borderWidth: 1,
+      },
+      {
+        label: "1999-2000 (%)",
+        data: [20.9, 26.0, 34.5, 18.6],
+        backgroundColor: "rgba(75, 192, 192, 0.2)",
+        borderColor: "rgba(75, 192, 192, 1)",
+        borderWidth: 1,
+      },
+    ],
+  }
+
   const randomMinMax = (min, max) => Math.random() * (max - min) + min
 
   const thoughts = [
@@ -34,6 +224,7 @@ export default function Article4() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    AOS.init()
     const container = containerRef.current
 
     elementsRef.current.forEach((element, index) => {
@@ -127,6 +318,41 @@ export default function Article4() {
       </div>
 
       <body className="body-background">
+        {/*             Charts
+          <figure>
+            <LineChart
+              id="chart1"
+              labels={lineChartData1.labels}
+              datasets={lineChartData1.datasets}
+            />
+            <figcaption>
+            Andelen jenter (i prosent) i perioden 2010-2022 som var registrert med diagnosekode for ADHD (ICD-10-kode F90) i spesialisthelsetjenesten, etter kjønn og alderskategori. Datagrunnlag: Norsk pasientregister. (<a target="_blank" href="https://www.fhi.no/nyheter/2023/okning-i-adhd-diagnoser-for-barn-og-unge-under-pandemien/">FHI</a>)
+            </figcaption>
+          </figure>
+
+          <figure>
+            <LineChart
+              id="chart2"
+              labels={lineChartData2.labels}
+              datasets={lineChartData2.datasets}
+            />
+            <figcaption>
+            Andelen gutter (i prosent) i perioden 2010-2022 som var registrert med diagnosekode for ADHD (ICD-10-kode F90) i spesialisthelsetjenesten, etter kjønn og alderskategori. Datagrunnlag: Norsk pasientregister. (<a target="_blank" href="https://www.fhi.no/nyheter/2023/okning-i-adhd-diagnoser-for-barn-og-unge-under-pandemien/">FHI</a>)
+            </figcaption>
+          </figure>
+
+          <figure>
+            <BarChart
+              id="chart3"
+              labels={barChartData.labels}
+              datasets={barChartData.datasets}
+            />
+            <figcaption>
+            Annualised mean number of office-based visits with a recorded diagnosis of attention-deficit hyperactivity disorder (ADHD) in adults ≥20 years old. ((<a target="_blank" href="https://link.springer.com/article/10.2165/00124363-200418060-00003">Springer</a>))
+            </figcaption>
+          </figure>
+          */}
+
         <div className="xl-container">
           {/*Parallax header*/}
           <section class="parallax-xl">
@@ -266,7 +492,6 @@ export default function Article4() {
           <section className="confused">
             <img src="../public/assets/img/confused2.png" alt="confused" />
           </section>
-
           {/*Parallax header*/}
           <section class="parallax-xl">
             <header class="caption-xl">
