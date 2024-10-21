@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react"
+import CardFlex from "../components/CardFlex"
 
 export default function Article4() {
   const randomMinMax = (min, max) => Math.random() * (max - min) + min
@@ -37,8 +38,8 @@ export default function Article4() {
 
     elementsRef.current.forEach((element, index) => {
       if (element) {
-        let directionX = randomMinMax(1, 3)
-        let directionY = randomMinMax(1, 3)
+        let directionX = randomMinMax(1, 2.5)
+        let directionY = randomMinMax(1, 2.5)
 
         const containerWidth = container.clientWidth
         const containerHeight = container.clientHeight
@@ -51,6 +52,7 @@ export default function Article4() {
         element.style.borderRadius = "50%"
         element.style.backgroundColor = "white"
         element.style.cursor = "pointer"
+        element.style.filter = "blur(10px)"
 
         element.addEventListener("mouseover", () => {
           element.style.borderRadius = "0%"
@@ -104,18 +106,6 @@ export default function Article4() {
 
   return (
     <>
-      <div className="card">
-        {/* <img src="https://placehold.co/200" alt="" /> */}
-        <section className="cardinfo">
-          <h2>Levi Havuinen Nuet</h2>
-          <span>1993</span>
-          <span>29 år ved diagnose</span>
-        </section>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. At placeat
-          molestias soluta tenetur labore ab facilis.
-        </p>
-      </div>
       <div
         className="xl-hero"
         style={{
@@ -167,7 +157,7 @@ export default function Article4() {
               </h2>
             </header>
           </section>
-
+          <CardFlex />
           {/*Article section*/}
           <article class="content-xl">
             <h2>Symptomer i skjul - En livslang kamp</h2>
