@@ -268,12 +268,6 @@ export default function Article2() {
           Kartet viser den globale lykkeindeksen for 2024, der land er fargekodet fra rødt (lavest lykkenivå) til blått (høyest lykkkenivå). 
           Kilde: World Happiness Report 2024
         </figcaption>
-        <p>
-            Ifølge den nyeste rapporten fra World Happiness Report, er det flere faktorer som bidrar til de høye lykkenivåene i de nordiske landene. 
-            Disse inkluderer sterke sosiale nettverk, et robust velferdssystem, tillit til offentlige institusjoner og en høy grad av personlig frihet. 
-            Finland, som nok en gang topper listen, illustrerer hvordan disse elementene kombineres for å skape et samfunn hvor innbyggerne føler seg trygge og verdsatt. 
-            I kontrast viser kartet at flere land utenfor Norden sliter med lavere lykkenivåer, ofte knyttet til økonomisk usikkerhet, høy kriminalitet og mindre tilgang på sosiale tjenester.
-        </p>
       </section>
             <p>
             Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som
