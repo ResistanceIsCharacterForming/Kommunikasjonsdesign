@@ -9,18 +9,28 @@
     max-width: 750px;
     padding: 0 1rem;
     text-align: center;
-}
-  
-.caption span.border {
-    background-color: var(--dark-grey);
-    opacity: 0.8;
-    color: #ffffff;
-    padding: 1rem;
-    font-size: 25px;
     letter-spacing: 5px;
-    display: inline-block;
-    margin-bottom: 1rem;
-    max-width: 80%;
+
+    h2 {
+        background-color: var(--dark-grey);
+        opacity: 0.8;
+        color: #ffffff;
+        padding: 1rem;
+        /*font-size: 25px; skal/bør legges inn som egen klasse fra index.css */
+        margin-bottom: 1rem;
+        max-width: 80%;
+        display: inline-block;
+    }
+
+    p {
+        background-color: var(--dark-grey);
+        opacity: 0.8;
+        color: var(--white);
+        padding: 1rem;
+        margin: 0 auto;
+        /*font-size: 20px; skal/bør legges inn som egen klasse fra index.css */
+        width: 80%;
+      }
 }
 
 /* END */
@@ -32,22 +42,20 @@
     padding: 2.5rem;
     text-align: left;
     letter-spacing: 0.4px;
+    line-height: 1.5;
   
     h2 {
       text-align: center;
       color: var(--red);
-      font-size: 25px;
-      letter-spacing: 4px;
+      /*font-size: 25px;*/
       text-transform: uppercase;
-      line-height: 1.5;
     }
   
     p {
-      font-size: 18px;
-      line-height: 1.6;
+      /*font-size: 18px;*/
       padding-top: 0.5rem;
     }
-  }
+}
 
 /* END */
 
@@ -61,6 +69,13 @@
     position: relative;
     margin: 0 auto;
     width: 80%;
+
+    p {
+        color: var(--dark-grey);
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 0 auto;
+    }
 }
 
 .speech-bubble::before {
@@ -76,30 +91,6 @@
     margin-left: -10px;
     margin-bottom: -10px;
 }
-  
-.bubble-text {
-    color: var(--dark-grey);
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 0 auto;
-}
-
-/* END */
-
-/* || BORDER */
-
-.border2 {
-    display: flex;
-    background-color: var(--dark-grey);
-    opacity: 0.8;
-    color: var(--white);
-    padding: 1rem;
-    margin: 0 auto;
-    font-size: 20px;
-    width: 80%;
-    letter-spacing: 4px;
-    line-height: 1.5;
-  }
 
 /* END */
 
@@ -109,6 +100,10 @@
   align-items: center;
   margin: 0 auto;
   margin-top: 1rem;
+
+  span {
+    color: var(--dark-grey);
+  }
 }
 
 /* END */
@@ -151,85 +146,55 @@
 
 @media only screen and (min-width: 760px) {
 
-    .caption span.border {
-        background-color: var(--dark-grey);
-        opacity: 0.8;
-        color: var(--white);
-        padding: 18px;
-        font-size: 30px;
-        letter-spacing: 5px;
-        display: inline-block;
-        margin-bottom: 1rem;
-      }
-    
-      .border2 {
-        display: flex;
-        background-color: var(--dark-grey);
-        opacity: 0.8;
-        color: var(--white);
-        padding: 18px;
-        font-size: 20px;
-        letter-spacing: 5px;
-        width: 80%;
-        margin: 0 auto;
-      }
-    
-      .content {
-        font-family: Inter, sans-serif;
-        justify-content: center;
-    
+    /* || CAPTION */
+
+    .caption {
         h2 {
-          text-align: center;
-          color: var(--red);
-          font-size: 25px;
-          letter-spacing: 4px;
-          text-transform: uppercase;
-          margin-bottom: 20px;
-          max-width: 60%;
-          margin: 0 auto;
-          padding: 1rem;
-        }
-    
-        p {
-          max-width: 60%;
-          font-size: 1.2rem;
-          line-height: 1.5;
-          margin: 0 auto;
-        }
-      }
-    
-      .speech-bubble {
-        background-color: var(--light-green);
-        border-radius: 10px;
-        margin: 20px 0;
-        padding: 1rem;
-        position: relative;
-        width: 50%;
-        margin: 0 auto;
-      }
-    
-      .speech-bubble::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 20px;
-        width: 0;
-        height: 0;
-        border: 10px solid transparent;
-        border-top-color: var(--light-green);
-        border-bottom: 0;
-        margin-left: -10px;
-        margin-bottom: -10px;
-      }
-    
-      .bubble-text {
-        color: var(--dark-grey);
-        font-size: 1.2rem;
-        line-height: 1.5;
-        margin: 0 auto;
-        width: 90%;
+            padding: 18px;
+            /*font-size: 30px;  bør/skal hentes fra index.css som klasse  */
       }
 
+      p {
+        padding: 18px;
+        /*font-size: 20px; bør/skal hentes fra index.css som klasse */
+      }
+    }
+
+    /* END */
+
+    /* || CONTENT */
+
+    .content {
+        h2 {
+            color: var(--red);
+            /*font-size: 25px;*/
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            max-width: 60%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        p {
+            max-width: 60%;
+            /*font-size: 1.2rem;*/
+            margin: 0 auto;
+        }
+    }
+
+    /* END */
+    
+    /* || SPEECH BUBBLE */
+
+    .speech-bubble {
+        width: 50%;
+
+        p {
+            /*font-size: 1.2rem;*/
+            width: 90%;
+        }
+    }
+    
     /* END */
 
 }

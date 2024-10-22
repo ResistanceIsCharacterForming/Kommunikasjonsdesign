@@ -123,29 +123,27 @@ export default function Article1() {
   return (
     <>
       <section className="parallax bg1">
-        <h1 className="caption">
-          <span className="border">FAGBREV</span>
-          <span className="border2">
+        <span className="caption">
+          <h2>FAGBREV</h2>
+          <p>
             {" "}
             - En blindvei for unge i arbeidslivet?
-          </span>
-        </h1>
+          </p>
+        </span>
       </section>
       <section className="content">
         <h2>Når drømmen om en fast jobb møter virkeligheten</h2>
-        <strong>
-          <p>
-            Dette er realiteten for mange som tar fagbrev i Norge. Etter to år
-            på videregående og to år som lærling, skulle veien videre være klar:
-            en trygg og fast jobb. Men for mange viser denne veien seg å være
-            alt annet enn sikker.
-          </p>
-        </strong>
+        <p class="txtBold">
+          Dette er realiteten for mange som tar fagbrev i Norge. Etter to år
+          på videregående og to år som lærling, skulle veien videre være klar:
+          en trygg og fast jobb. Men for mange viser denne veien seg å være
+          alt annet enn sikker.
+        </p>
       </section>
       <section className="parallax bg2">
-        <h2 className="caption">
-          <span className="border">UTFORDRINGER</span>
-        </h2>
+        <span className="caption">
+          <h2>UTFORDRINGER</h2>
+        </span>
       </section>
       <section className="content">
         <h2>Realiteten i arbeidsmarkedet</h2>
@@ -171,15 +169,14 @@ export default function Article1() {
             datasets={lineChartData.datasets}
           />
           <figcaption className="chartFig">
-            Figur 1: Statistikk over arbeidsmarkedet for fagbrevkandidater.
-            Generert med Chart.js.
+            Figur 1: Statistikk over arbeidsmarkedet for fagbrevkandidater. <span>Laget med <a href="https://www.chartjs.org/" target="_blank">Chart.js</a></span>
           </figcaption>
         </figure>
       </section>
       <section className="parallax bg3">
-        <h2 className="caption">
-          <span className="border">FRUSTRASJON</span>
-        </h2>
+        <span className="caption">
+          <h2>FRUSTRASJON</h2>
+        </span>
       </section>
       <section className="content">
         <h2>Fra drøm til skuffelse</h2>
@@ -189,11 +186,11 @@ export default function Article1() {
         </p>
       </section>
         <section className="speech-bubble">
-          <p className="bubble-text"> 
-            <em>"Jeg var sikker på at fagbrevet skulle være min 
-            billett inn i IT-bransjen," </em> sier han med et snev av frustrasjon. 
-            <em>"Jeg har investert fire år i denne utdanningen, men hver gang jeg søker jobb, 
-            får jeg høre at de heller vil ha noen med bachelorgrad. Det føles som om alt jeg har jobbet for blir oversett." </em>
+          <p> 
+            <span class="txtItalic">"Jeg var sikker på at fagbrevet skulle være min 
+            billett inn i IT-bransjen," </span> sier han med et snev av frustrasjon. 
+            <span class="txtItalic">"Jeg har investert fire år i denne utdanningen, men hver gang jeg søker jobb, 
+            får jeg høre at de heller vil ha noen med bachelorgrad. Det føles som om alt jeg har jobbet for blir oversett." </span>
           </p>
         </section>
         <section className="content">
@@ -203,10 +200,10 @@ export default function Article1() {
         </p>
         </section>
         <section className="speech-bubble">
-          <p className="bubble-text">
-          <em>"Det er demotiverende,"</em> innrømmer han. 
-          <em>"Jeg vet at jeg har både ferdighetene og 
-          kunnskapen til å gjøre jobben, men det føles som om jeg aldri får sjansen til å bevise det." </em>
+          <p>
+            <span class="txtItalic">Det er demotiverende,"</span> innrømmer han. 
+            <span class="txtItalic">"Jeg vet at jeg har både ferdighetene og 
+            kunnskapen til å gjøre jobben, men det føles som om jeg aldri får sjansen til å bevise det."</span>
           </p>
         </section>
         <section className="content">
@@ -219,9 +216,9 @@ export default function Article1() {
         </p>
       </section>
       <section className="parallax bg4">
-        <h2 className="caption">
-          <span className="border">KONSEKVENSER</span>
-        </h2>
+        <span className="caption">
+          <h2>KONSEKVENSER</h2>
+        </span>
       </section>
       <section className="content">
         <h2>Mer enn bare økonomi</h2>
@@ -248,14 +245,14 @@ export default function Article1() {
           />
           <figcaption className="chartFig">
             Figur 2: Arbeidsledighetsnivået i Norge og dets sammenheng med
-            psykisk helse. Generert med Chart.js
+            psykisk helse. <span>Laget med <a href="https://www.chartjs.org/" target="_blank">Chart.js</a></span>
           </figcaption>
         </figure>
       </section>
       <section className="parallax bg5">
-        <h2 className="caption">
-          <span className="border">LØSNINGER</span>
-        </h2>
+        <span className="caption">
+          <h2>LØSNINGER</h2>
+        </span>
       </section>
       <section className="content">
         <h2>Veien videre</h2>
@@ -266,11 +263,6 @@ export default function Article1() {
           Skal vi ta denne utfordringen på alvor, må vi verdsette alle typer
           kompetanse – også den som kommer fra fagbrev.
         </p>
-      </section>
-      <section className="parallax bg6">
-        <h2 className="caption">
-          <span className="border">REFLEKTER</span>
-        </h2>
       </section>
     </>
   )
