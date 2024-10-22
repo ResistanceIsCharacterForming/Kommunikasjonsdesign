@@ -277,7 +277,7 @@ export default function Article2() {
             for å forbedre livskvaliteten i land med lavere lykkenivåer. For Norge og andre land er det en invitasjon til refleksjon og handling: 
             hvordan kan vi implementere lærdommene fra de lykkeligste samfunnene i våre egne liv?
             </p>
-          </section>
+        </section>
 
         {/* Topp 7 lykkeligste land-seksjon */}
         {/*
