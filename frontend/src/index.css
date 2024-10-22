@@ -416,12 +416,7 @@ canvas {
   color: var(--orange);
 }
 
-.quote {
-  font-size: 1.1rem;
-  border-left: 4px solid var(--blue);
-  padding-left: 1rem;
-  margin: 1rem 0;
-}
+
 
 .lykkeindex {
   margin: 1rem 0;
@@ -429,11 +424,7 @@ canvas {
   font-size: 13px;
 }
 
-.portrait {
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-}
+
 
 figure {
   display: flex;

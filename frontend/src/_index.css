@@ -71,7 +71,6 @@ header {
   max-width: 100%;
 }
 
-/* Navigasjon */
 #menu-toggle {
   font-size: 1.5rem;
   color: var(--black);
@@ -209,6 +208,75 @@ footer {
 [data-aos].aos-animate {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+/* END */
+
+/* || MEDIA QUERIES */
+
+@media only screen and (min-width: 760px) {
+
+  /* || FRONTPAGE NAV */
+  #menu-toggle {
+    display: none;
+  }
+
+  #main-menu {
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--white);
+    padding: 0;
+    gap: 1.5rem;
+    width: auto;
+    transform: translateX(0);
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  #main-menu.active {
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--white);
+    padding: 0;
+    gap: 1.5rem;
+    width: auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  nav h2 {
+    padding-right: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  /* END */
+
+  /* || FOOTER */
+
+  footer {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  /* END */
 }
 
 /* END */
