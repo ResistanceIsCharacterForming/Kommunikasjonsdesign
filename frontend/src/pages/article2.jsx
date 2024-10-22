@@ -83,12 +83,11 @@ export default function Article2() {
         <h1 className="article-title">Lykke i Norden: <br>
         </br>Hva kan Norge lære av Finland?</h1>
         <p className="article-intro">
-        Lykke. Et ord som rommer både personlig tilfredshet og nasjonal stolthet, men som 
+        Lykke. Et ord som omfavner både personlig tilfredshet og nasjonal stolthet, men som 
         også vekker nysgjerrighet når det settes opp mot tall og statistikker. 
-        I Norden, hvor velferdssystemene er blant de beste i verden, skulle man tro at 
-        lykken var en selvfølge. Men er det slik? Ny forskning viser interessante 
-        forskjeller mellom de nordiske landene – og resultatene kan overraske.
-        </p>
+        I Norden, hvor velferdssystemene er blant verdens beste, skulle man tro lykken var en selvfølge. Men er det virkelig slik? 
+        Ny forskning avdekker interessante forskjeller mellom de nordiske landene
+        - og resultatene kan være overraskende. </p>
       </section>
       <section className="start-section1">
         <h2>Finland topper lykkeindeksen</h2>
