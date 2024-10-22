@@ -634,6 +634,13 @@ figcaption {
   }
 }
 
+.quote {
+  font-size: 1.1rem;
+  border-left: 4px solid var(--blue);
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
 .black-quote {
   position: absolute;
   top: -10px;
@@ -707,6 +714,7 @@ figcaption {
   transition: opacity 0.5s ease;
 }
 
+/*
 .card {
   position: absolute;
   top: 50%;
@@ -759,6 +767,7 @@ figcaption {
     gap: 0.5rem;
   }
 }
+*/
 
 /* AOS animations */
 [data-aos] {
