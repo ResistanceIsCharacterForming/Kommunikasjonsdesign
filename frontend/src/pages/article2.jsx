@@ -64,6 +64,18 @@ export default function Article2() {
     Norge: [60.472, 8.4689],
   }
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://datawrapper.dwcdn.net/nLQfN/embed.js";
+    script.async = true;
+    script.charset = "utf-8";
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       {/* Intro */}
@@ -237,27 +249,23 @@ export default function Article2() {
               gangen, kan komme nærmere en lykkeligere hverdag.
             </p>
           </section>
-          {/* Seksjon 6 */}
-          <section data-aos="fade-up">
-            <h2 className="section-title">
-              Lykkeindeksen 2024: En visuell oversikt
-            </h2>
-            <p>
-              I en verden der velstand og lykke ofte antas å gå hånd i hånd,
-              avdekker nye data et fascinerende paradoks i hjertet av Norden.
-              Lykkeindeksen for 2024 kaster nytt lys over hvordan nasjoner
-              rangeres på den globale lykkeskalaen, og resultatene utfordrer våre
-              antakelser om hva som virkelig bidrar til et lykkelig samfunn.
-            </p>
-            <div className="data-visualization" data-aos="zoom-in">
-              <figcaption className="lykkeindex">
-                Kartet viser den globale lykkeindeksen for 2024, der land er
-                fargekodet fra rødt (lavest lykkenivå) til blått (høyest
-                lykkkenivå). Skalaen går fra 1.72 til 7.74, noe som indikerer en
-                betydelig variasjon i opplevd lykke verden over. Kilde: World
-                Happiness Report 2024
-              </figcaption>
-            </div>
+          {/* Datawrapper Section */}
+      <section data-aos="fade-up">
+        <h2 className="section-title">
+          Lykkeindeksen 2024: En visuell oversikt
+        </h2>
+        <p>
+          Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer høye nivåer av lykke. 
+          Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som virkelig bidrar til lykken i de ulike landene.
+        </p>
+        <div className="data-visualization" id="datawrapper-container">
+          {/* Datawrapper embed will load here */}
+        </div>
+        <figcaption className="lykkeindex">
+          Kartet viser den globale lykkeindeksen for 2024, der land er fargekodet fra rødt (lavest lykkenivå) til blått (høyest lykkkenivå). 
+          Kilde: World Happiness Report 2024
+        </figcaption>
+      </section>
             <p>
               Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer
               høye nivåer av lykke. Likevel avslører de små nyansene interessante
@@ -317,7 +325,6 @@ export default function Article2() {
         */}
 
         </section>
-      </section>
     </>
   )
 }
