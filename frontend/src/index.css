@@ -615,12 +615,14 @@ figcaption {
   justify-content: center;
   align-items: center;
   height: 40vh;
+
+  img {
+    width: 150px;
+    height: auto;
+  }
 }
 
-.confused img {
-  width: 150px;
-  height: auto;
-}
+
 
 .xl-hero {
   display: flex;
