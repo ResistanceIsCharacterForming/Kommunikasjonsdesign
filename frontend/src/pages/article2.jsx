@@ -94,17 +94,18 @@ export default function Article2() {
         <h2>Finland topper lykkeindeksen</h2>
         <p>
         Finland topper igjen lykkeindeksen, med enda en 1. plass. Dette har blitt et mønster
-        de siste årene – men hva er det som gjør finnene så fornøyde med livet? Er det deres 
-        enkle livsstil, deres velferdssystem eller noe annet?
+        de siste årene. Men hva er det som gjør finnene så tilfredse med livet? 
+        Er det deres enkle livsstil, det solide velferdssystemet – eller ligger det noe annet bak?
         </p>
       </section>
       <section className="start-section1 nd2">
         <h2>Norge på 7. plass: Hva mangler?</h2>
         <p>
-        Selv om Norge er blant de 10 lykkeligste landene, havner landet likevel på en 7. plass.
-        Norge har rikelig med ressurser og høy levestandard, men likevel sliter landet med å 
-        klatre til topps i lykkeindeksen. Hva er det som gjør at nordmenn ikke når helt opp? 
-        Kan det være kulturelle forskjeller, arbeidslivet eller noe annet som spiller inn?
+        Selv om Norge er blant de ti lykkeligste landene, ender landet likevel på en 7. plass.
+        Til tross for rikelige ressurser og høy levestandard, ser det ut til at Norge 
+        sliter med å nå helt til topps på lykkeindeksen. 
+        Hva er det som holder nordmenn tilbake? Kan det være kulturelle forskjeller, 
+        arbeidsforhold eller noe annet som spiller inn?
         </p>
       </section>
       {isMapVisible && ( 
