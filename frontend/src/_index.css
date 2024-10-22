@@ -182,3 +182,33 @@ footer {
 }
 
 /* END */
+
+/* || AOS */
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(100px);
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-100px);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-100px);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(100px);
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* END */
