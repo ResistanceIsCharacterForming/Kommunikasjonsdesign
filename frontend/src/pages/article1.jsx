@@ -170,7 +170,7 @@ export default function Article1() {
             labels={lineChartData.labels}
             datasets={lineChartData.datasets}
           />
-          <figcaption className="chart1fig">
+          <figcaption className="chartFig">
             Figur 1: Statistikk over arbeidsmarkedet for fagbrevkandidater.
             Generert med Chart.js.
           </figcaption>
@@ -246,7 +246,7 @@ export default function Article1() {
             labels={barChartData.labels}
             datasets={barChartData.datasets}
           />
-          <figcaption className="chart2fig">
+          <figcaption className="chartFig">
             Figur 2: Arbeidsledighetsnivået i Norge og dets sammenheng med
             psykisk helse. Generert med Chart.js
           </figcaption>

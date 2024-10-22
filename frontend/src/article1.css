@@ -105,8 +105,7 @@
 
 /* || CHART */
 
-.chart1fig,
-.chart2fig {
+.chartFig {
   align-items: center;
   margin: 0 auto;
   margin-top: 1rem;
