@@ -12,8 +12,10 @@ function ZoomToCountry({ scrollPosition }) {
       map.setView([64.0, 15.0], 4)
     } else if (scrollPosition >= 400 && scrollPosition < 1100) {
       map.setView([64.00, 26.00], 6)
-    } else if (scrollPosition >= 1100) {
+    } else if (scrollPosition >= 1100 && scrollPosition < 2000) {
       map.setView([60.00, 8.00], 6)
+    } else if (scrollPosition >= 2000) {
+      map.setView([60.00, 8.00], 8)
     }
   }, [scrollPosition, map])
 
