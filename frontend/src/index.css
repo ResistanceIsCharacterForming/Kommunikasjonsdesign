@@ -716,54 +716,6 @@ figcaption {
   }
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromRight {
-  from {
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.article-header {
-  animation: fadeIn 1s ease-out;
-}
-
-.article-title {
-  animation: slideInFromLeft 1s ease-out;
-}
-
-.article-intro {
-  animation: slideInFromRight 1s ease-out;
-}
-
-.section-title {
-  animation: slideInFromLeft 0.5s ease-out;
-}
-
 /* AOS animations */
 [data-aos] {
   opacity: 0;
