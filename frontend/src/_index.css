@@ -1,0 +1,160 @@
+/* || SETTINGS */
+
+:root {
+  line-height: 1.2;
+  --white: white;
+  --smoke: #f7f7f7;
+  --black: black;
+  --light-grey: rgb(224, 224, 224);
+  --dark-grey: #484848;
+  --red: #c11c1c;
+  --grey: grey;
+  --light-grey-hover: rgb(142, 104, 104);
+  --blue: #1d67b7;
+  --orange: #e99666;
+  --dark-indigo: #2c2c54;
+  --deep-purple-gray: #474787;
+  --cool-gray: #aaabb8;
+  --green: #27a85d;
+  --light-green: #e3f1e5d1;
+  --light-blue: #8ebed8;
+  --dark-blue: #003366;
+  --forest-green: #5a7d7c;
+  --pink: rgba(186, 76, 110, 0.85);
+  font-size: calc(0.6em + 0.6vw);
+  font-family: sans-serif, Arial;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 5rem;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* END */
+
+/* || GLOBAL */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 3rem;
+}
+
+/* END */
+
+/* || FRONTPAGE NAV */
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Navigasjon */
+#menu-toggle {
+  font-size: 1.5rem;
+  color: var(--black);
+  max-width: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  position: fixed;
+  right: 2rem;
+}
+
+#main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: fixed;
+  gap: 1rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0rem 2rem;
+  padding-top: 5.5rem;
+  width: 250px;
+  background-color: var(--white);
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+
+  a {
+    font-size: 1rem;
+  }
+}
+
+#main-menu.active {
+  transform: translateX(0);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: var(--white);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+
+  h2 {
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0;
+  }
+
+  a {
+    position: relative;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.3s;
+    &.active {
+      font-weight: 900;
+    }
+
+    &:hover {
+      color: var(--light-grey-hover);
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+  }
+}
+
+nav.hidden {
+  transform: translateY(-100%);
+}
+
+#home {
+  font-weight: bold;
+}
+
+/* END */
