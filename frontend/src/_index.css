@@ -155,3 +155,30 @@ nav.hidden {
 }
 
 /* END */
+
+/* || FOOTER */
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background-color: var(--black);
+  color: var(--white);
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+
+      a {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+/* END */
