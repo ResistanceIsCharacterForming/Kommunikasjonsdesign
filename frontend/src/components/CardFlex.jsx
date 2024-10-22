@@ -29,7 +29,6 @@ export default function CardFlex() {
 
   return (
     <>
-      <h2>LES OM ADHDERNE</h2>
       <section className="xl-flex">
         {interviewees.map((interviewee) => (
           <div

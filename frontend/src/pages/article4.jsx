@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react"
 import Chart from "chart.js/auto"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import CardFlex from "../components/CardFlex"
 
 // Linjediagram
 const LineChart = ({ id, labels, datasets }) => {
@@ -243,7 +244,6 @@ export default function Article4() {
         element.style.borderRadius = "50%"
         element.style.backgroundColor = "white"
         element.style.cursor = "pointer"
-        element.style.filter = "blur(10px)"
 
         element.addEventListener("mouseover", () => {
           element.style.borderRadius = "0%"
@@ -317,7 +317,7 @@ export default function Article4() {
         </div>
       </div>
 
-      <body className="body-background">
+      <div className="body-background">
         {/*             Charts
           <figure>
             <LineChart
@@ -355,15 +355,15 @@ export default function Article4() {
 
         <div className="xl-container">
           {/*Parallax header*/}
-          <section class="parallax-xl">
-            <header class="caption-xl">
+          <section className="parallax-xl">
+            <header className="caption-xl">
               <h1>
                 SENDIAGNOSTISERING AV ADHD: EN LIVSLANG REISE MOT FORSTÅELSE
               </h1>
             </header>
           </section>
           {/*Article section*/}
-          <article class="content-xl">
+          <article className="content-xl">
             <h2>Den skjulte utfordringen</h2>
             <p>
               ADHD, eller Attention Deficit Hyperactivity Disorder, har lenge
@@ -376,8 +376,8 @@ export default function Article4() {
           </article>
 
           {/*Parallax header*/}
-          <section class="parallax-xl">
-            <header class="caption-xl">
+          <section className="parallax-xl">
+            <header className="caption-xl">
               <h2>
                 "JEG VISSTE ALLTID AT JEG VAR ANNERLEDES, MEN IKKE HVORFOR"
               </h2>
@@ -385,7 +385,7 @@ export default function Article4() {
           </section>
           <CardFlex />
           {/*Article section*/}
-          <article class="content-xl">
+          <article className="content-xl">
             <h2>Symptomer i skjul - En livslang kamp</h2>
             <h3>De subtile tegnene</h3>
             <p>
@@ -395,11 +395,11 @@ export default function Article4() {
               manifestere seg på subtile måter som er lette å overse eller
               mistolke.
             </p>
-            <section class="quote-container">
+            <section className="quote-container">
               <img
                 src="../public/assets/img/black-quote.png"
                 alt="quote"
-                class="black-quote"
+                className="black-quote"
               />
               <p>
                 "Jeg trodde alltid det var noe galt med meg. At jeg bare var lat
@@ -424,7 +424,7 @@ export default function Article4() {
               tilstandene kan ofte overskygge de primære ADHD-symptomene, noe
               som ytterligere kompliserer diagnostiseringsprosessen.
             </p>
-            <section class="fact-box">
+            <section className="fact-box">
               <strong>Visste du?</strong> Studier viser at opptil 4% av voksne
               kan ha ADHD, men mange forblir udiagnostisert gjennom store deler
               av livet.
@@ -437,8 +437,8 @@ export default function Article4() {
           </section>
 
           {/*Parallax header*/}
-          <section class="parallax-xl">
-            <header class="caption-xl">
+          <section className="parallax-xl">
+            <header className="caption-xl">
               <h2>
                 KJØNNSFORSKJELLER I ADHD-DIAGNOSTISERING: EN SKJULT EPIDEMI?
               </h2>
@@ -446,7 +446,7 @@ export default function Article4() {
           </section>
 
           {/*Article section*/}
-          <article class="content-xl">
+          <article className="content-xl">
             <h2>Kjønnsperspektivet - Når stereotyper skjuler sannheten</h2>
             <h3>Den "typiske" ADHD-pasienten</h3>
             <p>
@@ -464,11 +464,11 @@ export default function Article4() {
               føre til at ADHD hos jenter og kvinner ofte blir feildiagnostisert
               eller oppdages senere i livet.
             </p>
-            <section class="quote-container">
+            <section className="quote-container">
               <img
                 src="../public/assets/img/black-quote.png"
                 alt="quote"
-                class="black-quote"
+                className="black-quote"
               />
               <p>
                 "Jeg var alltid 'den stille jenta' i klassen. Ingen mistenkte
@@ -483,7 +483,7 @@ export default function Article4() {
               rapporterer at symptomene forverres under visse faser av
               menstruasjonssyklusen, graviditet eller menopause.
             </p>
-            <section class="fact-box">
+            <section className="fact-box">
               <strong>Statistikk:</strong> For hver tredje gutt som
               diagnostiseres med ADHD, diagnostiseres bare én jente, til tross
               for at forekomsten antas å være lik mellom kjønnene.
@@ -493,14 +493,14 @@ export default function Article4() {
             <img src="../public/assets/img/confused2.png" alt="confused" />
           </section>
           {/*Parallax header*/}
-          <section class="parallax-xl">
-            <header class="caption-xl">
+          <section className="parallax-xl">
+            <header className="caption-xl">
               <h2>ADHD I ARBEIDSLIVET: UTFORDRINGER OG UANTE STYRKER</h2>
             </header>
           </section>
 
           {/*Article section*/}
-          <article class="content-xl">
+          <article className="content-xl">
             <h2>ADHD i arbeidslivet - En tveegget sverd</h2>
             <h3>Daglige utfordringer</h3>
             <p>
@@ -523,7 +523,7 @@ export default function Article4() {
               arbeidstider, bruk av støyreduserende hodetelefoner, eller
               oppdeling av store prosjekter i mindre, håndterbare oppgaver.
             </p>
-            <section class="fact-box">
+            <section className="fact-box">
               <strong>Interessant fakta:</strong> Noen kjente entreprenører og
               innovatører, som Richard Branson og Ingvar Kamprad, har åpent delt
               sine erfaringer med ADHD og hvordan det har påvirket deres
@@ -537,14 +537,14 @@ export default function Article4() {
           </section>
 
           {/*Parallax header*/}
-          <section class="parallax-xl">
-            <header class="caption-xl">
+          <section className="parallax-xl">
+            <header className="caption-xl">
               <h2>VEIEN MOT DIAGNOSE: EN LABYRINT AV FØLELSER OG FORSTÅELSE</h2>
             </header>
           </section>
 
           {/*Article section*/}
-          <article class="content-xl">
+          <article className="content-xl">
             <h2>Diagnostisering og behandling - En ny start</h2>
             <h3>Utfordringer i diagnostiseringsprosessen</h3>
             <p>
@@ -559,11 +559,11 @@ export default function Article4() {
               lettelse og sorg - lettelse over å endelig forstå seg selv bedre,
               men også sorg over tapte muligheter og år med misforståelser.
             </p>
-            <section class="quote-container">
+            <section className="quote-container">
               <img
                 src="../public/assets/img/black-quote.png"
                 alt="quote"
-                class="black-quote"
+                className="black-quote"
               />
               <p>
                 "Å få diagnosen var som å få nøkkelen til å forstå meg selv. Det
@@ -586,7 +586,7 @@ export default function Article4() {
               For mange kan riktig behandling føre til betydelige forbedringer i
               livskvalitet og funksjonsnivå.
             </p>
-            <section class="fact-box">
+            <section className="fact-box">
               <strong>Visste du?</strong> Studier viser at opptil 70% av voksne
               med ADHD opplever betydelig symptomlindring med riktig behandling.
             </section>
@@ -598,14 +598,14 @@ export default function Article4() {
           </section>
 
           {/*Parallax header*/}
-          <section class="parallax-xl">
-            <header class="caption-xl">
+          <section className="parallax-xl">
+            <header className="caption-xl">
               <h2>ADHD OG RELASJONER: NAVIGERING I ET KOMPLEKST LANDSKAP</h2>
             </header>
           </section>
 
           {/*Article section*/}
-          <article class="content-xl">
+          <article className="content-xl">
             <h2>ADHD og mellommenneskelige relasjoner</h2>
             <h3>Utfordringer i parforhold</h3>
             <p>
@@ -613,11 +613,11 @@ export default function Article4() {
               Problemer med oppmerksomhet, impulsivitet og emosjonell regulering
               kan skape misforståelser og konflikter.
             </p>
-            <section class="quote-container">
+            <section className="quote-container">
               <img
                 src="../public/assets/img/black-quote.png"
                 alt="quote"
-                class="black-quote"
+                className="black-quote"
               />
               <p>
                 "Det tok tid for min partner å forstå at når jeg glemte ting,
@@ -640,7 +640,7 @@ export default function Article4() {
             <img src="../public/assets/img/confused2.png" alt="confused" />
           </section>
         </div>
-      </body>
+      </div>
     </>
   )
 }
