@@ -249,7 +249,7 @@ export default function Article2() {
               rangeres på den globale lykkeskalaen, og resultatene utfordrer våre
               antakelser om hva som virkelig bidrar til et lykkelig samfunn.
             </p>
-            {/*<div className="data-visualization" data-aos="zoom-in">
+            <div className="data-visualization" data-aos="zoom-in">
               <figcaption className="lykkeindex">
                 Kartet viser den globale lykkeindeksen for 2024, der land er
                 fargekodet fra rødt (lavest lykkenivå) til blått (høyest
@@ -257,7 +257,7 @@ export default function Article2() {
                 betydelig variasjon i opplevd lykke verden over. Kilde: World
                 Happiness Report 2024
               </figcaption>
-                </div>*/}
+            </div>
             <p>
               Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer
               høye nivåer av lykke. Likevel avslører de små nyansene interessante
@@ -268,7 +268,8 @@ export default function Article2() {
             </p>
           </section>
 
-          {/* Topp 7 lykkeligste land-seksjon */}
+        {/* Topp 7 lykkeligste land-seksjon */}
+        {/*
         <section data-aos="fade-up">
           <h2 className="section-title">Top 7 lykkeligste land</h2>
           <article className="country-boxes">
@@ -299,20 +300,22 @@ export default function Article2() {
               </section>
             ))}
           </article>
-            <MapContainer
-              center={countryCoordinates} 
-              zoom={4}
-              style={{ height: "600px", width: "100%" }}
-              zoomControl={true}
-              scrollWheelZoom={true}
-            >
-              <TileLayer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&copy <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              />
-              <ZoomToCountryTop7 coordinates={countryCoordinates} />
-            </MapContainer>
+          <MapContainer
+            center={countryCoordinates} 
+            zoom={4}
+            style={{ height: "600px", width: "100%" }}
+            zoomControl={true}
+            scrollWheelZoom={true}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+            <ZoomToCountryTop7 coordinates={countryCoordinates} />
+          </MapContainer>
         </section>
+        */}
+
         </section>
       </section>
     </>
