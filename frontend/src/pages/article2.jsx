@@ -255,8 +255,11 @@ export default function Article2() {
           Lykkeindeksen 2024: En visuell oversikt
         </h2>
         <p>
-          Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer høye nivåer av lykke. 
-          Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som virkelig bidrar til lykken i de ulike landene.
+        Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer høye nivåer av lykke. 
+        Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som virkelig bidrar til lykken i de ulike landene.
+        Kartet, som presenterer lykkeindeksen for 2024, gir en umiddelbar oversikt over hvordan innbyggerne opplever livskvalitet og trivsel. 
+        De blå fargene representerer de lykkeligste landene, mens de rødaktige nyansene indikerer lavere nivåer av tilfredshet. 
+        Dette fargekodede systemet gjør det enkelt å sammenligne ulike land og identifisere hvor vi finner de lykkeligste samfunnene.
         </p>
         <div className="data-visualization" id="datawrapper-container">
           {/* Datawrapper embed will load here */}
@@ -265,11 +268,20 @@ export default function Article2() {
           Kartet viser den globale lykkeindeksen for 2024, der land er fargekodet fra rødt (lavest lykkenivå) til blått (høyest lykkkenivå). 
           Kilde: World Happiness Report 2024
         </figcaption>
+        <p>
+            Ifølge den nyeste rapporten fra World Happiness Report, er det flere faktorer som bidrar til de høye lykkenivåene i de nordiske landene. 
+            Disse inkluderer sterke sosiale nettverk, et robust velferdssystem, tillit til offentlige institusjoner og en høy grad av personlig frihet. 
+            Finland, som nok en gang topper listen, illustrerer hvordan disse elementene kombineres for å skape et samfunn hvor innbyggerne føler seg trygge og verdsatt. 
+            I kontrast viser kartet at flere land utenfor Norden sliter med lavere lykkenivåer, ofte knyttet til økonomisk usikkerhet, høy kriminalitet og mindre tilgang på sosiale tjenester.
+        </p>
       </section>
             <p>
-              Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som
-              virkelig bidrar til lykken i de ulike landene, og får oss til å se
-              forbi de vanlige økonomiske kriteriene.
+            Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som
+            virkelig bidrar til lykken i de ulike landene, og får oss til å se
+            forbi de vanlige økonomiske kriteriene. Det er klart at lykke er mer enn bare tall; det handler om livskvalitet, samfunnsengasjement og 
+            følelsen av tilhørighet. Ved å studere lykkeindeksen kan vi lære mye om hvordan ulike kulturer prioriterer trivsel og hva som kan gjøres 
+            for å forbedre livskvaliteten i land med lavere lykkenivåer. For Norge og andre land er det en invitasjon til refleksjon og handling: 
+            hvordan kan vi implementere lærdommene fra de lykkeligste samfunnene i våre egne liv?
             </p>
           </section>
 
