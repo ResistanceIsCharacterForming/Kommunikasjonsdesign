@@ -1,0 +1,149 @@
+/* || CAPTION */
+
+.caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 750px;
+    padding: 0 1rem;
+    text-align: center;
+}
+  
+.caption span.border {
+    background-color: var(--dark-grey);
+    opacity: 0.8;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 25px;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+/* END */
+
+/* || CONTENT */
+
+.content {
+    width: 100%;
+    padding: 2.5rem;
+    text-align: left;
+    letter-spacing: 0.4px;
+  
+    h2 {
+      text-align: center;
+      color: var(--red);
+      font-size: 25px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      line-height: 1.5;
+    }
+  
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      padding-top: 0.5rem;
+    }
+  }
+
+/* END */
+
+/* || BUBBLE */
+
+.speech-bubble {
+    background-color: var(--light-green);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 1rem;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--light-green);
+    border-bottom: 0;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+  
+.bubble-text {
+    color: var(--dark-grey);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+/* END */
+
+/* || BORDER */
+
+.border2 {
+    display: flex;
+    background-color: var(--dark-grey);
+    opacity: 0.8;
+    color: var(--white);
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 20px;
+    width: 80%;
+    letter-spacing: 4px;
+    line-height: 1.5;
+  }
+
+/* END */
+
+/* || CHART */
+
+.chart1fig,
+.chart2fig {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/* END */
+
+/* || BACKGROUND IMAGES */
+
+.bg1 {
+    background-image: url("/public/assets/img/school.png");
+    min-height: 700px;
+}
+  
+.bg2 {
+    background-image: url("/public/assets/img/man.png");
+    min-height: 500px;
+}
+
+.bg3 {
+    background-image: url("/public/assets/img/employe.png");
+    min-height: 500px;
+}
+
+.bg4 {
+    background-image: url("/public/assets/img/failure.jpg");
+    min-height: 500px;
+}
+
+.bg5 {
+    background-image: url("/public/assets/img/puzzle.jpg");
+    min-height: 500px;
+}
+
+.bg6 {
+    background-image: url("/public/assets/img/woman.jpg");
+    min-height: 500px;
+}
+
+/* END */
