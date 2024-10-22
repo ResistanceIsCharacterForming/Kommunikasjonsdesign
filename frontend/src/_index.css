@@ -217,7 +217,7 @@ footer {
 @media only screen and (min-width: 760px) {
 
   /* || FRONTPAGE NAV */
-  
+
   #menu-toggle {
     display: none;
   }
@@ -276,6 +276,19 @@ footer {
   footer {
     padding: 2rem;
     font-size: 1rem;
+  }
+
+  /* END */
+
+  /* || CAVNAS */
+
+  canvas {
+    width: 100%;
+    height: auto;
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
   }
 
   /* END */
