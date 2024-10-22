@@ -1,9 +1,5 @@
 /* || section og H1 */
 
-.article-header {
-    animation: fadeIn 1s ease-out;
-}
-
 .article-title {
     animation: slideInFromLeft 1s ease-out;
 }
@@ -72,6 +68,21 @@
     display: block;
 }
 
+.data-visualization {
+  position: relative;
+}
+
+#datawrapper-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.lykkeindex {
+  position: relative;
+  width: 100%;
+}
+
+
 /* END */
 
 /* */
@@ -113,14 +124,7 @@
     margin-top: 0;
     margin-bottom: 30rem;
   }
-  
-  .article-header {
-    background-image: url("/public/assets/img/castle.jpg");
-    color: var(--white);
-    padding: 5rem 0;
-    padding-bottom: 4rem;
-    text-align: center;
-  }
+
   
   .article-title {
     font-size: 45px;
@@ -168,6 +172,12 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: var(--orange);
+  }
+
+  
+  .lykke-paradox-section * {
+    position: relative;
+    z-index: 2; /* Sørger for at tekst og annet innhold ligger over bakgrunnsbilde */
   }
   
   .lykkeindex {

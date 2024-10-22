@@ -65,15 +65,15 @@ export default function Article2() {
   }
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://datawrapper.dwcdn.net/nLQfN/embed.js";
-    script.async = true;
-    script.charset = "utf-8";
-    document.body.appendChild(script);
-  
-    return () => {
-      document.body.removeChild(script);
-    };
+    const existingScript = document.querySelector('script[src="https://datawrapper.dwcdn.net/nLQfN/embed.js"]');
+    
+    if (!existingScript) {
+      const script = document.createElement("script");
+      script.src = "https://datawrapper.dwcdn.net/nLQfN/embed.js";
+      script.async = true;
+      script.charset = "utf-8";
+      document.querySelector("#datawrapper-container").appendChild(script);
+    }
   }, []);
 
   return (
@@ -267,10 +267,7 @@ export default function Article2() {
         </figcaption>
       </section>
             <p>
-              Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer
-              høye nivåer av lykke. Likevel avslører de små nyansene interessante
-              forskjeller innen regionen, særlig mellom Norge og Finland. Dette
-              visuelle bildet oppfordrer oss til å dykke dypere inn i hva som
+              Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som
               virkelig bidrar til lykken i de ulike landene, og får oss til å se
               forbi de vanlige økonomiske kriteriene.
             </p>
