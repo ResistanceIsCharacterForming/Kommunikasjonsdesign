@@ -1,72 +1,52 @@
-import { useState, useEffect } from "react"
-import { MapContainer, TileLayer, useMap } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
-import AOS from "aos"
-import "aos/dist/aos.css"
+import { useState, useEffect } from "react";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function ZoomToCountry({ scrollPosition }) {
-  const map = useMap()
+function ZoomToCountry({ scrollPosition, coordinates }) {
+  const map = useMap();
 
   useEffect(() => {
     if (scrollPosition < 400) {
-      map.setView([64.0, 15.0], 4)
+      map.setView([64.0, 15.0], 4);
     } else if (scrollPosition >= 400 && scrollPosition < 1100) {
-      map.setView([64.00, 26.00], 6)
+      map.setView([64.0, 26.0], 6);
     } else if (scrollPosition >= 1100 && scrollPosition < 2000) {
-      map.setView([60.00, 8.00], 6)
+      map.setView([60.0, 8.0], 6);
     } else if (scrollPosition >= 2000) {
-      map.setView([60.00, 8.00], 8)
+      map.setView([60.0, 8.0], 8);
     }
-  }, [scrollPosition, map])
+  }, [scrollPosition, map, coordinates]);
 
-  return null
-}
-
-function ZoomToCountryTop7({ coordinates }) {
-  const map = useMap()
-
-  useEffect(() => {
-    if (coordinates) {
-      map.setView(coordinates, 6)
-    }
-  }, [coordinates, map])
-
-  return null
+  return null;
 }
 
 export default function Article2() {
-  const [scrollPosition, setScrollPosition] = useState(0)
-  const [countryCoordinates, setCountryCoordinates] = useState([62.0, 15.0]) 
-  const [isMapVisible, setIsMapVisible] = useState(true) 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [countryCoordinates, setCountryCoordinates] = useState([62.0, 15.0]);
+  const [isMapVisible, setIsMapVisible] = useState(true);
 
   const handleScroll = () => {
-    const currentScrollPosition = window.scrollY
-    setScrollPosition(currentScrollPosition)
-    setIsMapVisible(currentScrollPosition <= 2800)
-  }
+    const currentScrollPosition = window.scrollY;
+    setScrollPosition(currentScrollPosition);
+    setIsMapVisible(currentScrollPosition <= 2800);
+  };
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true })
-    window.scrollTo(0, 0)
-    window.addEventListener("scroll", handleScroll)
+    AOS.init({ duration: 1000, once: true });
+    window.scrollTo(0, 0);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
-
-  const countryData = {
-    Finland: [64.00, 26.00],
-    Danmark: [56.2639, 9.5018],
-    Island: [64.9631, -19.0208],
-    Sverige: [60.1282, 18.6435],
-    Israel: [31.0461, 34.8516],
-    Nederland: [52.1326, 5.2913],
-    Norge: [60.472, 8.4689],
-  }
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
-    const existingScript = document.querySelector('script[src="https://datawrapper.dwcdn.net/nLQfN/embed.js"]');
-    
+    const existingScript = document.querySelector(
+      'script[src="https://datawrapper.dwcdn.net/nLQfN/embed.js"]'
+    );
+
     if (!existingScript) {
       const script = document.createElement("script");
       script.src = "https://datawrapper.dwcdn.net/nLQfN/embed.js";
@@ -87,7 +67,8 @@ export default function Article2() {
         også vekker nysgjerrighet når det settes opp mot tall og statistikker. 
         I Norden, hvor velferdssystemene er blant verdens beste, skulle man tro lykken var en selvfølge. Men er det virkelig slik? 
         Ny forskning avdekker interessante forskjeller mellom de nordiske landene
-        - og resultatene kan være overraskende. </p>
+        - og resultatene kan være overraskende. 
+        </p>
       </section>
       <section className="start-section1">
         <h2>Finland topper lykkeindeksen</h2>
@@ -126,8 +107,6 @@ export default function Article2() {
         </MapContainer>
       )}
       {/* Hoved */}
-      <section className="article-header">
-      </section>
       <section className="article-content">
         <section className="inner-content">
           {/* Seksjon 1 */}
@@ -250,84 +229,35 @@ export default function Article2() {
             </p>
           </section>
           {/* Datawrapper Section */}
-      <section data-aos="fade-up">
-        <h2 className="section-title">
-          Lykkeindeksen 2024: En visuell oversikt
-        </h2>
-        <p>
-        Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer høye nivåer av lykke. 
-        Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som virkelig bidrar til lykken i de ulike landene.
-        Kartet, som presenterer lykkeindeksen for 2024, gir en umiddelbar oversikt over hvordan innbyggerne opplever livskvalitet og trivsel. 
-        De blå fargene representerer de lykkeligste landene, mens de rødaktige nyansene indikerer lavere nivåer av tilfredshet. 
-        Dette fargekodede systemet gjør det enkelt å sammenligne ulike land og identifisere hvor vi finner de lykkeligste samfunnene.
-        </p>
-        <div className="data-visualization" id="datawrapper-container">
-          {/* Datawrapper embed will load here */}
-        </div>
-        <figcaption className="lykkeindex">
-          Kartet viser den globale lykkeindeksen for 2024, der land er fargekodet fra rødt (lavest lykkenivå) til blått (høyest lykkkenivå). 
-          Kilde: World Happiness Report 2024
-        </figcaption>
-      </section>
+          <section data-aos="fade-up">
+            <h2 className="section-title">
+              Lykkeindeksen 2024: En visuell oversikt
+            </h2>
             <p>
-            Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som
-            virkelig bidrar til lykken i de ulike landene, og får oss til å se
-            forbi de vanlige økonomiske kriteriene. Det er klart at lykke er mer enn bare tall; det handler om livskvalitet, samfunnsengasjement og 
-            følelsen av tilhørighet. Ved å studere lykkeindeksen kan vi lære mye om hvordan ulike kulturer prioriterer trivsel og hva som kan gjøres 
-            for å forbedre livskvaliteten i land med lavere lykkenivåer. For Norge og andre land er det en invitasjon til refleksjon og handling: 
-            hvordan kan vi implementere lærdommene fra de lykkeligste samfunnene i våre egne liv?
+              Norden skiller seg ut med sine gjennomgående blåtoner, som indikerer høye nivåer av lykke. 
+              Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som virkelig bidrar til lykken i de ulike landene.
+              Kartet, som presenterer lykkeindeksen for 2024, gir en umiddelbar oversikt over hvordan innbyggerne opplever livskvalitet og trivsel. 
+              De blå fargene representerer de lykkeligste landene, mens de rødaktige nyansene indikerer lavere nivåer av tilfredshet. 
+              Dette fargekodede systemet gjør det enkelt å sammenligne ulike land og identifisere hvor vi finner de lykkeligste samfunnene.
             </p>
+            <div className="data-visualization" id="datawrapper-container">
+              {/* Datawrapper embed will load here */}
+            </div>
+            <figcaption className="lykkeindex">
+              Kartet viser den globale lykkeindeksen for 2024, der land er fargekodet fra rødt (lavest lykkenivå) til blått (høyest lykkkenivå). 
+              Kilde: World Happiness Report 2024
+            </figcaption>
+            <p>
+              Dette visuelle bildet oppfordrer oss til å dykke dypere inn i hva som
+              virkelig bidrar til lykken i de ulike landene, og får oss til å se
+              forbi de vanlige økonomiske kriteriene. Det er klart at lykke er mer enn bare tall det handler om livskvalitet, samfunnsengasjement og 
+              følelsen av tilhørighet. Ved å studere lykkeindeksen kan vi lære mye om hvordan ulike kulturer prioriterer trivsel og hva som kan gjøres 
+              for å forbedre livskvaliteten i land med lavere lykkenivåer. For Norge og andre land er det en invitasjon til refleksjon og handling: 
+              hvordan kan vi implementere lærdommene fra de lykkeligste samfunnene i våre egne liv?
+            </p>
+          </section> 
         </section>
-
-        {/* Topp 7 lykkeligste land-seksjon */}
-        {/*
-        <section data-aos="fade-up">
-          <h2 className="section-title">Top 7 lykkeligste land</h2>
-          <article className="country-boxes">
-            {Object.keys(countryData).map((country, index) => (
-              <section
-                key={index}
-                className="country-box"
-                data-aos="fade-up"
-                onClick={() => setCountryCoordinates(countryData[country])}
-                style={{ cursor: "pointer" }}
-              >
-                <h3>{index + 1}. {country}</h3>
-                <p>
-                  {country === "Finland"
-                    ? "Finland topper lykkesrangeringene på grunn av lav inntektsulikhet, høy sosial støtte, og frihet til å ta egne valg."
-                    : country === "Danmark"
-                    ? "Dansker er kjent for sin 'hygge'-kultur, som fremmer koselige og intime sosiale samlinger."
-                    : country === "Island"
-                    ? "Island har en sterk følelse av fellesskap og sosial støtte."
-                    : country === "Sverige"
-                    ? "Sverige har en god balanse mellom arbeid og fritid."
-                    : country === "Israel"
-                    ? "Israel scorer høyt på livstilfredshet, økonomi, helse og sosial støtte."
-                    : country === "Nederland"
-                    ? "Nederland har høye nivåer av sosial støtte og tillit til offentlige institusjoner."
-                    : "Norge har et høyt BNP per innbygger, god sosial støtte og høy forventet levealder."}
-                </p>
-              </section>
-            ))}
-          </article>
-          <MapContainer
-            center={countryCoordinates} 
-            zoom={4}
-            style={{ height: "600px", width: "100%" }}
-            zoomControl={true}
-            scrollWheelZoom={true}
-          >
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
-            <ZoomToCountryTop7 coordinates={countryCoordinates} />
-          </MapContainer>
-        </section>
-        */}
-
-        </section>
+      </section>
     </>
   )
 }
